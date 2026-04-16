@@ -13,9 +13,21 @@ with open("config.json", "r") as f:
 CACHE_FILE = "seen_jobs.json"
 seen_job_urls = set()
 
-if os.path.exists(CACHE_FILE) and os.path.getsize(CACHE_FILE) > 0:
-    with open(CACHE_FILE, "r") as f:
-        seen_job_urls = set(json.load(f))
+if os.path.exists(CACHE_FILE):
+    try:
+        with open(CACHE_FILE, "r") as f:
+            content = f.read().strip()
+            if content:  # Only try to load if there's actually text
+                data = json.loads(content)
+                if isinstance(data, list):
+                    seen_job_urls = set(data)
+            else:
+                print("Cache file is empty. Initializing...")
+    except (json.JSONDecodeError, ValueError):
+        print("Cache corrupted. Starting fresh.")
+        seen_job_urls = set()
+else:
+    print("No cache file found. Starting fresh.")
 
 new_jobs = []
 
