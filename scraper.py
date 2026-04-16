@@ -28,9 +28,7 @@ if os.path.exists(CACHE_FILE):
 graph_config = {
     "llm": {
         "api_key": os.getenv("GEMINI_API_KEY"),
-        # Use 'gemini-2.0-flash' or 'gemini-1.5-flash'. 
-        # Avoid '-latest' unless you are on the v1 stable endpoint.
-        "model": "google_genai/gemini-2.0-flash", 
+        "model": "google_genai/gemini-2.0-flash-lite",
         "max_tokens": 8192,
         "temperature": 0,
     },
