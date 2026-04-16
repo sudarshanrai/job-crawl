@@ -1,1 +1,10 @@
-
+{
+  "receiver_email": "your-personal-email@gmail.com",
+  "keywords": ["Software Engineer", "Backend Developer"],
+  "urls": [
+    "https://example.com/careers",
+    "https://techcorp.jobs/search",
+    "https://startup-hub.io/jobs"
+  ],
+  "gemini_model": "google_genai/gemini-1.5-flash"
+}
