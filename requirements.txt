@@ -1,0 +1,4 @@
+scrapegraphai
+playwright
+resend
+python-dotenv
