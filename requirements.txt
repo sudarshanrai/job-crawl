@@ -1,5 +1,5 @@
+langchain-google-genai
 scrapegraphai
 playwright
 resend
-langchain-google-genai
 python-dotenv
