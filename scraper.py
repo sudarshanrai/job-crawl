@@ -47,6 +47,7 @@ def scrape_site(url):
             
             # 1. Broad Search: Check if keywords exist anywhere in the page text
             page_text = soup.get_text(separator=' ', strip=True).lower()
+            print(page_text)
             if not any(k.lower() in page_text for k in config["keywords"]):
                 return [] # Exit early if keyword isn't on the page at all
 
