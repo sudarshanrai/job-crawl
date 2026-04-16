@@ -8,13 +8,21 @@ with open("config.json", "r") as f:
     config = json.load(f)
 
 CACHE_FILE = "seen_jobs.json"
+seen_job_urls = set()
 
-# Load seen jobs cache
 if os.path.exists(CACHE_FILE):
-    with open(CACHE_FILE, "r") as f:
-        seen_job_urls = set(json.load(f))
-else:
-    seen_job_urls = set()
+    try:
+        # Check if file has content before trying to load
+        if os.path.getsize(CACHE_FILE) > 0:
+            with open(CACHE_FILE, "r") as f:
+                content = json.load(f)
+                # Ensure the content is a list before converting to set
+                if isinstance(content, list):
+                    seen_job_urls = set(content)
+        else:
+            print("Cache file is empty. Starting fresh.")
+    except (json.JSONDecodeError, ValueError) as e:
+        print(f"Cache corrupted ({e}). Resetting seen_jobs.")
 
 # Gemini Config
 graph_config = {
