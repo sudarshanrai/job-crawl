@@ -30,77 +30,60 @@ if os.path.exists(CACHE_FILE):
     except Exception as e:
         print(f"Cache reset: {e}")
 
-new_jobs = []
-
 def scrape_site(url):
-    found = []
+    """Returns the total number of keyword occurrences on the page."""
     with sync_playwright() as p:
-        # Launching browser
         browser = p.chromium.launch(headless=True)
         page = browser.new_page()
-        
         print(f"Scanning {url} for {config['keywords']}...")
         try:
             page.goto(url, wait_until="networkidle", timeout=60000)
-            html_content = page.content()
-            soup = BeautifulSoup(html_content, "html.parser")
+            # Get all text content from the body, lowercased
+            page_content = page.content().lower()
             
-            # 1. Broad Search: Check if keywords exist anywhere in the page text
-            page_text = soup.get_text(separator=' ', strip=True).lower()
-            print(page_text)
-            if not any(k.lower() in page_text for k in config["keywords"]):
-                return [] # Exit early if keyword isn't on the page at all
-
-            # 2. Targeted Search: Find the links related to those keywords
-            # We look for links where the text OR the immediate surrounding contains the keyword
-            links = soup.find_all("a", href=True)
-            for link in links:
-                href = link['href']
-                full_url = urljoin(url, href)
-                
-                # Get the link text and its parent's text to catch "Java" in a description
-                link_text = link.get_text(strip=True)
-                parent_text = link.find_parent().get_text(strip=True) if link.parent else ""
-                combined_context = (link_text + " " + parent_text).lower()
-
-                if any(k.lower() in combined_context for k in config["keywords"]):
-                    # Basic noise filtering: ignore common nav links
-                    if len(link_text) > 2 and full_url not in [url, url + "/"]:
-                        found.append({
-                            "title": link_text if len(link_text) > 5 else f"Java Opportunity at {url}",
-                            "url": full_url
-                        })
+            total_matches = 0
+            for k in config["keywords"]:
+                total_matches += page_content.count(k.lower())
+            
+            return total_matches
         except Exception as e:
             print(f"Failed to load {url}: {e}")
+            return None # Return None to indicate a skip/error
         finally:
             browser.close()
-    return found
 
 # --- Main Execution Loop ---
+updates = []
+
 for url_item in config["urls"]:
-    try:
-        results = scrape_site(url_item)
+    current_count = scrape_site(url_item)
+    
+    if current_count is not None:
+        last_count = counts_cache.get(url_item, 0)
         
-        for job in results:
-            # Notify ONLY if this specific URL has not been seen before
-            if job['url'] not in seen_job_urls:
-                job['source_site'] = url_item
-                new_jobs.append(job)
-                seen_job_urls.add(job['url'])
-    except Exception as e:
-        print(f"Error processing {url_item}: {e}")
+        if current_count > last_count:
+            diff = current_count - last_count
+            updates.append({
+                "url": url_item,
+                "new_matches": diff,
+                "total": current_count
+            })
+        
+        # Update cache with the latest count regardless of change
+        counts_cache[url_item] = current_count
 
 # --- Notification Logic ---
-if new_jobs:
+if updates:
     resend.api_key = os.getenv("RESEND_API_KEY")
     
-    html_body = f"<h2>New Java Jobs Detected ({len(new_jobs)})</h2>"
-    for job in new_jobs:
+    html_body = "<h2>Keyword Increase Detected</h2>"
+    for item in updates:
         html_body += f"""
         <div style="margin-bottom: 15px; border-left: 4px solid #f89820; padding-left: 10px;">
-            <p style="font-size: 16px;"><strong>{job['title']}</strong><br>
-            <span style="color: #666;">Found on: {job['source_site']}</span><br>
-            <a href="{job['url']}" style="color: #007bff;">Open Job Listing →</a></p>
+            <p><strong>Site:</strong> {item['url']}<br>
+            <strong>Change:</strong> +{item['new_matches']} new mentions<br>
+            <strong>Current Total:</strong> {item['total']}</p>
+            <a href="{item['url']}" style="color: #007bff;">View Site →</a>
         </div>
         """
 
@@ -108,15 +91,15 @@ if new_jobs:
         resend.Emails.send({
             "from": "JobBot <onboarding@resend.dev>",
             "to": [config["receiver_email"]],
-            "subject": f"New Java Match: {len(new_jobs)} updates",
+            "subject": f"Update: {len(updates)} sites have more keyword matches",
             "html": html_body
         })
         
-        # Save the updated cache only after successful email
+        # Save the updated counts to cache
         with open(CACHE_FILE, "w") as f:
-            json.dump(list(seen_job_urls), f)
-        print(f"Success: {len(new_jobs)} new jobs reported.")
+            json.dump(counts_cache, f)
+        print("Success: Notification sent and cache updated.")
     except Exception as e:
         print(f"Email failed: {e}")
 else:
-    print("No new Java keywords or links detected since last check.")
+    print("No increases in keyword mentions detected.")
