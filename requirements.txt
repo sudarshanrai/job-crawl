@@ -1,5 +1,1 @@
 langchain-google-genai
-scrapegraphai
-playwright
-resend
-python-dotenv
