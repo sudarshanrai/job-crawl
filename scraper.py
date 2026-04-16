@@ -28,7 +28,8 @@ if os.path.exists(CACHE_FILE):
 graph_config = {
     "llm": {
         "api_key": os.getenv("GEMINI_API_KEY"),
-        "model": config["gemini_model"],
+        "model": "google_genai/gemini-1.5-flash",
+        "model_tokens": 1000000, # Gemini 1.5 Flash supports up to 1M tokens
     },
     "headless": True
 }
