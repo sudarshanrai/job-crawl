@@ -28,10 +28,12 @@ if os.path.exists(CACHE_FILE):
 graph_config = {
     "llm": {
         "api_key": os.getenv("GEMINI_API_KEY"),
-        "model": "google_genai/gemini-1.5-flash",
-        "model_tokens": 1000000, # Gemini 1.5 Flash supports up to 1M tokens
+        "model": "google_genai/gemini-2.0-flash-latest", # Updated model name
+        "max_tokens": 8192,  # Changed from model_tokens to max_tokens
+        "temperature": 0,
     },
-    "headless": True
+    "verbose": True,
+    "headless": True,
 }
 
 new_jobs = []
