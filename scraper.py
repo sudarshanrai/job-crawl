@@ -1,5 +1,6 @@
 import os
 import json
+import re
 import resend
 from playwright.sync_api import sync_playwright
 
@@ -7,84 +8,95 @@ from playwright.sync_api import sync_playwright
 with open("config.json", "r") as f:
     config = json.load(f)
 
-CACHE_FILE = "job_counts.json"
-# Load cache as a dictionary: { "site_url": last_seen_count }
+CACHE_FILE = "pattern_cache.json"
+
+# Load cache: { "url": ["pattern_hash_1", "pattern_hash_2"] }
 if os.path.exists(CACHE_FILE):
     with open(CACHE_FILE, "r") as f:
-        counts_cache = json.load(f)
+        pattern_cache = json.load(f)
 else:
-    counts_cache = {}
+    pattern_cache = {}
 
-def scrape_site(url):
-    """Returns the total number of keyword occurrences on the page."""
+def get_patterns(url):
+    """Extracts unique text snippets surrounding the keywords."""
+    found_patterns = set()
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
         page = browser.new_page()
-        print(f"Scanning {url} for {config['keywords']}...")
+        print(f"Analyzing patterns on {url}...")
         try:
             page.goto(url, wait_until="networkidle", timeout=60000)
-            # Get all text content from the body, lowercased
-            page_content = page.content().lower()
+            # Get visible text only to avoid script/style noise
+            page_text = page.inner_text("body")
             
-            total_matches = 0
             for k in config["keywords"]:
-                total_matches += page_content.count(k.lower())
-            
-            return total_matches
+                # Regex: Finds keyword and captures 40 chars of surrounding context
+                # \b ensures we match the whole word (Java, not JavaScript)
+                regex_pattern = rf"(.{{0,40}}\b{re.escape(k)}\b.{{0,40}})"
+                matches = re.findall(regex_pattern, page_text, re.IGNORECASE)
+                
+                for m in matches:
+                    # Clean up whitespace and normalize for comparison
+                    clean_pattern = " ".join(m.split())
+                    found_patterns.add(clean_pattern)
+                    
+            return list(found_patterns)
         except Exception as e:
-            print(f"Failed to load {url}: {e}")
-            return None # Return None to indicate a skip/error
+            print(f"Error analyzing {url}: {e}")
+            return None
         finally:
             browser.close()
 
 # --- Main Execution Loop ---
-updates = []
+new_discoveries = []
 
 for url_item in config["urls"]:
-    current_count = scrape_site(url_item)
+    current_patterns = get_patterns(url_item)
     
-    if current_count is not None:
-        last_count = counts_cache.get(url_item, 0)
+    if current_patterns is not None:
+        old_patterns = pattern_cache.get(url_item, [])
         
-        if current_count > last_count:
-            diff = current_count - last_count
-            updates.append({
+        # Identify patterns that exist now but didn't last time
+        new_patterns = [p for p in current_patterns if p not in old_patterns]
+        
+        if new_patterns:
+            new_discoveries.append({
                 "url": url_item,
-                "new_matches": diff,
-                "total": current_count
+                "snippets": new_patterns
             })
         
-        # Update cache with the latest count regardless of change
-        counts_cache[url_item] = current_count
+        # Update cache with the current state
+        pattern_cache[url_item] = current_patterns
 
 # --- Notification Logic ---
-if updates:
+if new_discoveries:
     resend.api_key = os.getenv("RESEND_API_KEY")
     
-    html_body = "<h2>Keyword Increase Detected</h2>"
-    for item in updates:
+    html_body = "<h2>New Java Patterns Detected</h2>"
+    for discovery in new_discoveries:
         html_body += f"""
-        <div style="margin-bottom: 15px; border-left: 4px solid #f89820; padding-left: 10px;">
-            <p><strong>Site:</strong> {item['url']}<br>
-            <strong>Change:</strong> +{item['new_matches']} new mentions<br>
-            <strong>Current Total:</strong> {item['total']}</p>
-            <a href="{item['url']}" style="color: #007bff;">View Site →</a>
-        </div>
+        <div style="margin-bottom: 20px; border-left: 4px solid #007bff; padding-left: 10px;">
+            <p><strong>Source:</strong> <a href="{discovery['url']}">{discovery['url']}</a></p>
+            <p><strong>New Contexts Found:</strong></p>
+            <ul style="color: #444; font-family: monospace;">
         """
+        for snippet in discovery['snippets']:
+            html_body += f"<li>...{snippet}...</li>"
+        
+        html_body += "</ul></div>"
 
     try:
         resend.Emails.send({
-            "from": "JobBot <onboarding@resend.dev>",
+            "from": "PatternBot <onboarding@resend.dev>",
             "to": [config["receiver_email"]],
-            "subject": f"Update: {len(updates)} sites have more keyword matches",
+            "subject": f"Alert: {len(new_discoveries)} sites have new Java activity",
             "html": html_body
         })
         
-        # Save the updated counts to cache
         with open(CACHE_FILE, "w") as f:
-            json.dump(counts_cache, f)
-        print("Success: Notification sent and cache updated.")
+            json.dump(pattern_cache, f)
+        print("Success: New patterns reported.")
     except Exception as e:
         print(f"Email failed: {e}")
 else:
-    print("No increases in keyword mentions detected.")
+    print("No new patterns detected.")
