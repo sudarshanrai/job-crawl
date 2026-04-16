@@ -3,7 +3,8 @@
   "keywords": ["Java", "Backend"],
   "urls": [
     "https://kleinanzeigendegmbh.careers.hibob.com/jobs?department=266131009",
-    "https://www.xn--jobs-fr-koblenz-4vb.com/stellenangebote/?jw_jobname=java"
+    "https://www.xn--jobs-fr-koblenz-4vb.com/stellenangebote/?jw_jobname=java",
+    "https://careers.telekom.com/de/jobs?search=java"
   ],
   "gemini_model": "google_genai/gemini-1.5-flash"
 }
