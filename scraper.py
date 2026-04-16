@@ -1,34 +1,19 @@
 import os
 import json
 import resend
-from bs4 import BeautifulSoup
 from playwright.sync_api import sync_playwright
-from urllib.parse import urljoin
 
 # --- Configuration ---
-# Ensure your config.json looks like this:
-# {
-#   "urls": ["https://example-jobs.com", "https://tech-careers.io"],
-#   "keywords": ["Java"],
-#   "receiver_email": "you@email.com"
-# }
-
 with open("config.json", "r") as f:
     config = json.load(f)
 
-CACHE_FILE = "seen_jobs.json"
-seen_job_urls = set()
-
-# Robust Cache Loading
+CACHE_FILE = "job_counts.json"
+# Load cache as a dictionary: { "site_url": last_seen_count }
 if os.path.exists(CACHE_FILE):
-    try:
-        with open(CACHE_FILE, "r") as f:
-            content = f.read().strip()
-            if content:
-                data = json.loads(content)
-                seen_job_urls = set(data)
-    except Exception as e:
-        print(f"Cache reset: {e}")
+    with open(CACHE_FILE, "r") as f:
+        counts_cache = json.load(f)
+else:
+    counts_cache = {}
 
 def scrape_site(url):
     """Returns the total number of keyword occurrences on the page."""
