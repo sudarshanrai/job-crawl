@@ -2,18 +2,7 @@ import os
 import json
 import resend
 from scrapegraphai.graphs import SmartScraperGraph
-import google.generativeai as genai
 
-# Load your key
-api_key = os.getenv("GEMINI_API_KEY")
-genai.configure(api_key=api_key)
-
-# Print the list of available models
-print("--- Available Gemini Models ---")
-for model in genai.list_models():
-    if 'generateContent' in model.supported_generation_methods:
-        print(f"Model Name: {model.name}")
-        
 # 1. Load configuration from the separate file
 with open("config.json", "r") as f:
     config = json.load(f)
