@@ -1,7 +1,8 @@
-name: AI Job Search (Every 2 Hours)
+name: Job Search Scraper (Every 2 Hours)
 
 on:
   schedule:
+    # Runs every 2 hours from 9 AM to 5 PM
     - cron: '0 9-17/2 * * *'
   workflow_dispatch:
 
@@ -22,23 +23,29 @@ jobs:
         uses: actions/cache@v4
         with:
           path: seen_jobs.json
+          # Using run_id for the key ensures we can save a new version 
+          # while restore-keys gets the most recent previous one.
           key: job-cache-${{ github.run_id }}
           restore-keys: |
             job-cache-
 
       - name: Install dependencies
         run: |
-          pip install scrapegraphai playwright resend langchain-google-genai python-dotenv
+          pip install playwright beautifulsoup4 resend
+          # Install the browser engine and its system dependencies
           playwright install chromium
+          playwright install-deps chromium
 
       - name: Run Scraper
         env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }} # Changed from OPENAI_API_KEY
+          # You no longer need GEMINI_API_KEY if using the standard scraper, 
+          # but keep it if you plan to use AI for specific tasks.
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
         run: python scraper.py
 
       # Save the updated list back to the cache for the next run
       - name: Save updated cache
+        if: always() # Ensure cache saves even if a later step fails
         uses: actions/cache/save@v4
         with:
           path: seen_jobs.json
