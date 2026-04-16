@@ -1,95 +1,89 @@
 import os
 import json
 import resend
-from scrapegraphai.graphs import SmartScraperGraph
+from bs4 import BeautifulSoup
+from playwright.sync_api import sync_playwright
 
-# 1. Load configuration from the separate file
+# 1. Configuration (Example structure)
+# Your config.json should now include a "selector" for each URL
+# Example: {"urls": [{"link": "https://site.com/jobs", "selector": "a.job-link"}], ...}
 with open("config.json", "r") as f:
     config = json.load(f)
 
 CACHE_FILE = "seen_jobs.json"
 seen_job_urls = set()
 
-if os.path.exists(CACHE_FILE):
-    try:
-        # Check if file has content before trying to load
-        if os.path.getsize(CACHE_FILE) > 0:
-            with open(CACHE_FILE, "r") as f:
-                content = json.load(f)
-                # Ensure the content is a list before converting to set
-                if isinstance(content, list):
-                    seen_job_urls = set(content)
-        else:
-            print("Cache file is empty. Starting fresh.")
-    except (json.JSONDecodeError, ValueError) as e:
-        print(f"Cache corrupted ({e}). Resetting seen_jobs.")
-
-# Gemini Config
-graph_config = {
-    "llm": {
-        "api_key": os.getenv("GEMINI_API_KEY"),
-        "model": "google_genai/gemini-2.0-flash-lite",
-        "max_tokens": 8192,
-        "temperature": 0,
-    },
-    "verbose": True,
-    "headless": True,
-}
+if os.path.exists(CACHE_FILE) and os.path.getsize(CACHE_FILE) > 0:
+    with open(CACHE_FILE, "r") as f:
+        seen_job_urls = set(json.load(f))
 
 new_jobs = []
 
-# 2. Iterate through all URLs and Keywords
-for url in config["urls"]:
-    for keyword in config["keywords"]:
-        try:
-            print(f"Searching for {keyword} at {url}...")
-            
-            prompt = f"List all {keyword} job openings. Return a list of objects with 'title' and 'url'."
-            
-            smart_scraper_graph = SmartScraperGraph(
-                prompt=prompt,
-                source=url,
-                config=graph_config
-            )
-            
-            results = smart_scraper_graph.run()
-            
-            if isinstance(results, list):
-                for job in results:
-                    job_url = job.get('url')
-                    if job_url and job_url not in seen_job_urls:
-                        # Add metadata so you know which keyword/site it came from
-                        job['source_site'] = url
-                        new_jobs.append(job)
-                        seen_job_urls.add(job_url)
-        except Exception as e:
-            print(f"Error scraping {url}: {e}")
+def scrape_site(url_data):
+    url = url_data["link"]
+    selector = url_data["selector"] # The CSS class for the job link
+    found = []
 
-# 3. Notification Logic
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=True)
+        page = browser.new_page()
+        page.goto(url, wait_until="networkidle")
+        
+        # Get the rendered HTML
+        html = page.content()
+        soup = BeautifulSoup(html, "html.parser")
+        
+        # Find all elements matching your selector
+        # Example: soup.select("a.job-title-link")
+        job_elements = soup.select(selector)
+        
+        for el in job_elements:
+            title = el.get_text(strip=True)
+            link = el.get('href')
+            
+            # Ensure the link is a full URL
+            if link and not link.startswith("http"):
+                from urllib.parse import urljoin
+                link = urljoin(url, link)
+            
+            if link:
+                found.append({"title": title, "url": link})
+        
+        browser.close()
+    return found
+
+# 2. Execution Loop
+for url_item in config["urls"]:
+    try:
+        print(f"Scraping {url_item['link']}...")
+        results = scrape_site(url_item)
+        
+        for job in results:
+            if job['url'] not in seen_job_urls:
+                # Filter by keyword manually since we aren't using AI
+                if any(k.lower() in job['title'].lower() for k in config["keywords"]):
+                    job['source_site'] = url_item['link']
+                    new_jobs.append(job)
+                    seen_job_urls.add(job['url'])
+    except Exception as e:
+        print(f"Error on {url_item['link']}: {e}")
+
+# 3. Notification (Same as your original logic)
 if new_jobs:
     resend.api_key = os.getenv("RESEND_API_KEY")
-    
     html_body = f"<h2>New Job Matches Found ({len(new_jobs)})</h2>"
     for job in new_jobs:
-        html_body += f"""
-        <div style="margin-bottom: 15px; border-left: 4px solid #4CAF50; padding-left: 10px;">
-            <p><strong>{job['title']}</strong></p>
-            <p>Source: {job['source_site']}</p>
-            <a href="{job['url']}">View Job Posting</a>
-        </div>
-        <hr>
-        """
+        html_body += f"<p><strong>{job['title']}</strong><br><a href='{job['url']}'>Link</a></p><hr>"
 
     resend.Emails.send({
         "from": "JobBot <onboarding@resend.dev>",
         "to": [config["receiver_email"]],
-        "subject": f"Alert: {len(new_jobs)} New Jobs Found",
+        "subject": f"Alert: {len(new_jobs)} New Jobs",
         "html": html_body
     })
 
-    # Save updated cache
     with open(CACHE_FILE, "w") as f:
         json.dump(list(seen_job_urls), f)
-    print("Email sent successfully.")
+    print("Updates sent.")
 else:
-    print("No new jobs found this cycle.")
+    print("No new matches.")
