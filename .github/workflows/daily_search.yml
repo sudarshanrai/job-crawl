@@ -6,6 +6,10 @@ on:
     - cron: '0 9-17/2 * * *'
   workflow_dispatch:
 
+# REQUIRED: This gives the action permission to push changes back to your repo
+permissions:
+  contents: write
+
 jobs:
   scrape_and_mail:
     runs-on: ubuntu-latest
@@ -18,35 +22,27 @@ jobs:
         with:
           python-version: '3.10'
 
-      # Restore the list of seen jobs from the previous run
-      - name: Restore seen jobs cache
-        uses: actions/cache@v4
-        with:
-          path: seen_jobs.json
-          # Using run_id for the key ensures we can save a new version 
-          # while restore-keys gets the most recent previous one.
-          key: job-cache-${{ github.run_id }}
-          restore-keys: |
-            job-cache-
-
       - name: Install dependencies
         run: |
           pip install playwright beautifulsoup4 resend
-          # Install the browser engine and its system dependencies
           playwright install chromium
           playwright install-deps chromium
 
       - name: Run Scraper
         env:
-          # You no longer need GEMINI_API_KEY if using the standard scraper, 
-          # but keep it if you plan to use AI for specific tasks.
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
         run: python scraper.py
 
-      # Save the updated list back to the cache for the next run
-      - name: Save updated cache
-        if: always() # Ensure cache saves even if a later step fails
-        uses: actions/cache/save@v4
-        with:
-          path: seen_jobs.json
-          key: job-cache-${{ github.run_id }}
+      - name: Commit and Push changes
+        run: |
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add seen_jobs.json
+          
+          # Only commit and push if the file actually changed
+          if git diff --staged --quiet; then
+            echo "No new jobs found. Skipping commit."
+          else
+            git commit -m "Update seen_jobs.json [skip ci]"
+            git push
+          fi
