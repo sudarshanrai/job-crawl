@@ -27,7 +27,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install playwright beautifulsoup4 resend
+          pip install playwright resend python-Levenshtein cleantext
           playwright install chromium
           playwright install-deps chromium
 
