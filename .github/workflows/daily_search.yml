@@ -16,6 +16,9 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          # Ensures we have the full history to allow pushing changes
+          persist-credentials: true
 
       - name: Set up Python
         uses: actions/setup-python@v4
