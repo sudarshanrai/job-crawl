@@ -2,119 +2,134 @@ import os
 import json
 import re
 import resend
+from difflib import SequenceMatcher
 from playwright.sync_api import sync_playwright
 
 # --- Configuration ---
 CONFIG_FILE = "config.json"
-# 1. Changed filename to seen_jobs.json as requested
-CACHE_FILE = "seen_jobs.json" 
+CACHE_FILE = "seen_jobs.json"
 
-with open(CONFIG_FILE, "r") as f:
-    config = json.load(f)
+def load_json(file, default):
+    if os.path.exists(file):
+        with open(file, "r") as f:
+            return json.load(f)
+    return default
 
-# Load cache: { "site_url": ["snippet1", "snippet2"] }
-if os.path.exists(CACHE_FILE):
-    with open(CACHE_FILE, "r") as f:
-        pattern_cache = json.load(f)
-else:
-    pattern_cache = {}
+config = load_json(CONFIG_FILE, {"keywords": ["Java"], "urls": []})
+job_cache = load_json(CACHE_FILE, {})
 
-def scrape_and_extract_patterns(url):
-    found_patterns = set()
+def is_similar(a, b, threshold=0.85):
+    """Prevents duplicates if the title changes slightly (e.g., adding 'New')."""
+    return SequenceMatcher(None, a.lower(), b.lower()).ratio() > threshold
+
+def is_valid_job_title(text, keywords):
+    """
+    Advanced filter to separate job titles from site noise.
+    """
+    text_clean = " ".join(text.split())
     
-    with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
-        context = browser.new_context(
-            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
-        )
-        page = context.new_page()
+    # 1. Must contain one of our keywords
+    if not any(k.lower() in text_clean.lower() for k in keywords):
+        return False
+    
+    # 2. Kill 'False Positive' patterns (Search counts, pagination, etc.)
+    noise_patterns = [
+        r"\d+\s*(results|jobs|found|angebote)", # "13 jobs found"
+        r"suche nach",                          # "Search for..."
+        r"page\s*\d+",                          # "Page 1"
+        r"sort by",                             # "Sort by date"
+        r"cookie", r"privacy", r"impressum"      # Legal noise
+    ]
+    if any(re.search(p, text_clean, re.IGNORECASE) for p in noise_patterns):
+        return False
+    
+    # 3. Logic Check: Job titles are usually between 10 and 80 characters
+    if not (10 <= len(text_clean) <= 90):
+        return False
         
-        print(f"🔍 Analyzing: {url}")
+    return True
+
+def extract_jobs_heuristically(page, keywords):
+    """
+    Analyzes the page for links and headers that look like job listings.
+    """
+    found_titles = set()
+    
+    # We target 'Prominent' elements usually used for job titles
+    potential_elements = page.query_selector_all("a, h1, h2, h3, .job-title, [class*='title']")
+    
+    for el in potential_elements:
         try:
-            page.goto(url, wait_until="networkidle", timeout=60000)
+            if el.is_visible():
+                text = el.inner_text().strip()
+                if is_valid_job_title(text, keywords):
+                    found_titles.add(" ".join(text.split()))
+        except:
+            continue
             
-            # Handle Cookie Dialogs
-            try:
-                cookie_selectors = ["Accept", "Agree", "Allow all", "Accept Cookies", "OK"]
-                for text in cookie_selectors:
-                    btn = page.get_by_role("button").get_by_text(re.compile(text, re.IGNORECASE)).first
-                    if btn.is_visible():
-                        btn.click()
-                        page.wait_for_timeout(1000)
-                        break
-            except:
-                pass
+    return list(found_titles)
 
-            page.wait_for_timeout(2000) 
-            page_text = page.inner_text("body")
-            
-            for k in config["keywords"]:
-                # The regex: looks for keyword + 40 chars of context
-                regex_pattern = rf"(.{{0,40}}\b{re.escape(k)}\b.{{0,40}})"
-                matches = re.findall(regex_pattern, page_text, re.IGNORECASE)
-                
-                for m in matches:
-                    clean_snippet = " ".join(m.split())
-                    found_patterns.add(clean_snippet)
-            
-            return list(found_patterns)
-
-        except Exception as e:
-            print(f"❌ Failed to process {url}: {e}")
-            return None
-        finally:
-            browser.close()
-
-# --- Main Logic ---
+# --- Execution Logic ---
 new_discoveries = []
 
-for url in config["urls"]:
-    current_patterns = scrape_and_extract_patterns(url)
+with sync_playwright() as p:
+    browser = p.chromium.launch(headless=True)
+    context = browser.new_context(user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36")
     
-    if current_patterns is not None:
-        # Get what we found in the PREVIOUS run for this URL
-        old_patterns = pattern_cache.get(url, [])
+    for url in config.get("urls", []):
+        page = context.new_page()
+        print(f"🧐 Heuristic Analysis: {url}")
         
-        # 2. Compare: Only keep snippets not present in the last run
-        new_stuff = [p for p in current_patterns if p not in old_patterns]
-        
-        if new_stuff:
-            new_discoveries.append({
-                "url": url,
-                "snippets": new_stuff
-            })
-        
-        # 3. Update the memory with current findings for the NEXT run
-        pattern_cache[url] = current_patterns
+        try:
+            page.goto(url, wait_until="networkidle", timeout=60000)
+            page.wait_for_timeout(3000) # Wait for JS to render titles
+            
+            current_titles = extract_jobs_heuristically(page, config["keywords"])
+            old_titles = job_cache.get(url, [])
+            
+            # Determine what is actually NEW
+            site_new_jobs = []
+            for current in current_titles:
+                if not any(is_similar(current, old) for old in old_titles):
+                    site_new_jobs.append(current)
+            
+            if site_new_jobs:
+                new_discoveries.append({"url": url, "titles": site_new_jobs})
+            
+            # Update cache with everything seen today
+            job_cache[url] = current_titles
+            
+        except Exception as e:
+            print(f"❌ Failed {url}: {e}")
+        finally:
+            page.close()
 
-# --- Notification & Saving ---
+    browser.close()
+
+# --- Notifications ---
 if new_discoveries:
-    # Use environment variable for security
     resend.api_key = os.getenv("RESEND_API_KEY")
     
-    html_body = f"<h2>Found {len(new_discoveries)} New Updates</h2>"
+    html_content = "<h2>New Job Opportunities Detected</h2>"
     for item in new_discoveries:
-        html_body += f"""
-        <div style="margin-bottom: 25px; border-left: 5px solid #f89820; padding-left: 15px;">
-            <p><strong>Site:</strong> <a href="{item['url']}">{item['url']}</a></p>
-            <ul style="background: #f4f4f4; padding: 10px; font-family: monospace;">
+        html_content += f"""
+        <div style="margin-bottom: 20px; border-left: 4px solid #007bff; padding-left: 10px;">
+            <p><strong>Source:</strong> <a href="{item['url']}">{item['url']}</a></p>
+            <ul>{"".join([f"<li>{t}</li>" for t in item['titles']])}</ul>
+        </div>
         """
-        for s in item['snippets']:
-            html_body += f"<li>...{s}...</li>"
-        html_body += "</ul></div>"
-
+    
     try:
         resend.Emails.send({
-            "from": "JobTracker <onboarding@resend.dev>",
+            "from": "JobAlert <onboarding@resend.dev>",
             "to": [config["receiver_email"]],
-            "subject": "Alert: New Java Opportunities Detected",
-            "html": html_body
+            "subject": "Update: New Java Jobs Found",
+            "html": html_content
         })
-        print(f"✅ Email sent with {len(new_discoveries)} updates.")
+        print(f"✅ Email sent with {len(new_discoveries)} site updates.")
     except Exception as e:
-        print(f"📧 Email failed: {e}")
+        print(f"📧 Email error: {e}")
 
-# 4. Save updated results to seen_jobs.json regardless of whether an email was sent
-# This ensures that "seen" items are remembered even if the email fails.
+# Final save
 with open(CACHE_FILE, "w") as f:
-    json.dump(pattern_cache, f, indent=4)
+    json.dump(job_cache, f, indent=4)
