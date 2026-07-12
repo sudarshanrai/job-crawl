@@ -1,9 +1,8 @@
 import os
 import json
 import re
-import smtplib
-from email.mime.multipart import MIMEMultipart
-from email.mime.text import MIMEText
+import urllib.request
+import urllib.error
 from google import genai
 from google.genai import types
 from playwright.sync_api import sync_playwright
@@ -17,7 +16,6 @@ def load_json(file, default):
             return json.load(f)
     return default
 
-# Removed receiver/sender emails from JSON defaults
 config = load_json(CONFIG_FILE, {"keywords": [], "urls": []})
 job_cache = load_json(CACHE_FILE, {})
 
@@ -114,20 +112,15 @@ with sync_playwright() as p:
 
     browser.close()
 
-# --- Notifications via Brevo SMTP ---
+# --- Notifications via Brevo HTTP API v3 ---
 if new_discoveries:
-    # Fetch Brevo Credentials and Emails from environment variables
-    SMTP_SERVER = "smtp-relay.brevo.com"
-    SMTP_PORT = 587
-    SMTP_USER = os.getenv("BREVO_SMTP_USER")
-    SMTP_PASSWORD = os.getenv("BREVO_SMTP_PASSWORD") 
-    
-    # New Environment variables fetched here
+    # Fetch API Key and Emails from environment variables
+    BREVO_API_KEY = os.getenv("BREVO_API_KEY")
     sender_email = os.getenv("JOB_ALERT_SENDER")
     receiver_email = os.getenv("JOB_ALERT_RECEIVER")
 
-    if not all([SMTP_USER, SMTP_PASSWORD, sender_email, receiver_email]):
-        print("❌ Missing required environment variables. Check Brevo settings, Sender, and Receiver values.")
+    if not all([BREVO_API_KEY, sender_email, receiver_email]):
+        print("❌ Missing required environment variables. Check BREVO_API_KEY, JOB_ALERT_SENDER, and JOB_ALERT_RECEIVER.")
     else:
         # Build the HTML Content
         html_content = "<h2>🔥 New Job Opportunities Detected</h2>"
@@ -139,22 +132,40 @@ if new_discoveries:
             </div>
             """
         
-        # Prepare the Email Message
-        msg = MIMEMultipart("alternative")
-        msg["Subject"] = "Update: New Tech Jobs Found"
-        msg["From"] = f"JobAlert <{sender_email}>"
-        msg["To"] = receiver_email
-        msg.attach(MIMEText(html_content, "html"))
+        # Structure the payload strictly according to Brevo v3 API standards
+        payload = {
+            "sender": {"name": "JobAlert", "email": sender_email},
+            "to": [{"email": receiver_email}],
+            "subject": "Update: New Tech Jobs Found",
+            "htmlContent": html_content
+        }
+        
+        # Target the transactional email endpoint
+        api_url = "https://api.brevo.com/v3/smtp/email"
+        req = urllib.request.Request(
+            api_url, 
+            data=json.dumps(payload).encode("utf-8"),
+            headers={
+                "accept": "application/json",
+                "api-key": BREVO_API_KEY,
+                "content-type": "application/json"
+            },
+            method="POST"
+        )
         
         try:
-            print("📨 Connecting to Brevo SMTP Relay...")
-            with smtplib.SMTP(SMTP_SERVER, SMTP_PORT) as server:
-                server.starttls()  # Upgrade connection to secure TLS
-                server.login(SMTP_USER, SMTP_PASSWORD)
-                server.sendmail(sender_email, [receiver_email], msg.as_string())
-            print(f"📧 Notification sent successfully via Brevo!")
+            print("🚀 Sending notification via Brevo HTTP API...")
+            with urllib.request.urlopen(req) as response:
+                res_body = json.loads(response.read().decode("utf-8"))
+                # Brevo returns a messageId upon a successful request transmission
+                if "messageId" in res_body:
+                    print(f"📧 Notification sent successfully! Message ID: {res_body['messageId']}")
+                else:
+                    print(f"⚠️ Email sent but payload response structure shifted: {res_body}")
+        except urllib.error.HTTPError as e:
+            print(f"❌ Brevo API Error (HTTP {e.code}): {e.read().decode('utf-8')}")
         except Exception as e:
-            print(f"📧 Email delivery error via Brevo: {e}")
+            print(f"❌ General failure sending via Brevo API: {e}")
 
 # Save state
 with open(CACHE_FILE, "w") as f:
