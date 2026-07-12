@@ -17,7 +17,8 @@ def load_json(file, default):
             return json.load(f)
     return default
 
-config = load_json(CONFIG_FILE, {"keywords": [], "urls": [], "receiver_email": "", "sender_email": ""})
+# Removed receiver/sender emails from JSON defaults
+config = load_json(CONFIG_FILE, {"keywords": [], "urls": []})
 job_cache = load_json(CACHE_FILE, {})
 
 # Initialize Gemini Client (Requires GEMINI_API_KEY environment variable)
@@ -115,17 +116,18 @@ with sync_playwright() as p:
 
 # --- Notifications via Brevo SMTP ---
 if new_discoveries:
-    # Fetch Brevo Credentials from environment variables
+    # Fetch Brevo Credentials and Emails from environment variables
     SMTP_SERVER = "smtp-relay.brevo.com"
     SMTP_PORT = 587
     SMTP_USER = os.getenv("BREVO_SMTP_USER")
-    SMTP_PASSWORD = os.getenv("BREVO_SMTP_PASSWORD") # This is your Brevo SMTP Master Key/API Key
+    SMTP_PASSWORD = os.getenv("BREVO_SMTP_PASSWORD") 
     
-    sender_email = config.get("sender_email", SMTP_USER)
-    receiver_email = config["receiver_email"]
+    # New Environment variables fetched here
+    sender_email = os.getenv("JOB_ALERT_SENDER")
+    receiver_email = os.getenv("JOB_ALERT_RECEIVER")
 
-    if not SMTP_USER or not SMTP_PASSWORD:
-        print("❌ Missing Brevo SMTP environment variables.")
+    if not all([SMTP_USER, SMTP_PASSWORD, sender_email, receiver_email]):
+        print("❌ Missing required environment variables. Check Brevo settings, Sender, and Receiver values.")
     else:
         # Build the HTML Content
         html_content = "<h2>🔥 New Job Opportunities Detected</h2>"
@@ -146,14 +148,4 @@ if new_discoveries:
         
         try:
             print("📨 Connecting to Brevo SMTP Relay...")
-            with smtplib.SMTP(SMTP_SERVER, SMTP_PORT) as server:
-                server.starttls()  # Upgrade connection to secure TLS
-                server.login(SMTP_USER, SMTP_PASSWORD)
-                server.sendmail(sender_email, [receiver_email], msg.as_string())
-            print(f"📧 Notification sent successfully via Brevo!")
-        except Exception as e:
-            print(f"📧 Email delivery error via Brevo: {e}")
-
-# Save state
-with open(CACHE_FILE, "w") as f:
-    json.dump(job_cache, f, indent=4)
+            with smtplib.SMTP(SMTP_SERVER, SMTP
