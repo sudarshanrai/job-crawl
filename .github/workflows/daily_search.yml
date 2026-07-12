@@ -1,51 +1,45 @@
-name: Job Search Scraper (Every 2 Hours)
+name: AI Job Scraper
 
 on:
   schedule:
-    # Runs every 2 hours from 9 AM to 5 PM
-    - cron: '0 9-17/2 * * *'
-  workflow_dispatch:
-
-# REQUIRED: This gives the action permission to push changes back to your repo
-permissions:
-  contents: write
+    # Runs every 6 hours (Adjust the cron expression as needed)
+    - cron: '0 */6 * * *'
+  workflow_dispatch: # Allows you to manually trigger it from the Actions tab
 
 jobs:
-  scrape_and_mail:
+  scrape:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-        with:
-          # Ensures we have the full history to allow pushing changes
-          persist-credentials: true
+    - name: Checkout Repository
+      uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.10'
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-python: '3.11'
+        cache: 'pip' # Caching pip speeds up subsequent runs
 
-      - name: Install dependencies
-        run: |
-          pip install playwright resend python-Levenshtein cleantext
-          playwright install chromium
-          playwright install-deps chromium
+    - name: Install Dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
 
-      - name: Run Scraper
-        env:
-          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
-        run: python scraper.py
+    - name: Install Playwright Browsers
+      run: |
+        # Installs system dependencies and Chromium binary required for headless scraping
+        playwright install chromium --with-deps
 
-      - name: Commit and Push changes
-        run: |
-          git config --local user.name "github-actions[bot]"
-          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add seen_jobs.json
-          
-          # Only commit and push if the file actually changed
-          if git diff --staged --quiet; then
-            echo "No new jobs found. Skipping commit."
-          else
-            git commit -m "Update seen_jobs.json [skip ci]"
-            git push
-          fi
+    - name: Run Scraper
+      env:
+        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+      run: python scraper.py
+
+    - name: Commit and Push Updated Cache
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git add seen_jobs.json
+        # Only commit if the cache file actually changed
+        git diff --quiet && git diff --staged --quiet || (git commit -m "chore: update seen jobs cache [skip ci]" && git push)
