@@ -23,18 +23,20 @@ ai_client = genai.Client()
 
 def extract_page_snippet(page) -> str:
     """
-    Minimizes tokens by pulling visible elements that likely contain text/links.
-    Drops script, style tags, and ultra-long legal footers.
+    Minimizes tokens safely by pulling visible elements that contain text.
+    Defensively strips out empty elements to prevent JS runtime exceptions.
     """
-    # Evaluate a small script inside playwright to extract text clean lines
     lines = page.evaluate("""() => {
         const elements = document.querySelectorAll('a, h1, h2, h3, h4, [class*="job"], [class*="position"]');
         return Array.from(elements)
-            .map(el => el.innerText.trim())
+            .map(el => {
+                const text = el.innerText || el.textContent;
+                return text ? text.trim() : "";
+            })
             .filter(text => text.length > 5 && text.length < 200);
     }""")
     
-    # Keep unique items to further optimize token footprint
+    # Keep unique items to optimize token footprint
     unique_lines = list(set(lines))
     return "\n".join(unique_lines)
 
