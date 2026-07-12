@@ -59,7 +59,7 @@ def analyze_jobs_with_ai(page_content: str, keywords: list) -> list:
 
     try:
         response = ai_client.models.generate_content(
-                    model='gemini-3.5-flash',
+                    model='gemini-2.5-flash',
                     contents=[prompt, page_content],
                     config=types.GenerateContentConfig(
                         response_mime_type="application/json",
@@ -69,7 +69,7 @@ def analyze_jobs_with_ai(page_content: str, keywords: list) -> list:
         )
         return json.loads(response.text)
     except Exception as e:
-        print(f"🤖 Gemini Analysis Error: {e}")
+        print(f"🤖 Gemini Analysis Error: {type(e).__name__} -> {e}")
         return []
 
 # --- Execution Logic ---
@@ -105,8 +105,14 @@ with sync_playwright() as p:
             job_cache[url] = current_titles
             print(f"    Found {len(current_titles)} relevant jobs. ({len(site_new_jobs)} brand new)")
             
+        except p.errors.TimeoutError:
+            print(f"❌ Failed processing {url}: Page loading timed out (exceeded 60s limit).")
+        except p.errors.Error as e:
+            # Catches driver/browser specific issues like DNS failures, SSL bugs, blockages
+            print(f"❌ Failed processing {url}: Playwright Browser Error -> {e.message}")
         except Exception as e:
-            print(f"❌ Failed processing {url}: {e}")
+            # Catches unexpected runtime script errors
+            print(f"❌ Failed processing {url}: Internal Exception -> {type(e).__name__}: {e}")
         finally:
             page.close()
 
