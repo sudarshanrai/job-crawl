@@ -56,13 +56,13 @@ def analyze_jobs_with_ai(page_content: str, keywords: list) -> list:
 
     try:
         response = ai_client.models.generate_content(
-            model='gemini-1.5-flash',
-            contents=[prompt, page_content],
-            config=types.GenerateContentConfig(
-                response_mime_type="application/json",
-                response_schema=list[str], # Forces Gemini to return exactly JSON: ["Title 1", "Title 2"]
-                temperature=0.1 # Low temperature ensures consistency
-            ),
+                    model='gemini-2.5-flash', # Upgraded to the optimal, cost-efficient generation model
+                    contents=[prompt, page_content],
+                    config=types.GenerateContentConfig(
+                        response_mime_type="application/json",
+                        response_schema=list[str],
+                        temperature=0.1
+                    ),
         )
         return json.loads(response.text)
     except Exception as e:
