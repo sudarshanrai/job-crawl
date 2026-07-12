@@ -2,9 +2,14 @@
   "receiver_email": "aishwaryashetty40@gmail.com",
   "keywords": ["Java", "Backend", "JavaScript", "TypeScript", "Frontend", "Fullstack", "Software Engineer", "Developer"],
   "urls": [
-    "https://kleinanzeigendegmbh.careers.hibob.com/jobs?department=266131009",
-    "https://www.xn--jobs-fr-koblenz-4vb.com/stellenangebote/?jw_jobname=java",
-    "https://careers.telekom.com/de/jobs?search=java"
+    "https://kleinanzeigendegmbh.careers.hibob.com/jobs",
+    "https://www.xn--jobs-fr-koblenz-4vb.com/stellenangebote",
+    "https://careers.telekom.com/de/jobs",
+    "https://jobsformoms.de/de-de/jobs",
+    "https://www.7education.com/career",
+    "https://cgm.wd3.myworkdayjobs.com/cgm",
+    "https://www.tomra.com/careers/vacant-positions?country=de"
+    
   ],
   "gemini_model": "gemini-3.5-flash"
 }
