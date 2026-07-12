@@ -11,7 +11,9 @@
     "https://www.tomra.com/careers/vacant-positions?country=de",
     "https://www.ptc-telematik.de/karriere-jobs/",
     "https://lumaserv.com/company/career",
-    "https://touch.ferchau.com/de/en?type=3&city=Koblenz%2C+Rhineland-Palatinate%2C+Germany%3B50.353121%3B7.594565&rangeAndFaculty%5B0%5D=12004&sortingType=distance&sortingDirection=ASC"
+    "https://touch.ferchau.com/de/en?type=3&city=Koblenz%2C+Rhineland-Palatinate%2C+Germany%3B50.353121%3B7.594565&rangeAndFaculty%5B0%5D=12004&sortingType=distance&sortingDirection=ASC",
+    "https://www.united-coding.com/karriere/",
+    "https://www.iridium-works.com/en/career"
   ],
   "gemini_model": "gemini-3.5-flash"
 }
