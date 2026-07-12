@@ -25,9 +25,9 @@
     "https://careers.telekom.com/de/jobs": [],
     "https://jobsformoms.de/de-de/jobs": [],
     "https://www.7education.com/career": [
+        "Ausbildung - Fachinformatiker:in f\u00fcr Anwendungsentwicklung",
         "Engineering Lead, Identity",
-        "Senior System Engineer",
-        "Ausbildung - Fachinformatiker:in f\u00fcr Anwendungsentwicklung"
+        "Senior System Engineer"
     ],
     "https://cgm.wd3.myworkdayjobs.com/cgm": [
         "Senior Software Architect (m/w/d)"
@@ -38,22 +38,21 @@
     ],
     "https://lumaserv.com/company/career": [],
     "https://touch.ferchau.com/de/en?type=3&city=Koblenz%2C+Rhineland-Palatinate%2C+Germany%3B50.353121%3B7.594565&rangeAndFaculty%5B0%5D=12004&sortingType=distance&sortingDirection=ASC": [
-        "Embedded Software Entwickler (m/w/d)",
+        "Embedded-Software-Entwickler (m/w/d)",
         "(Junior) Softwareentwickler (m/w/d) Sondermaschinenbau",
-        "Embedded-Software-Entwickler (m/w/d)"
+        "Embedded Software Entwickler (m/w/d)"
     ],
     "https://www.united-coding.com/karriere/": [
-        "Java Entwickler",
-        "React Entwickler",
-        "Full-Stack Entwickler",
-        "Full-Stack-Entwickler (m/w)",
-        "Python Entwickler",
-        "PHP Entwickler",
-        "Software Architekt",
+        "Front-End Entwickler",
         "Magento 2 Entwickler",
         "Shopware Entwickler",
+        "Java Entwickler",
+        "PHP Entwickler",
+        "React Entwickler",
+        "Full-Stack-Entwickler (m/w)",
         "Moodle Entwickler",
-        "Front-End Entwickler"
+        "Python Entwickler",
+        "Full-Stack Entwickler"
     ],
     "https://www.iridium-works.com/en/career": []
 }
