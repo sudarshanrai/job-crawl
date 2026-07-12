@@ -34,6 +34,10 @@ jobs:
       env:
         GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+        BREVO_SMTP_USER: ${{ secrets.BREVO_SMTP_USER }}
+        BREVO_SMTP_PASSWORD: ${{ secrets.BREVO_SMTP_PASSWORD }}
+        JOB_ALERT_SENDER: ${{ secrets.JOB_ALERT_SENDER }}
+        JOB_ALERT_RECEIVER: ${{ secrets.JOB_ALERT_RECEIVER }}
       run: python scraper.py
 
     - name: Commit and Push Updated Cache
