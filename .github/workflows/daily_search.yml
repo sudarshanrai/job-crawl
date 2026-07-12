@@ -38,6 +38,7 @@ jobs:
         BREVO_SMTP_PASSWORD: ${{ secrets.BREVO_SMTP_PASSWORD }}
         JOB_ALERT_SENDER: ${{ secrets.JOB_ALERT_SENDER }}
         JOB_ALERT_RECEIVER: ${{ secrets.JOB_ALERT_RECEIVER }}
+        BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
       run: python scraper.py
 
     - name: Commit and Push Updated Cache
