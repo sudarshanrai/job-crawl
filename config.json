@@ -6,5 +6,5 @@
     "https://www.xn--jobs-fr-koblenz-4vb.com/stellenangebote/?jw_jobname=java",
     "https://careers.telekom.com/de/jobs?search=java"
   ],
-  "gemini_model": "google_genai/gemini-1.5-flash"
+  "gemini_model": "gemini-2.5-flash"
 }
