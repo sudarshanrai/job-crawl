@@ -25,8 +25,9 @@
     "https://careers.telekom.com/de/jobs": [],
     "https://jobsformoms.de/de-de/jobs": [],
     "https://www.7education.com/career": [
+        "Engineering Lead, Identity",
         "Ausbildung - Fachinformatiker:in f\u00fcr Anwendungsentwicklung",
-        "Engineering Lead, Identity"
+        "Senior System Engineer"
     ],
     "https://cgm.wd3.myworkdayjobs.com/cgm": [
         "Senior Software Architect (m/w/d)"
@@ -42,20 +43,27 @@
         "Embedded Software Entwickler (m/w/d)"
     ],
     "https://www.united-coding.com/karriere/": [
-        "Software Architekt",
         "Java Entwickler",
-        "Front-End Entwickler",
-        "Full-Stack-Entwickler (m/w)",
-        "PHP Entwickler",
+        "Magento 2 Entwickler",
         "React Entwickler",
-        "Python Entwickler",
         "Moodle Entwickler",
         "Shopware Entwickler",
-        "Magento 2 Entwickler",
-        "Full-Stack Entwickler"
+        "Front-End Entwickler",
+        "Python Entwickler",
+        "Full-Stack Entwickler",
+        "PHP Entwickler",
+        "Full-Stack-Entwickler (m/w)",
+        "Software Architekt"
     ],
     "https://www.iridium-works.com/en/career": [],
-    "https://www.tomra.com/careers/vacant-positions?country=de": [
-        "Software Developer - C++*"
-    ]
+    "https://www.tomra.com/careers/vacant-positions?country=de": [],
+    "https://wearexena.com/jobs/?_market=backend%2Cfrontend%2Cfullstack&_location=berlin%2Cremote%2Cmunich%2Chamburg%2Ccologne%2Cdusseldorf%2Cfrankfurt": [
+        "Senior Backend Engineer (Node.js/Typescript)",
+        "Senior Software Engineer",
+        "Full Stack Engineer (German Speaking)",
+        "Software Engineer Kotlin/Java",
+        "Senior Frontend Software Engineer",
+        "Full Stack Engineer (mid-level)"
+    ],
+    "https://reev.com/en/this-is-reev/working-at-reev/#jobs": []
 }
