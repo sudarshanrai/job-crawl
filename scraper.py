@@ -148,4 +148,14 @@ if new_discoveries:
         
         try:
             print("📨 Connecting to Brevo SMTP Relay...")
-            with smtplib.SMTP(SMTP_SERVER, SMTP
+            with smtplib.SMTP(SMTP_SERVER, SMTP_PORT) as server:
+                server.starttls()  # Upgrade connection to secure TLS
+                server.login(SMTP_USER, SMTP_PASSWORD)
+                server.sendmail(sender_email, [receiver_email], msg.as_string())
+            print(f"📧 Notification sent successfully via Brevo!")
+        except Exception as e:
+            print(f"📧 Email delivery error via Brevo: {e}")
+
+# Save state
+with open(CACHE_FILE, "w") as f:
+    json.dump(job_cache, f, indent=4)
