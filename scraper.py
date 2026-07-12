@@ -1,7 +1,9 @@
 import os
 import json
 import re
-import resend
+import smtplib
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
 from google import genai
 from google.genai import types
 from playwright.sync_api import sync_playwright
@@ -15,7 +17,7 @@ def load_json(file, default):
             return json.load(f)
     return default
 
-config = load_json(CONFIG_FILE, {"keywords": [], "urls": []})
+config = load_json(CONFIG_FILE, {"keywords": [], "urls": [], "receiver_email": "", "sender_email": ""})
 job_cache = load_json(CACHE_FILE, {})
 
 # Initialize Gemini Client (Requires GEMINI_API_KEY environment variable)
@@ -58,7 +60,7 @@ def analyze_jobs_with_ai(page_content: str, keywords: list) -> list:
 
     try:
         response = ai_client.models.generate_content(
-                    model='gemini-3.5-flash',  # Upgraded to current generation production suite
+                    model='gemini-3.5-flash',
                     contents=[prompt, page_content],
                     config=types.GenerateContentConfig(
                         response_mime_type="application/json",
@@ -84,7 +86,7 @@ with sync_playwright() as p:
         
         try:
             page.goto(url, wait_until="networkidle", timeout=60000)
-            page.wait_for_timeout(4000) # Give extra time for JS frameworks to spin up lists
+            page.wait_for_timeout(4000) 
             
             # 1. Get Token-Friendly condensed content
             condensed_content = extract_page_snippet(page)
@@ -102,7 +104,7 @@ with sync_playwright() as p:
             
             # Cache the latest snapshot
             job_cache[url] = current_titles
-            print(f"   Found {len(current_titles)} relevant jobs. ({len(site_new_jobs)} brand new)")
+            print(f"    Found {len(current_titles)} relevant jobs. ({len(site_new_jobs)} brand new)")
             
         except Exception as e:
             print(f"❌ Failed processing {url}: {e}")
@@ -111,29 +113,46 @@ with sync_playwright() as p:
 
     browser.close()
 
-# --- Notifications ---
+# --- Notifications via Brevo SMTP ---
 if new_discoveries:
-    resend.api_key = os.getenv("RESEND_API_KEY")
+    # Fetch Brevo Credentials from environment variables
+    SMTP_SERVER = "smtp-relay.brevo.com"
+    SMTP_PORT = 587
+    SMTP_USER = os.getenv("BREVO_SMTP_USER")
+    SMTP_PASSWORD = os.getenv("BREVO_SMTP_PASSWORD") # This is your Brevo SMTP Master Key/API Key
     
-    html_content = "<h2>🔥 New Job Opportunities Detected</h2>"
-    for item in new_discoveries:
-        html_content += f"""
-        <div style="margin-bottom: 20px; border-left: 4px solid #4CAF50; padding-left: 10px;">
-            <p><strong>Source:</strong> <a href="{item['url']}">{item['url']}</a></p>
-            <ul>{"".join([f"<li>{t}</li>" for t in item['titles']])}</ul>
-        </div>
-        """
-    
-    try:
-        resend.Emails.send({
-            "from": "JobAlert <onboarding@resend.dev>",
-            "to": [config["receiver_email"]],
-            "subject": "Update: New Tech Jobs Found",
-            "html": html_content
-        })
-        print(f"📧 Notification sent successfully!")
-    except Exception as e:
-        print(f"📧 Email delivery error: {e}")
+    sender_email = config.get("sender_email", SMTP_USER)
+    receiver_email = config["receiver_email"]
+
+    if not SMTP_USER or not SMTP_PASSWORD:
+        print("❌ Missing Brevo SMTP environment variables.")
+    else:
+        # Build the HTML Content
+        html_content = "<h2>🔥 New Job Opportunities Detected</h2>"
+        for item in new_discoveries:
+            html_content += f"""
+            <div style="margin-bottom: 20px; border-left: 4px solid #4CAF50; padding-left: 10px;">
+                <p><strong>Source:</strong> <a href="{item['url']}">{item['url']}</a></p>
+                <ul>{"".join([f"<li>{t}</li>" for t in item['titles']])}</ul>
+            </div>
+            """
+        
+        # Prepare the Email Message
+        msg = MIMEMultipart("alternative")
+        msg["Subject"] = "Update: New Tech Jobs Found"
+        msg["From"] = f"JobAlert <{sender_email}>"
+        msg["To"] = receiver_email
+        msg.attach(MIMEText(html_content, "html"))
+        
+        try:
+            print("📨 Connecting to Brevo SMTP Relay...")
+            with smtplib.SMTP(SMTP_SERVER, SMTP_PORT) as server:
+                server.starttls()  # Upgrade connection to secure TLS
+                server.login(SMTP_USER, SMTP_PASSWORD)
+                server.sendmail(sender_email, [receiver_email], msg.as_string())
+            print(f"📧 Notification sent successfully via Brevo!")
+        except Exception as e:
+            print(f"📧 Email delivery error via Brevo: {e}")
 
 # Save state
 with open(CACHE_FILE, "w") as f:
