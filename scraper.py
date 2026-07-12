@@ -58,7 +58,7 @@ def analyze_jobs_with_ai(page_content: str, keywords: list) -> list:
 
     try:
         response = ai_client.models.generate_content(
-                    model='gemini-2.5-flash', # Upgraded to the optimal, cost-efficient generation model
+                    model='gemini-3.5-flash',  # Upgraded to current generation production suite
                     contents=[prompt, page_content],
                     config=types.GenerateContentConfig(
                         response_mime_type="application/json",
