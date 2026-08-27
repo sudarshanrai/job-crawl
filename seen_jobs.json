@@ -30,13 +30,25 @@
         "Software Developer (w/m/d)\nPTC Telematik",
         "Software Developer (w/m/d)\nPTC Telematik\nVollzeit"
     ],
-    "https://lumaserv.com/company/career": [],
+    "https://lumaserv.com/company/career": [
+        "Drupal Developer / Web Design Freelancer [gn]",
+        "Drupal Developer / Web Design Freelancer [gn]\nRemote RLP\nTeilzeit\nFreelancing",
+        "PHP Developer Nextcloud / OSS [gn]",
+        "PHP Developer Nextcloud / OSS [gn]\nKoblenz, Remote RLP\nPart-time\nPermanent employee"
+    ],
     "https://touch.ferchau.com/de/en?type=3&city=Koblenz%2C+Rhineland-Palatinate%2C+Germany%3B50.353121%3B7.594565&rangeAndFaculty%5B0%5D=12004&sortingType=distance&sortingDirection=ASC": [
         "Java-Softwareentwickler (m/w/d)"
     ],
     "https://www.united-coding.com/karriere/": [
+        "Front-End Entwickler",
+        "Full-Stack Entwickler",
         "Java Entwickler",
         "Java-Script Entwickler buchen",
+        "Mehr als 3 Jahre Erfahrung in Entwurf und Umsetzung von Fullstack-Anwendungen",
+        "Tiefgehende Entwicklungserfahrung in Python (Kenntnisse in Java, C/C++ oder anderen dynamischen Sprachen sind von Vorteil)",
+        "Umfangreiche Kenntnisse in JavaScript, jQuery, compass, CSS3 und Selenium",
+        "Umfangreiche Kenntnisse von Web und Backend Technologien (z. B.: HTTP, AWS, nginx). Kenntnisse in asynchroner Programmierung, asyncio und dem Tornado Webserver sind von Vorteil",
+        "Unser Team in Koblenz sucht dich als Full-Stack-Entwickler (m/w)",
         "Websysteme und Backend-Entwicklung"
     ],
     "https://www.iridium-works.com/en/career": [],
@@ -49,8 +61,12 @@
     "https://wearexena.com/jobs/?_market=backend%2Cfrontend%2Cfullstack&_location=berlin%2Cremote%2Cmunich%2Chamburg%2Ccologne%2Cdusseldorf%2Cfrankfurt": [
         "Backend(38)\nFullstack(17)\nFrontend(16)\nManagement(15)\nData(12)\nXena(6)\nIndividual Contributor(4)\nMobile(3)\nProduct(2)\nDesign(1)",
         "Berlin\nSenior Frontend Software Engineer\nRead more",
+        "Full Stack Engineer (German Speaking)",
+        "Full Stack Engineer (mid-level)",
+        "Hamburg\nFull Stack Engineer (German Speaking)\nRead more",
         "Job types\nBackend(38)\nFullstack(17)\nFrontend(16)\nManagement(15)\nData(12)\nXena(6)\nIndividual Contributor(4)\nMobile(3)\nProduct(2)\nDesign(1)",
         "Munich\nSenior Software Engineer\nRead more",
+        "Remote\nFull Stack Engineer (mid-level)\nRead more",
         "Remote\nSenior Backend Engineer (Node.js/Typescript)\nRead more",
         "Remote\nSoftware Engineer Kotlin/Java\nRead more",
         "Senior Backend Engineer (Node.js/Typescript)",
