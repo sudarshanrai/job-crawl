@@ -3,9 +3,7 @@ import json
 import re
 import urllib.request
 import urllib.error
-from google import genai
-from google.genai import types
-from playwright.sync_api import sync_playwright
+from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeoutError, Error as PlaywrightError
 
 CONFIG_FILE = "config.json"
 CACHE_FILE = "seen_jobs.json"
@@ -19,13 +17,12 @@ def load_json(file, default):
 config = load_json(CONFIG_FILE, {"keywords": [], "urls": []})
 job_cache = load_json(CACHE_FILE, {})
 
-# Initialize Gemini Client (Requires GEMINI_API_KEY environment variable)
-ai_client = genai.Client()
 
-def extract_page_snippet(page) -> str:
+def extract_page_snippet(page) -> list:
     """
-    Minimizes tokens safely by pulling visible elements that contain text.
-    Defensively strips out empty elements to prevent JS runtime exceptions.
+    Pulls visible text from elements likely to contain job listings
+    (links, headings, and anything whose class hints at "job"/"position").
+    Strips empty/junk entries and de-duplicates while preserving order.
     """
     lines = page.evaluate("""() => {
         const elements = document.querySelectorAll('a, h1, h2, h3, h4, [class*="job"], [class*="position"]');
@@ -36,41 +33,24 @@ def extract_page_snippet(page) -> str:
             })
             .filter(text => text.length > 5 && text.length < 200);
     }""")
-    
-    # Keep unique items to optimize token footprint
-    unique_lines = list(set(lines))
-    return "\n".join(unique_lines)
 
-def analyze_jobs_with_ai(page_content: str, keywords: list) -> list:
+    # dict.fromkeys() dedupes but keeps first-seen order, unlike set()
+    return list(dict.fromkeys(lines))
+
+
+def match_jobs_by_keyword(lines: list, keywords: list) -> list:
     """
-    Uses Gemini to extract jobs based on strict criteria using Structured Outputs.
+    Pure keyword matching -- no AI involved.
+    A line counts as a job listing if it contains any target keyword as a
+    whole word (case-insensitive), e.g. "Backend" matches "Senior Backend
+    Engineer" but a bare substring match wouldn't accidentally fire on
+    unrelated words that merely contain the letters.
     """
-    if not page_content.strip():
+    if not keywords:
         return []
+    patterns = [re.compile(r'\b' + re.escape(kw) + r'\b', re.IGNORECASE) for kw in keywords]
+    return [line for line in lines if any(p.search(line) for p in patterns)]
 
-    prompt = f"""
-    You are an expert HR data parsing assistant.
-    Analyze the following extracted text from a company careers website.
-    Identify and extract explicit job titles that match or are closely related to these target domains: {', '.join(keywords)}.
-    
-    Ignore navigation elements, filter terms, country names, or generic dashboard text.
-    Extract ONLY valid, specific job open positions.
-    """
-
-    try:
-        response = ai_client.models.generate_content(
-                    model='gemini-3.5-flash',
-                    contents=[prompt, page_content],
-                    config=types.GenerateContentConfig(
-                        response_mime_type="application/json",
-                        response_schema=list[str],
-                        temperature=0.1
-                    ),
-        )
-        return json.loads(response.text)
-    except Exception as e:
-        print(f"🤖 Gemini Analysis Error: {type(e).__name__} -> {e}")
-        return []
 
 # --- Execution Logic ---
 new_discoveries = []
@@ -78,38 +58,38 @@ new_discoveries = []
 with sync_playwright() as p:
     browser = p.chromium.launch(headless=True)
     context = browser.new_context(user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36")
-    
+
     for url in config.get("urls", []):
         page = context.new_page()
-        print(f"🔍 AI-Powered Extraction: {url}")
-        
+        print(f"🔍 Scanning: {url}")
+
         try:
             page.goto(url, wait_until="networkidle", timeout=60000)
-            page.wait_for_timeout(4000) 
-            
-            # 1. Get Token-Friendly condensed content
-            condensed_content = extract_page_snippet(page)
-            
-            # 2. Let Gemini extract the exact matching titles
-            current_titles = analyze_jobs_with_ai(condensed_content, config["keywords"])
-            
+            page.wait_for_timeout(4000)
+
+            # 1. Pull candidate text from the page
+            condensed_lines = extract_page_snippet(page)
+
+            # 2. Keep only the lines that match a target keyword
+            current_titles = sorted(match_jobs_by_keyword(condensed_lines, config["keywords"]))
+
             old_titles = job_cache.get(url, [])
-            
+
             # 3. Detect what is genuinely new
             site_new_jobs = [job for job in current_titles if job not in old_titles]
-            
+
             if site_new_jobs:
                 new_discoveries.append({"url": url, "titles": site_new_jobs})
-            
+
             # Cache the latest snapshot
             job_cache[url] = current_titles
-            print(f"    Found {len(current_titles)} relevant jobs. ({len(site_new_jobs)} brand new)")
-            
-        except p.errors.TimeoutError:
+            print(f"    Found {len(current_titles)} matching jobs. ({len(site_new_jobs)} brand new)")
+
+        except PlaywrightTimeoutError:
             print(f"❌ Failed processing {url}: Page loading timed out (exceeded 60s limit).")
-        except p.errors.Error as e:
+        except PlaywrightError as e:
             # Catches driver/browser specific issues like DNS failures, SSL bugs, blockages
-            print(f"❌ Failed processing {url}: Playwright Browser Error -> {e.message}")
+            print(f"❌ Failed processing {url}: Playwright Browser Error -> {e}")
         except Exception as e:
             # Catches unexpected runtime script errors
             print(f"❌ Failed processing {url}: Internal Exception -> {type(e).__name__}: {e}")
@@ -120,7 +100,6 @@ with sync_playwright() as p:
 
 # --- Notifications via Brevo HTTP API v3 ---
 if new_discoveries:
-    # Fetch API Key and Emails from environment variables
     BREVO_API_KEY = os.getenv("BREVO_API_KEY")
     sender_email = os.getenv("JOB_ALERT_SENDER")
     receiver_email = os.getenv("JOB_ALERT_RECEIVER")
@@ -128,7 +107,6 @@ if new_discoveries:
     if not all([BREVO_API_KEY, sender_email, receiver_email]):
         print("❌ Missing required environment variables. Check BREVO_API_KEY, JOB_ALERT_SENDER, and JOB_ALERT_RECEIVER.")
     else:
-        # Build the HTML Content
         html_content = "<h2>🔥 New Job Opportunities Detected</h2>"
         for item in new_discoveries:
             html_content += f"""
@@ -137,19 +115,17 @@ if new_discoveries:
                 <ul>{"".join([f"<li>{t}</li>" for t in item['titles']])}</ul>
             </div>
             """
-        
-        # Structure the payload strictly according to Brevo v3 API standards
+
         payload = {
             "sender": {"name": "JobAlert", "email": sender_email},
             "to": [{"email": receiver_email}],
             "subject": "Update: New Tech Jobs Found",
             "htmlContent": html_content
         }
-        
-        # Target the transactional email endpoint
+
         api_url = "https://api.brevo.com/v3/smtp/email"
         req = urllib.request.Request(
-            api_url, 
+            api_url,
             data=json.dumps(payload).encode("utf-8"),
             headers={
                 "accept": "application/json",
@@ -158,12 +134,11 @@ if new_discoveries:
             },
             method="POST"
         )
-        
+
         try:
             print("🚀 Sending notification via Brevo HTTP API...")
             with urllib.request.urlopen(req) as response:
                 res_body = json.loads(response.read().decode("utf-8"))
-                # Brevo returns a messageId upon a successful request transmission
                 if "messageId" in res_body:
                     print(f"📧 Notification sent successfully! Message ID: {res_body['messageId']}")
                 else:
