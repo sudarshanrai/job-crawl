@@ -48,7 +48,7 @@
         "IT-Kaufmann (m/w/d)\nlocations\nKoblenz\nJR110121",
         "IT-Service-Manager (m/w/d)",
         "IT-Service-Manager (m/w/d)\nlocations\n2 Locations\nJR110162CompuGroup Medical Deutschland AG",
-        "Junior Infrastructure & Ops Automation Engineer (AI)\nlocations\nIasi\nJR110129CGM Software RO SRL",
+        "Infrastructure & Ops Automation Engineer (AI) (2-3 years experience)\nlocations\nIasi\nJR110129CGM Software RO SRL",
         "Senior IT-Projektmanager (m/w/d)",
         "Senior IT-Projektmanager (m/w/d)\nlocations\n7 Locations\nJR110098CGM SE & Co. KGaA"
     ],
@@ -256,6 +256,8 @@
         "(Junior) Frontend Engineer - Vue.js & Design System (m/w/d)\n\nBerufserfahrene | Bad Friedrichshall",
         "(Junior) IT Business Consultant - Finance & Administration (m/w/d)",
         "(Junior) IT Business Consultant - Finance & Administration (m/w/d)\n\nBerufserfahrene | Heilbronn",
+        "(Junior) IT Business Consultant Payment Solutions (m/w/d)",
+        "(Junior) IT Business Consultant Payment Solutions (m/w/d)\n\nBerufseinsteiger | Bad Friedrichshall",
         "(Junior) IT Operations & Event Specialist f\u00fcr IPAI (m/w/d)",
         "(Junior) IT Operations & Event Specialist f\u00fcr IPAI (m/w/d)\n\nBerufserfahrene | Heilbronn"
     ],
@@ -324,8 +326,6 @@
         "IT System Administrator (f/m/d)\n\nRennes, Ille-et-Vilaine, France",
         "Internal IT",
         "Job\n\n\n\n\nIT Integration Engineer (f/m/d)\n\nBerlin, Berlin, Germany; M\u00fcnchen, Bavaria, Germany\n\n\n\n\nIT System Administrator (f/m/d)\n\nRennes, Ille-et-Vilaine, France",
-        "Job\n\n\n\n\nSenior Software Engineer \u2013 Java (f/m/d)\n\nBerlin, Berlin, Germany; M\u00fcnchen, Bavaria, Germany",
-        "Product & Tech\n\nJob\n\n\n\n\nSenior Software Engineer \u2013 Java (f/m/d)\n\nBerlin, Berlin, Germany; M\u00fcnchen, Bavaria, Germany",
         "Senior Software Engineer \u2013 Java (f/m/d)\n\nBerlin, Berlin, Germany; M\u00fcnchen, Bavaria, Germany"
     ],
     "https://job-boards.greenhouse.io/prisma6": [
@@ -363,5 +363,39 @@
         "Software Engineer - Backend/Funds Transfer *EU/UK remote* (m/f/d)\n\nEngineering \u2022 Remote \u2022 Full time \u2022 Remote",
         "Software Engineer - Mobile *EU/UK remote* (m/f/d)",
         "Software Engineer - Mobile *EU/UK remote* (m/f/d)\n\nEngineering \u2022 Remote \u2022 Full time \u2022 Remote"
+    ],
+    "https://jobs.pwc.de/de/de/search-results": [
+        "Jetzt bewerben\nManager Deals IT Solutions (w/m/d)",
+        "Jetzt bewerben\nSenior Consultant Deals IT Solutions (w/m/d)",
+        "Manager Deals IT Solutions (w/m/d)",
+        "Save Manager Deals IT Solutions (w/m/d) 2549",
+        "Save Senior Consultant Deals IT Solutions (w/m/d) 2548",
+        "Senior Consultant Deals IT Solutions (w/m/d)"
+    ],
+    "https://jobs.check24.de/de/jobs/?query=": [
+        "(Junior) Full-Stack Entwickler (m/w/d) AI & Digital Innovation Reise",
+        "(Junior) Software Entwickler (m/w/d)",
+        "Ausbildung zum IT Fachinformatiker (m/w/d) Anwendungsentwicklung - 2026",
+        "Du hast sehr gute Kenntnisse in der Softwareentwicklung von Webapplikationen mit Python (Django als Backend) und React/Typescript (Frontend)",
+        "Eigeninitiative und Ownership: Du hinterfragst Dinge, setzt um und willst sehen, wie Deine Software live geht",
+        "Eine Programmier- bzw. Scriptsprache (Java, TypeScript, Python, Golang, C#, etc.) beherrschst Du sicher",
+        "Erste Programmierkenntnisse\u00a0in mindestens einer objektorientierten Programmiersprache wie z.B. mit C#, Java, PHP und/oder Erfahrung im Erstellen von Homepages oder Mobile Apps",
+        "Full-Stack\u202fEntwickler (m/w/d)\u202f\u2013 AI & Digital Innovation Explorer",
+        "Full-Stack\u202fEntwickler (m/w/d)\u202f\u2013 Fokus\u202fBackend Explorer",
+        "Full-Stack\u202fEntwickler (m/w/d)\u202f\u2013 Fokus\u202fFrontend Explorer",
+        "Fullstack Mindset: Du kannst Dich daf\u00fcr begeistern mit neuen Technologien End-to-End Features umzusetzen. Du musst nicht alle Technologien beherrschen, Du musst jedoch bereit sein\u00a0zu lernen.",
+        "Fullstack Softwareentwickler (m/w/d) HR-Automation",
+        "Interdisziplin\u00e4res Arbeiten: Du bringst ein technisches Grundverst\u00e4ndnis mit und hast Lust, eng mit Produktmanagement, IT, Data Science und der Gesch\u00e4ftsf\u00fchrung zusammenzuarbeiten",
+        "Mehrj\u00e4hrige Erfahrung in der Backend\u2011Entwicklung mit PHP und Go sowie praktische Kenntnisse in Next.js/React",
+        "Mehrj\u00e4hrige Erfahrung in der Frontend\u2011Entwicklung mit React/Next.js sowie fundierte Kenntnisse in PHP und/oder Go f\u00fcr Backend\u2011Services",
+        "Praktische Erfahrung: In mindestens einer Programmier- oder Skriptsprache (Python, Golang, Java, PHP, C#, etc.) sowie in Linux/DevOps verf\u00fcgst Du bereits \u00fcber gute Kenntnisse",
+        "Sehr erfolgreich abgeschlossenes Studium im IT-Bereich oder eine sehr erfolgreich abgeschlossene Ausbildung als Fachinformatiker f\u00fcr Anwendungsentwicklung",
+        "Sehr gro\u00dfe Begeisterung f\u00fcr IT, Internet-Themen und digitale Trends",
+        "Sehr gut abgeschlossenes Studium mit wirtschaftswissenschaftlicher, mathematisch-technischer oder IT-Ausrichtung bzw. eines anderen quantitativ ausgerichteten Studienganges",
+        "Sehr guter Schulabschluss\u00a0mit\u00a0sehr guten Noten\u00a0in den technischen / naturwissenschaftlichen F\u00e4chern oder hast Du bereits ein IT-Studium begonnen und m\u00f6chtest zu einer Ausbildung wechseln?",
+        "Sehr gutes Beherrschen mindestens einer Programmier- bzw. Scriptsprache (PHP, Python, Golang, Java, C#, etc.)",
+        "Sicherer Umgang mit JavaScript/TypeScript, responsivem Design und UI/UX\u2011Prinzipien; Erfahrung mit API\u2011Design und Datenbankanbindungen",
+        "Software Engineering",
+        "Verst\u00e4ndnis f\u00fcr sauberen, wartbaren Code und grundlegende Software-Engineering-Prinzipien"
     ]
 }
