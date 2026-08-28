@@ -20,42 +20,98 @@
     ],
     "https://kleinanzeigendegmbh.careers.hibob.com/jobs": [],
     "https://www.xn--jobs-fr-koblenz-4vb.com/stellenangebote": [],
-    "https://careers.telekom.com/de/jobs": [],
+    "https://careers.telekom.com/de/jobs": [
+        "Ausbildung IT-System-Elektroniker*in (m/w/d)",
+        "Ausbildung IT-System-Elektroniker*in (m/w/d)\n\nNetzwerk/Infrastruktur",
+        "Ausbildung IT-System-Elektroniker*in (m/w/d)\n\nNetzwerk/Infrastruktur\n\nG\u00f6ppingen\n\nAusbildung\n\nJobdetails",
+        "Ausbildung IT-System-Elektroniker*in (m/w/d)\n\nNetzwerk/Infrastruktur\n\nW\u00fcrzburg\n\nAusbildung\n\nJobdetails",
+        "Berufsorientierungspraktikum IT-System-Elektroniker*in (m/w/d)",
+        "Berufsorientierungspraktikum IT-System-Elektroniker*in (m/w/d)\n\nNetzwerk/Infrastruktur",
+        "Berufsorientierungspraktikum IT-System-Elektroniker*in (m/w/d)\n\nNetzwerk/Infrastruktur\n\nAngerm\u00fcnde\n\nSch\u00fclerpraktikum\n\nJobdetails",
+        "Berufsorientierungspraktikum IT-System-Elektroniker*in (m/w/d)\n\nNetzwerk/Infrastruktur\n\nG\u00fctersloh\n\nSch\u00fclerpraktikum\n\nJobdetails",
+        "Berufsorientierungspraktikum IT-System-Elektroniker*in (m/w/d)\n\nNetzwerk/Infrastruktur\n\nKoblenz\n\nSch\u00fclerpraktikum\n\nJobdetails",
+        "Berufsorientierungspraktikum IT-System-Elektroniker*in (m/w/d)\n\nNetzwerk/Infrastruktur\n\nSchwabm\u00fcnchen\n\nSch\u00fclerpraktikum\n\nJobdetails"
+    ],
     "https://jobsformoms.de/de-de/jobs": [],
-    "https://www.7education.com/career": [],
-    "https://cgm.wd3.myworkdayjobs.com/cgm": [],
+    "https://www.7education.com/career": [
+        "It\u2019s more than a new start. \nIt\u2019s the impact you can make.",
+        "You made it"
+    ],
+    "https://cgm.wd3.myworkdayjobs.com/cgm": [
+        "CGM Software RO SRL",
+        "CompuGroup Medical Software GmbH",
+        "Head of Software Development (m/w/d)",
+        "Head of Software Development (m/w/d)\nlocations\nKoblenz | Maria Trost 21\nJR108062CompuGroup Medical Software GmbH",
+        "IT Security Engineer (m/w/d)",
+        "IT Security Engineer (m/w/d)\nlocations\n3 Locations\nJR109923CompuGroup Medical Deutschland AG",
+        "IT-Kaufmann (m/w/d)",
+        "IT-Kaufmann (m/w/d)\nlocations\nKoblenz\nJR110121",
+        "Junior Infrastructure & Ops Automation Engineer (AI)\nlocations\nIasi\nJR110129CGM Software RO SRL",
+        "Senior IT-Projektmanager (m/w/d)",
+        "Senior IT-Projektmanager (m/w/d)\nlocations\n7 Locations\nJR110098CGM SE & Co. KGaA",
+        "Senior Network Engineer (Security & Zero Trust)\nlocations\nIasi\nJR110128CGM Software RO SRL"
+    ],
     "https://www.ptc-telematik.de/karriere-jobs/": [
+        "Digitaler Tachograph\n                Remote auslesen, Daten speichern, in der Software auslesen, Dokumentation erstellen,\n                    einfach, praktikabel, gesetzeskonformmehr...",
         "Senior Softwareentwickler/in (Ingenieur) (m/w/d)\nPTC Telematik\nVollzeit\nSoftware Developer (w/m/d)\nPTC Telematik\nVollzeit",
         "Software Developer (w/m/d)",
         "Software Developer (w/m/d)\nPTC Telematik",
-        "Software Developer (w/m/d)\nPTC Telematik\nVollzeit"
+        "Software Developer (w/m/d)\nPTC Telematik\nVollzeit",
+        "Telematik-Software",
+        "Vertrauen aus einer Hand\t\t\tErfahrung, Software, Apps, Hardware, Einbau vor Ort, umfassender Service u. v. m. \u2013 L\u00f6sungen f\u00fcr Ihre Anspr\u00fcche"
     ],
     "https://lumaserv.com/company/career": [
+        "Assistenz Projektmanagement IT & Quality Assurance [gn]",
+        "Assistenz Projektmanagement IT & Quality Assurance [gn]\nKoblenz, Remote\nVollzeit\nFestanstellung",
+        "DevOps Engineer [gn]\nKoblenz, Remote\nVollzeit\nFestanstellung\nIT System Engineer [gn]\nKoblenz, Remote RLP, Remote Hessen, Remote Hamburg\nVollzeit\nFestanstellung",
         "Drupal Developer / Web Design Freelancer [gn]",
         "Drupal Developer / Web Design Freelancer [gn]\nRemote RLP\nTeilzeit\nFreelancing",
+        "IT Project Manager [gn]",
+        "IT Project Manager [gn]\nKoblenz, Remote RLP, Remote Hamburg\nVollzeit\nFestanstellung",
+        "IT System Engineer [gn]",
+        "IT System Engineer [gn]\nKoblenz, Remote RLP, Remote Hessen, Remote Hamburg\nVollzeit\nFestanstellung",
+        "Internal IT / Support\n- 1 Position",
+        "Internal IT / Support\n- 1 Position\n1",
+        "Internal IT / Support\n- 1 Position\n1\nWerkstudent - IT-Systemintegration [gn]\nKoblenz, Remote RLP\nTeilzeit\nPraktikum/Werkstudium",
         "PHP Developer Nextcloud / OSS [gn]",
-        "PHP Developer Nextcloud / OSS [gn]\nKoblenz, Remote RLP\nPart-time\nPermanent employee"
+        "PHP Developer Nextcloud / OSS [gn]\nKoblenz, Remote RLP\nPart-time\nPermanent employee",
+        "QA /Testing\n- 1 Position\n1\nAssistenz Projektmanagement IT & Quality Assurance [gn]\nKoblenz, Remote\nVollzeit\nFestanstellung",
+        "Software & Operations",
+        "Werkstudent - IT-Systemintegration [gn]",
+        "Werkstudent - IT-Systemintegration [gn]\nKoblenz, Remote RLP\nTeilzeit\nPraktikum/Werkstudium"
     ],
     "https://touch.ferchau.com/de/en?type=3&city=Koblenz%2C+Rhineland-Palatinate%2C+Germany%3B50.353121%3B7.594565&rangeAndFaculty%5B0%5D=12004&sortingType=distance&sortingDirection=ASC": [
-        "Java-Softwareentwickler (m/w/d)"
+        "Embedded Software Entwickler (m/w/d)",
+        "Embedded-Software-Entwickler (m/w/d)",
+        "IT Administrator (m/w/d)",
+        "Java-Softwareentwickler (m/w/d)",
+        "Netzwerktechniker (m/w/d) IT Security",
+        "Service Manager IT-Infrastruktur (m/w/d)",
+        "Technischer Projektmanager Defence / IT (m/w/d)"
     ],
     "https://www.united-coding.com/karriere/": [
+        "Der IT-Partner f\u00fcr Agenturen",
+        "Front-End Entwickler",
         "Full-Stack Entwickler",
+        "IT-Administrator",
         "Java Entwickler",
         "Java-Script Entwickler buchen",
         "Mehr als 3 Jahre Erfahrung in Entwurf und Umsetzung von Fullstack-Anwendungen",
+        "Software Architekt",
         "Tiefgehende Entwicklungserfahrung in Python (Kenntnisse in Java, C/C++ oder anderen dynamischen Sprachen sind von Vorteil)",
         "Umfangreiche Kenntnisse in JavaScript, jQuery, compass, CSS3 und Selenium",
         "Umfangreiche Kenntnisse von Web und Backend Technologien (z. B.: HTTP, AWS, nginx). Kenntnisse in asynchroner Programmierung, asyncio und dem Tornado Webserver sind von Vorteil",
         "Unser Team in Koblenz sucht dich als Full-Stack-Entwickler (m/w)",
-        "Websysteme und Backend-Entwicklung"
+        "Websysteme und Backend-Entwicklung",
+        "\u201eWir schaffen Bedingungen, in denen sich unsere Mitarbeiter 100 % entfalten k\u00f6nnen \u2013 als Voraussetzung f\u00fcr Software-Entwicklungen h\u00f6chster Qualit\u00e4t.\u201c"
     ],
     "https://www.iridium-works.com/en/career": [],
     "https://www.tomra.com/careers/vacant-positions?country=de": [
         "Research\nTOMRA Recycling\nFull-time\nSave to favorite\nSenior Software Engineer (all genders)\n\nWedel, SH, Germany\n\nShow more...",
         "Research\nTOMRA Recycling\nFull-time\nSave to favorite\nSoftware Developer - C++*\n\nM\u00fclheim-K\u00e4rlich, RP, Germany\n\nShow more...",
         "Senior Software Engineer (all genders)",
-        "Software Developer - C++*"
+        "Software Developer - C++*",
+        "The plastic dilemma: Is it recyclable or waste?"
     ],
     "https://wearexena.com/jobs/?_market=backend%2Cfrontend%2Cfullstack&_location=berlin%2Cremote%2Cmunich%2Chamburg%2Ccologne%2Cdusseldorf%2Cfrankfurt": [
         "Backend(38)\nFullstack(17)\nFrontend(16)\nManagement(15)\nData(12)\nXena(6)\nIndividual Contributor(4)\nMobile(3)\nProduct(2)\nDesign(1)",
@@ -74,44 +130,73 @@
         "Software Engineer Kotlin/Java"
     ],
     "https://reev.com/en/this-is-reev/working-at-reev/#jobs": [],
-    "https://www.7education.com/career#open-positions": [],
-    "https://www.lodige.co.uk/company/about-us/career/#c32422": [],
+    "https://www.7education.com/career#open-positions": [
+        "It\u2019s more than a new start. \nIt\u2019s the impact you can make.",
+        "You made it"
+    ],
+    "https://www.lodige.co.uk/company/about-us/career/#c32422": [
+        "A GOOD #FEELING ABOUT IT.",
+        "A career is more than just a job \u2013 it has to feel right.",
+        "For us, innovation isn\u2019t just a department \u2013 it\u2019s a mindset.",
+        "For us, mechanical engineering is more than just technology \u2013 it is our passion.",
+        "From Paderborn to the world \u2013 it is international diversity that makes all the difference."
+    ],
     "https://www.discoverinternational.com/job-seekers?joblocation=Germany&p=2": [],
     "https://www.faktorzehn.com/de/danke-fuer-ihre-bewerbung/": [],
     "https://schwarz-digits.de/en/jobsearch/hr/full-stack-engineering-lead-supply-chain-management-applications-m-w-d-GT2793": [],
     "https://jobs.ashbyhq.com/krakentech/135b7374-0c5d-4684-922d-af835a5d1bf7?source=linkedin+application": [
         "Lead Software Engineer",
         "Python and Django (or equivalent web framework) web development experience, as you will be asked to work on some full-stack projects",
+        "Writing robust and fault-tolerant software",
         "Your level will be Senior Software Engineer or above and we expect you to have experience/expertise in the following (in rough priority order):",
         "Your team will be building and maintaining the backend systems and support site for UK-based clients to support their electricity and gas operations."
     ],
     "https://www.annapurnarecruitment.com/job/senior-software-engineer-647609/": [
+        "5+ years of commercial software engineering experience",
         "Designing, developing and delivering scalable backend services using Java and Kotlin",
         "Experience building scalable backend or distributed systems",
         "Frontend experience with React, TypeScript or Node.js would be beneficial but isn\u2019t essential",
+        "JOB SEARCH\nSenior\n \nSoftware\n \nEngineer\n\nPermanent\n\nNegotiable\n\nBerlin",
+        "Senior\n \nSoftware\n \nEngineer",
+        "Senior Full Stack Developer (Python & TypeScript)",
         "Senior Software Engineer (Java / Kotlin)",
         "Staff Software Engineer",
         "Strong Java and Kotlin development experience"
     ],
     "https://jd.wd103.myworkdayjobs.com/en-US/Careers_at_JD": [],
-    "https://jobs.zalando.com/en/jobs?category=IT+Consulting+%26+Operations&location=Germany": [],
-    "https://job.takko.com/de/jobs/127332/applied?feedbackToken=90fccff8-41b1-4827-995a-5ca371c0e7f1": [],
-    "https://contextfab.ai/careers": [],
-    "https://www.personio.com/careers/5a4d9bca-8c1c-4fd1-98fd-658bf1d16105/apply/": [],
-    "https://flix.careers/job/?jobid=8729404002&gh_src=fc023d502": [
-        "7+ years of commercial experience as a Java Engineer",
-        "Senior Java Engineer (m/f/d) - Team Search",
-        "Senior Java Engineer (m/f/d) - Team Search\n\nCity: Berlin\nDepartment: IT & Engineering\n\nRecruiter: Anna Symonenko\n\nApply for Job",
-        "Senior Java Engineer (m/f/d) - Team Search\n\nCity: Berlin\nDepartment: IT & Engineering\n\nRecruiter: Anna Symonenko\n\nApply for Job\nShare Job",
-        "Strong experience with Java/JVM-based frameworks such as Micronaut or Spring Boot"
+    "https://jobs.zalando.com/en/jobs?category=IT+Consulting+%26+Operations&location=Germany": [
+        "IT Techniker*in",
+        "IT Techniker*in\n\nIT Consulting & Operations\n\nLahr\n\nView job",
+        "Principal Enterprise Automation Engineer - Logistics Development (all genders)\n\nIT Consulting & Operations\n\nBerlin\n\nView job",
+        "Principal Technology Vendor Manager (all genders)\n\nIT Consulting & Operations\n\nBerlin\n\nView job",
+        "Senior CRM Process Owner (all genders)\n\nIT Consulting & Operations\n\nBerlin\n\nView job",
+        "Tech Consultant - Fulfilment (all genders)\n\nIT Consulting & Operations\n\nBerlin\n\nView job"
     ],
+    "https://job.takko.com/de/jobs/127332/applied?feedbackToken=90fccff8-41b1-4827-995a-5ca371c0e7f1": [],
+    "https://contextfab.ai/careers": [
+        "03\nBuilt to scale.\n\nIf it won't hold up across sites, we rethink it.",
+        "Software that powers real production lines."
+    ],
+    "https://www.personio.com/careers/5a4d9bca-8c1c-4fd1-98fd-658bf1d16105/apply/": [],
+    "https://flix.careers/job/?jobid=8729404002&gh_src=fc023d502": [],
     "https://jobs.deel.com/dott/job-details/2d6eaf3d-fcaa-4c08-82d2-db8fd1d218c1/application?source=linkedin": [
+        "Experimenting with new patterns of software engineering with AI systems; and",
         "Exposure to iOS or backend development",
         "Work alongside product, design, iOS engineers, and backend engineers to push features from problem clarification all the way to post-release monitoring;"
     ],
     "https://www.porsche-digital.hr/en/jobs/backend-engineer#job-application-section": [],
-    "https://www.aptiv.com/en/jobs/search/open-positions/J000701023": [],
-    "https://careers.canyon.com/search/?q=&searchResultView=LIST": [],
+    "https://www.aptiv.com/en/jobs/search/open-positions/J000701023": [
+        "Senior Robotics Simulation Engineer (f-m-d)\nSoftware Engineering, Wuppertal, North Rhine-Westphalia",
+        "Software & Services",
+        "Software Engineering, Wuppertal, North Rhine-Westphalia",
+        "italiano (IT)"
+    ],
+    "https://careers.canyon.com/search/?q=&searchResultView=LIST": [
+        "IT\nDeutschland\nKoblenz (HQ)\nVollzeit\nHybrid\nUnbefristet",
+        "LEAD IT SYSTEM ENGINEER CORE (M/W/D)",
+        "LEAD IT SYSTEM ENGINEER CORE (M/W/D)\nKoblenz Deutschland\nIT\nDeutschland\nKoblenz (HQ)\nVollzeit\nHybrid\nUnbefristet",
+        "SAP BASIS ADMINISTRATOR (M/F/D)\nKoblenz Deutschland\nIT\nDeutschland\nKoblenz (HQ)\nVollzeit\nHybrid\nUnbefristet"
+    ],
     "https://job-boards.greenhouse.io/idnow/jobs/4822285101": [
         "5+ years of professional software development experience with a strong focus on Java.",
         "Design, develop, and maintain robust Java applications and microservices powering IDnow\u2019s identity verification platform.",
@@ -121,17 +206,35 @@
         "Senior Software Engineer \u2013 Java (f/m/d)\nBerlin, Berlin, Germany; M\u00fcnchen, Bavaria, Germany\nJoin IDnow"
     ],
     "https://job-boards.greenhouse.io/prisma6/jobs/4390154002": [
+        "Experience running software solutions on cloud services, such as AWS;",
         "Experience with Java and interest in other languages like Kotlin or TypeScript;",
+        "High interest in software craftsmanship and doing things \"right\" from Design Patterns to Security;",
+        "Influence Analysis, Architecture, Deployment, Monitoring, Security, and every other aspect of the software lifecycle;",
+        "Relevant professional experience and track record in software development;",
         "Software Engineer (m/f/d) - Onsite/Hybrid/Remote (Germany)",
         "Software Engineer (m/f/d) - Onsite/Hybrid/Remote (Germany)\nLeipzig",
         "Software Engineer (m/f/d) - Onsite/Hybrid/Remote (Germany)\nLeipzig\nApply"
     ],
     "https://jobs.ashbyhq.com/pliant/682e4239-60fd-4e00-b3d3-c310e9787dbd": [
         "5+ years of relevant experience with Java/Kotlin and Spring Boot",
+        "Businesses such as financial software platforms, ERP providers, and banks that want to launch or enhance their credit card offerings using Pliant\u2019s embedded finance and white-label solutions.",
         "Collaborate closely with product managers, designers, and frontend engineers in a cross-functional team",
         "Conceptualize, define and develop our partner and developer experience platform",
+        "Experience using agentic AI in all phases of software development",
         "Exposure to, and understanding of, frontend development with React",
         "Software Engineer - Backend - Partner Experience EU/UK remote (m/f/d)",
         "The opportunity to work in a growing team with challenging responsibilities, owning partner and developer experience"
+    ],
+    "https://www.fourenergy.de/karriereseite/senior-fullstack-m-w-d/": [
+        "(Senior) Fullstack (m/w/d)",
+        "Abgeschlossenes IT-Studium oder vergleichbare Qualifikation.",
+        "Bei der Frontend-Magie bist Du der Superstar und kreierst mit Angular, React, und/oder vue.js beeindruckende interaktive und reaktionsf\u00e4hige Benutzeroberfl\u00e4chen, die den Nutzer zum Staunen bringen.",
+        "Du zauberst mit Java (17+), Spring Boot und Microservices die coolsten Anwendungen aus dem Code-Hut.",
+        "Erfahrung in Java (17+), Spring Boot und Microservices.",
+        "Frontend-Expertise mit Angular, React oder vue.js.",
+        "IT-Entwicklung",
+        "IT-Konzeption",
+        "Mindestens 3 Jahre Erfahrung im Fullstack-Development.",
+        "Software Entwicklung"
     ]
 }
