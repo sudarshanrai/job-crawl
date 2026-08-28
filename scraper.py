@@ -214,7 +214,7 @@ if new_discoveries:
             """
 
         payload = {
-            "sender": {"name": "JobAlert", "email": sender_email},
+            "sender": {"name": "New job postings from the listed links: Do not miss it!!", "email": sender_email},
             "to": [{"email": receiver_email}],
             "subject": "Update: New Tech Jobs Found",
             "htmlContent": html_content
