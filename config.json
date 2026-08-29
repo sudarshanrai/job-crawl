@@ -41,6 +41,7 @@
     "https://pointsharp.jobs.personio.de/?language=en",
     "https://jobs.ashbyhq.com/pliant",
     "https://jobs.pwc.de/de/de/search-results",
+    "https://careers.soprasteria.de/jobs",
     "https://jobs.check24.de/de/jobs/?query="
   ],
   "gemini_model": "gemini-3.5-flash"
