@@ -1,5 +1,5 @@
 {
-  "keywords": ["Java", "Backend", "JavaScript", "TypeScript", "Frontend", "Fullstack", "Software Engineer", "Developer", "Software", "IT"],
+  "keywords": ["Java", "Backend", "JavaScript", "TypeScript", "Frontend", "Fullstack", "Software Engineer", "Developer", "Software", "IT", "Softwareentwickler", "entwickler"],
   "urls": [
     "https://kleinanzeigendegmbh.careers.hibob.com/jobs",
     "https://www.xn--jobs-fr-koblenz-4vb.com/stellenangebote",
@@ -42,7 +42,8 @@
     "https://jobs.ashbyhq.com/pliant",
     "https://jobs.pwc.de/de/de/search-results",
     "https://careers.soprasteria.de/jobs",
-    "https://jobs.check24.de/de/jobs/?query="
+    "https://jobs.check24.de/de/jobs/?query=",
+    "https://www.arbeitsagentur.de/jobsuche/suche?suchbereich=jobs&was=Software-Entwickler%2Fin&wo=56068%20Koblenz%20am%20Rhein&umkreis=25"
   ],
   "gemini_model": "gemini-3.5-flash"
 }
