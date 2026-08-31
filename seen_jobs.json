@@ -19,9 +19,7 @@
         "Senior Full-Stack-Entwickler (m/w/d) mit Schwerpunkt Frontend (Senior Anwendungsentwickler - Projekt Gigabit)"
     ],
     "https://kleinanzeigendegmbh.careers.hibob.com/jobs": [],
-    "https://www.xn--jobs-fr-koblenz-4vb.com/stellenangebote": [
-        "du bist Ansprechpartner im Benutzerservice f\u00fcr IT-Fragen"
-    ],
+    "https://www.xn--jobs-fr-koblenz-4vb.com/stellenangebote": [],
     "https://careers.telekom.com/de/jobs": [
         "Ausbildung IT-System-Elektroniker*in (m/w/d)",
         "Ausbildung IT-System-Elektroniker*in (m/w/d)\n\nNetzwerk/Infrastruktur",
@@ -117,15 +115,17 @@
     ],
     "https://wearexena.com/jobs/?_market=backend%2Cfrontend%2Cfullstack&_location=berlin%2Cremote%2Cmunich%2Chamburg%2Ccologne%2Cdusseldorf%2Cfrankfurt": [
         "Backend(38)\nFullstack(17)\nFrontend(16)\nManagement(15)\nData(12)\nXena(6)\nIndividual Contributor(4)\nMobile(3)\nProduct(2)\nDesign(1)",
-        "Berlin\nFull Stack Engineer\nRead more",
-        "Berlin\nFull Stack Engineer (JS/TS/Python)\nRead more",
-        "Berlin\nPrincipal Frontend Engineer - Green Tech\nRead more",
-        "Berlin\nSenior (Lead) Java Engineer\nRead more",
-        "Full Stack Engineer",
-        "Full Stack Engineer (JS/TS/Python)",
+        "Berlin\nLead Java Engineer\nRead more",
+        "Berlin\nSenior Frontend Engineer\nRead more",
+        "Berlin\nSoftware Engineer (Rust/Python)\nRead more",
         "Job types\nBackend(38)\nFullstack(17)\nFrontend(16)\nManagement(15)\nData(12)\nXena(6)\nIndividual Contributor(4)\nMobile(3)\nProduct(2)\nDesign(1)",
-        "Principal Frontend Engineer - Green Tech",
-        "Senior (Lead) Java Engineer"
+        "Lead Java Engineer",
+        "Remote\nSenior Frontend Engineer (React.js)\nRead more",
+        "Remote\nTech Lead Backend (Kotlin)\nRead more",
+        "Senior Frontend Engineer",
+        "Senior Frontend Engineer (React.js)",
+        "Software Engineer (Rust/Python)",
+        "Tech Lead Backend (Kotlin)"
     ],
     "https://reev.com/en/this-is-reev/working-at-reev/#jobs": [],
     "https://www.7education.com/career#open-positions": [
@@ -406,5 +406,6 @@
         "Jobprofile\nZur\u00fcckkehrenBusiness & Management Consulting\nCybersecurity\nData & AI\nDigital Transformation\nIT Architecture & Software Development\nProject Management\nSAP\nTestmanagement",
         "Software & Web Development(21)",
         "Sopra Steria Custom Software Solutions GmbH(6)"
-    ]
+    ],
+    "https://ic-resources.com/en/job-search/?ct=Europe": []
 }
