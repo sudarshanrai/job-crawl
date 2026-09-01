@@ -177,6 +177,7 @@
     "https://jobs.zalando.com/en/jobs?category=IT+Consulting+%26+Operations&location=Germany": [
         "IT Techniker*in",
         "IT Techniker*in\n\nIT Consulting & Operations\n\nLahr\n\nView job",
+        "Partner Onboarding Intern (all genders) - ZEOS\n\nIT Consulting & Operations\n\nBerlin\n\nView job",
         "Principal Enterprise Automation Engineer - Logistics Development (all genders)\n\nIT Consulting & Operations\n\nBerlin\n\nView job",
         "Principal Technology Vendor Manager (all genders)\n\nIT Consulting & Operations\n\nBerlin\n\nView job",
         "Senior CRM Process Owner (all genders)\n\nIT Consulting & Operations\n\nBerlin\n\nView job",
@@ -278,7 +279,9 @@
         "Senior Software Engineer - Agent Safety / Evals - AI Foundations",
         "Senior Software Engineer - Agent Safety / Evals - AI Foundations\n\nTech Development \u2022 London, UK; Berlin, Germany; Manchester, UK; Paris, France \u2022 Full time \u2022 Hybrid"
     ],
-    "https://www.annapurnarecruitment.com/jobs/": [],
+    "https://www.annapurnarecruitment.com/jobs/": [
+        "Senior Full Stack Engineer"
+    ],
     "https://agile-robots-se.jobs.personio.de/?language=en": [],
     "https://jobs.takko.com/de-de/suche": [
         "Werkstudent IT- ERP (m/w/d)",
@@ -293,6 +296,7 @@
         "Senior Full-stack Python Engineer (m/f/d) - Network Planning\nBerlin",
         "Senior Software Engineer (m/f/d)\nBerlin",
         "Senior Software Engineer - Mobile/Android (m/f/d)\nBerlin",
+        "Senior Talent Acquisition Partner (m/f/d) - Tech/IT Hiring\nWarsaw",
         "Zendesk Manager / Developer of Solutions for Migrations into Zendesk (m/f/d)\nLisbon"
     ],
     "https://jobs.deel.com/dott?locationIds[]=ff8d304f-2045-4161-aab5-8af878d0a6b8&locationIds[]=210cb33a-45ea-4d8a-b286-6b9ad43fc7d1&locationIds[]=21f52878-fae9-4bbe-ae69-76ef067dbccd#jobs": [
@@ -333,7 +337,6 @@
         "(Senior) Fullstack (m/w/d)",
         "(Senior) Java Testautomatisierer (m/w/d)",
         "(Senior) Software Architekt (m/w/d)",
-        "Consulting Services\n\t\nIT-KonzeptionIT-EntwicklungSoftware EntwicklungStrategische AusrichtungOrganisatorische AufstellungNachhaltige Ver\u00e4nderung",
         "IT-Entwicklung",
         "IT-Konzeption",
         "Software Entwicklung"
@@ -434,11 +437,15 @@
         "Ausbildung zum Kaufmann f\u00fcr IT-Systemmanagement (w/m/d) (Start 2027)",
         "Ausbildung zum Kaufmann f\u00fcr IT-Systemmanagement (w/m/d) (Start 2027)\nBechtle GmbH & Co. KG\nBonn\n25.08.2026",
         "Die Suche in der Kategorie IT ergab 13 Jobs.",
+        "Hilfestellung zu unserer Software bei Fragen und Problemen unserer Kunden per Remote Zugriff",
         "IT-Administrator (m/w/d)",
         "IT-Administrator (m/w/d)\nmedentis medical GmbH\nBad Neuenahr-Ahrweiler\n30.08.2026",
+        "IT-Affinit\u00e4t, die es dir erm\u00f6glicht dich schnell in die Funktionalit\u00e4t unserer Programme einzuarbeiten",
+        "Idealerweise erste Erfahrung im Support oder der Anwendung von technischen Produkten/Software",
         "Mitarbeiter f\u00fcr den Software-Support (m/w/d)",
         "Mitarbeiter f\u00fcr den Software-Support (m/w/d)\nHottgenroth Software AG\nK\u00f6ln, Flammersfeld/Weyerbusch\n20.08.2026",
         "Softwareentwickler (m/w/d) Fullstack f\u00fcr Prozessdigitalisierung und Automatisierung",
-        "Softwareentwickler (m/w/d) Fullstack f\u00fcr Prozessdigitalisierung und Automatisierung\nDMG MORI Ultrasonic Lasertec GmbH\nStipshausen\n19.08.2026"
+        "Softwareentwickler (m/w/d) Fullstack f\u00fcr Prozessdigitalisierung und Automatisierung\nDMG MORI Ultrasonic Lasertec GmbH\nStipshausen\n19.08.2026",
+        "Weiterleitung wiederkehrender Support-Themen an die Software-Entwicklung zur stetigen Verbesserung unserer Software"
     ]
 }
