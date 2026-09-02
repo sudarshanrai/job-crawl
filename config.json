@@ -44,7 +44,8 @@
     "https://careers.soprasteria.de/jobs",
     "https://jobs.check24.de/de/jobs/?query=",
     "https://www.arbeitsagentur.de/jobsuche/suche?suchbereich=jobs&was=Software-Entwickler%2Fin&wo=56068%20Koblenz%20am%20Rhein&umkreis=25&sort=veroeffdatum",
-    "https://www.xn--jobs-fr-koblenz-4vb.com/stellenangebote/?jw_categories=2045"
+    "https://www.xn--jobs-fr-koblenz-4vb.com/stellenangebote/?jw_categories=2045",
+    "https://www.sai360.com/about-us/careers"
   ],
   "gemini_model": "gemini-3.5-flash"
 }
