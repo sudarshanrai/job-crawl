@@ -1,447 +1,1964 @@
 {
-    "https://kleinanzeigendegmbh.careers.hibob.com/jobs?department=266131009": [],
-    "https://www.xn--jobs-fr-koblenz-4vb.com/stellenangebote/?jw_jobname=java": [],
-    "https://careers.telekom.com/de/jobs?search=java": [
-        "Senior Java-Entwickler (m/w/d) Projekt Gigabit",
-        "Java Developer (m/w/d)",
-        "Java-Entwickler (m/w/d)",
-        "Senior Softwareentwickler (m/w/d) Java-Anwendungsentwickler",
-        "Senior Java Software-Architekt (m/w/d)",
-        "Senior Java-Entwickler (m/w/d) Identity & Access Platform",
-        "Werkstudent Softwareentwicklung (m/w/d)",
-        "Senior Java-Entwickler (m/w/d)",
-        "Anwendungsentwickler (m/w/d) mit Angular",
-        "Senior Java-Entwickler (m/w/d) Projekt Atlas",
-        "Lead Java-Entwickler (m/w/d)",
-        "FullStack-Softwareentwickler (m/w/d) Java und Angular",
-        "Senior Fullstack-Entwickler (m/w/d) Java und JavaScript",
-        "Java Backend Entwickler (m/w/d)",
-        "Senior Full-Stack-Entwickler (m/w/d) mit Schwerpunkt Frontend (Senior Anwendungsentwickler - Projekt Gigabit)"
-    ],
-    "https://kleinanzeigendegmbh.careers.hibob.com/jobs": [],
-    "https://www.xn--jobs-fr-koblenz-4vb.com/stellenangebote": [],
-    "https://careers.telekom.com/de/jobs": [
-        "Ausbildung IT-System-Elektroniker*in (m/w/d)",
-        "Ausbildung IT-System-Elektroniker*in (m/w/d)\n\nNetzwerk/Infrastruktur",
-        "Ausbildung IT-System-Elektroniker*in (m/w/d)\n\nNetzwerk/Infrastruktur\n\nG\u00f6ppingen\n\nAusbildung\n\nJobdetails",
-        "Ausbildung IT-System-Elektroniker*in (m/w/d)\n\nNetzwerk/Infrastruktur\n\nW\u00fcrzburg\n\nAusbildung\n\nJobdetails",
-        "Berufsorientierungspraktikum IT-System-Elektroniker*in (m/w/d)",
-        "Berufsorientierungspraktikum IT-System-Elektroniker*in (m/w/d)\n\nNetzwerk/Infrastruktur",
-        "Berufsorientierungspraktikum IT-System-Elektroniker*in (m/w/d)\n\nNetzwerk/Infrastruktur\n\nAngerm\u00fcnde\n\nSch\u00fclerpraktikum\n\nJobdetails",
-        "Berufsorientierungspraktikum IT-System-Elektroniker*in (m/w/d)\n\nNetzwerk/Infrastruktur\n\nG\u00fctersloh\n\nSch\u00fclerpraktikum\n\nJobdetails",
-        "Berufsorientierungspraktikum IT-System-Elektroniker*in (m/w/d)\n\nNetzwerk/Infrastruktur\n\nKoblenz\n\nSch\u00fclerpraktikum\n\nJobdetails",
-        "Berufsorientierungspraktikum IT-System-Elektroniker*in (m/w/d)\n\nNetzwerk/Infrastruktur\n\nSchwabm\u00fcnchen\n\nSch\u00fclerpraktikum\n\nJobdetails"
-    ],
-    "https://jobsformoms.de/de-de/jobs": [],
-    "https://www.7education.com/career": [
-        "It\u2019s more than a new start. \nIt\u2019s the impact you can make.",
-        "You made it"
-    ],
-    "https://cgm.wd3.myworkdayjobs.com/cgm": [
-        "CGM Software RO SRL",
-        "CompuGroup Medical Software GmbH",
-        "Head of Software Development (m/w/d)",
-        "Head of Software Development (m/w/d)\nlocations\nKoblenz | Maria Trost 21\nJR108062CompuGroup Medical Software GmbH",
-        "IT Security Engineer (m/w/d)",
-        "IT Security Engineer (m/w/d)\nlocations\n3 Locations\nJR109923CompuGroup Medical Deutschland AG",
-        "IT-Kaufmann (m/w/d)",
-        "IT-Kaufmann (m/w/d)\nlocations\nKoblenz\nJR110121",
-        "IT-Service-Manager (m/w/d)",
-        "IT-Service-Manager (m/w/d)\nlocations\n2 Locations\nJR110162CompuGroup Medical Deutschland AG",
-        "Infrastructure & Ops Automation Engineer (AI) (2-3 years experience)\nlocations\nIasi\nJR110129CGM Software RO SRL",
-        "Senior IT-Projektmanager (m/w/d)",
-        "Senior IT-Projektmanager (m/w/d)\nlocations\n7 Locations\nJR110098CGM SE & Co. KGaA"
-    ],
-    "https://www.ptc-telematik.de/karriere-jobs/": [
-        "Digitaler Tachograph\n                Remote auslesen, Daten speichern, in der Software auslesen, Dokumentation erstellen,\n                    einfach, praktikabel, gesetzeskonformmehr...",
-        "Senior Softwareentwickler/in (Ingenieur) (m/w/d)",
-        "Senior Softwareentwickler/in (Ingenieur) (m/w/d)\nPTC Telematik",
-        "Senior Softwareentwickler/in (Ingenieur) (m/w/d)\nPTC Telematik\nVollzeit",
-        "Senior Softwareentwickler/in (Ingenieur) (m/w/d)\nPTC Telematik\nVollzeit\nSoftware Developer (w/m/d)\nPTC Telematik\nVollzeit",
-        "Software Developer (w/m/d)",
-        "Software Developer (w/m/d)\nPTC Telematik",
-        "Software Developer (w/m/d)\nPTC Telematik\nVollzeit",
-        "Telematik-Software",
-        "Vertrauen aus einer Hand\t\t\tErfahrung, Software, Apps, Hardware, Einbau vor Ort, umfassender Service u. v. m. \u2013 L\u00f6sungen f\u00fcr Ihre Anspr\u00fcche"
-    ],
-    "https://lumaserv.com/company/career": [
-        "Assistenz Projektmanagement IT & Quality Assurance [gn]",
-        "Assistenz Projektmanagement IT & Quality Assurance [gn]\nKoblenz, Remote\nVollzeit\nFestanstellung",
-        "DevOps Engineer [gn]\nKoblenz, Remote\nVollzeit\nFestanstellung\nIT System Engineer [gn]\nKoblenz, Remote RLP, Remote Hessen, Remote Hamburg\nVollzeit\nFestanstellung",
-        "Drupal Developer / Web Design Freelancer [gn]",
-        "Drupal Developer / Web Design Freelancer [gn]\nRemote RLP\nTeilzeit\nFreelancing",
-        "IT Project Manager [gn]",
-        "IT Project Manager [gn]\nKoblenz, Remote RLP, Remote Hamburg\nVollzeit\nFestanstellung",
-        "IT System Engineer [gn]",
-        "IT System Engineer [gn]\nKoblenz, Remote RLP, Remote Hessen, Remote Hamburg\nVollzeit\nFestanstellung",
-        "Internal IT / Support\n- 1 Position",
-        "Internal IT / Support\n- 1 Position\n1",
-        "Internal IT / Support\n- 1 Position\n1\nWerkstudent - IT-Systemintegration [gn]\nKoblenz, Remote RLP\nTeilzeit\nPraktikum/Werkstudium",
-        "PHP Developer Nextcloud / OSS [gn]",
-        "PHP Developer Nextcloud / OSS [gn]\nKoblenz, Remote RLP\nPart-time\nPermanent employee",
-        "QA /Testing\n- 1 Position\n1\nAssistenz Projektmanagement IT & Quality Assurance [gn]\nKoblenz, Remote\nVollzeit\nFestanstellung",
-        "Software & Operations",
-        "Werkstudent - IT-Systemintegration [gn]",
-        "Werkstudent - IT-Systemintegration [gn]\nKoblenz, Remote RLP\nTeilzeit\nPraktikum/Werkstudium"
-    ],
-    "https://touch.ferchau.com/de/en?type=3&city=Koblenz%2C+Rhineland-Palatinate%2C+Germany%3B50.353121%3B7.594565&rangeAndFaculty%5B0%5D=12004&sortingType=distance&sortingDirection=ASC": [
-        "(Junior) Softwareentwickler (m/w/d) Sondermaschinenbau",
-        "Embedded-Software-Entwickler (m/w/d)",
-        "IT Administrator (m/w/d)",
-        "Java-Softwareentwickler (m/w/d)",
-        "Netzwerktechniker (m/w/d) IT Security",
-        "Senior IT-Servicetechniker (m/w/d)",
-        "Technischer Projektmanager Defence / IT (m/w/d)"
-    ],
-    "https://www.united-coding.com/karriere/": [
-        "Der IT-Partner f\u00fcr Agenturen",
-        "Front-End Entwickler",
-        "Full-Stack Entwickler",
-        "IT-Administrator",
-        "Java Entwickler",
-        "Java-Script Entwickler buchen",
-        "Magento 2 Entwickler",
-        "Mehr als 3 Jahre Erfahrung in Entwurf und Umsetzung von Fullstack-Anwendungen",
-        "Moodle Entwickler",
-        "PHP Entwickler",
-        "Python Entwickler",
-        "React Entwickler",
-        "Shopware Entwickler",
-        "Software Architekt",
-        "Tiefgehende Entwicklungserfahrung in Python (Kenntnisse in Java, C/C++ oder anderen dynamischen Sprachen sind von Vorteil)",
-        "Umfangreiche Kenntnisse in JavaScript, jQuery, compass, CSS3 und Selenium",
-        "Umfangreiche Kenntnisse von Web und Backend Technologien (z. B.: HTTP, AWS, nginx). Kenntnisse in asynchroner Programmierung, asyncio und dem Tornado Webserver sind von Vorteil",
-        "Unser Team in Koblenz sucht dich als Full-Stack-Entwickler (m/w)",
-        "Websysteme und Backend-Entwicklung",
-        "Welchen Entwickler m\u00f6chten Sie buchen?",
-        "\u00dcber welchen Zeitraum m\u00f6chten sie den Entwickler buchen?",
-        "\u201eWir schaffen Bedingungen, in denen sich unsere Mitarbeiter 100 % entfalten k\u00f6nnen \u2013 als Voraussetzung f\u00fcr Software-Entwicklungen h\u00f6chster Qualit\u00e4t.\u201c"
-    ],
-    "https://www.iridium-works.com/en/career": [],
-    "https://www.tomra.com/careers/vacant-positions?country=de": [
-        "Research\nTOMRA Recycling\nFull-time\nSave to favorite\nSoftware Developer - C++*\n\nM\u00fclheim-K\u00e4rlich, RP, Germany\n\nShow more...",
-        "Software Developer - C++*",
-        "The plastic dilemma: Is it recyclable or waste?"
-    ],
-    "https://wearexena.com/jobs/?_market=backend%2Cfrontend%2Cfullstack&_location=berlin%2Cremote%2Cmunich%2Chamburg%2Ccologne%2Cdusseldorf%2Cfrankfurt": [
-        "Backend(38)\nFullstack(17)\nFrontend(16)\nManagement(15)\nData(12)\nXena(6)\nIndividual Contributor(4)\nMobile(3)\nProduct(2)\nDesign(1)",
-        "Berlin\nLead Java Engineer\nRead more",
-        "Berlin\nSenior Frontend Engineer\nRead more",
-        "Berlin\nSoftware Engineer (Rust/Python)\nRead more",
-        "Job types\nBackend(38)\nFullstack(17)\nFrontend(16)\nManagement(15)\nData(12)\nXena(6)\nIndividual Contributor(4)\nMobile(3)\nProduct(2)\nDesign(1)",
-        "Lead Java Engineer",
-        "Remote\nSenior Frontend Engineer (React.js)\nRead more",
-        "Remote\nTech Lead Backend (Kotlin)\nRead more",
-        "Senior Frontend Engineer",
-        "Senior Frontend Engineer (React.js)",
-        "Software Engineer (Rust/Python)",
-        "Tech Lead Backend (Kotlin)"
-    ],
-    "https://reev.com/en/this-is-reev/working-at-reev/#jobs": [],
-    "https://www.7education.com/career#open-positions": [
-        "It\u2019s more than a new start. \nIt\u2019s the impact you can make.",
-        "You made it"
-    ],
-    "https://www.lodige.co.uk/company/about-us/career/#c32422": [
-        "A GOOD #FEELING ABOUT IT.",
-        "A career is more than just a job \u2013 it has to feel right.",
-        "For us, innovation isn\u2019t just a department \u2013 it\u2019s a mindset.",
-        "For us, mechanical engineering is more than just technology \u2013 it is our passion.",
-        "From Paderborn to the world \u2013 it is international diversity that makes all the difference."
-    ],
-    "https://www.discoverinternational.com/job-seekers?joblocation=Germany&p=2": [],
-    "https://www.faktorzehn.com/de/danke-fuer-ihre-bewerbung/": [],
-    "https://schwarz-digits.de/en/jobsearch/hr/full-stack-engineering-lead-supply-chain-management-applications-m-w-d-GT2793": [],
-    "https://jobs.ashbyhq.com/krakentech/135b7374-0c5d-4684-922d-af835a5d1bf7?source=linkedin+application": [
-        "Lead Software Engineer",
-        "Python and Django (or equivalent web framework) web development experience, as you will be asked to work on some full-stack projects",
-        "Writing robust and fault-tolerant software",
-        "Your level will be Senior Software Engineer or above and we expect you to have experience/expertise in the following (in rough priority order):",
-        "Your team will be building and maintaining the backend systems and support site for UK-based clients to support their electricity and gas operations."
-    ],
-    "https://www.annapurnarecruitment.com/job/senior-software-engineer-647609/": [
-        "5+ years of commercial software engineering experience",
-        "Designing, developing and delivering scalable backend services using Java and Kotlin",
-        "Experience building scalable backend or distributed systems",
-        "Frontend experience with React, TypeScript or Node.js would be beneficial but isn\u2019t essential",
-        "JOB SEARCH\nSenior\n \nSoftware\n \nEngineer\n\nPermanent\n\nNegotiable\n\nBerlin",
-        "Senior\n \nSoftware\n \nEngineer",
-        "Senior Full Stack Developer (Python & TypeScript)",
-        "Senior Software Engineer (Java / Kotlin)",
-        "Staff Software Engineer",
-        "Strong Java and Kotlin development experience"
-    ],
-    "https://jd.wd103.myworkdayjobs.com/en-US/Careers_at_JD": [],
-    "https://jobs.zalando.com/en/jobs?category=IT+Consulting+%26+Operations&location=Germany": [
-        "IT Techniker*in",
-        "IT Techniker*in\n\nIT Consulting & Operations\n\nLahr\n\nView job",
-        "Partner Onboarding Intern (all genders) - ZEOS\n\nIT Consulting & Operations\n\nBerlin\n\nView job",
-        "Principal Enterprise Automation Engineer - Logistics Development (all genders)\n\nIT Consulting & Operations\n\nBerlin\n\nView job",
-        "Principal Technology Vendor Manager (all genders)\n\nIT Consulting & Operations\n\nBerlin\n\nView job",
-        "Senior CRM Process Owner (all genders)\n\nIT Consulting & Operations\n\nBerlin\n\nView job",
-        "Tech Consultant - Fulfilment (all genders)\n\nIT Consulting & Operations\n\nBerlin\n\nView job"
-    ],
-    "https://job.takko.com/de/jobs/127332/applied?feedbackToken=90fccff8-41b1-4827-995a-5ca371c0e7f1": [],
-    "https://contextfab.ai/careers": [
-        "03\nBuilt to scale.\n\nIf it won't hold up across sites, we rethink it.",
-        "Software that powers real production lines."
-    ],
-    "https://www.personio.com/careers/5a4d9bca-8c1c-4fd1-98fd-658bf1d16105/apply/": [],
-    "https://flix.careers/job/?jobid=8729404002&gh_src=fc023d502": [],
-    "https://jobs.deel.com/dott/job-details/2d6eaf3d-fcaa-4c08-82d2-db8fd1d218c1/application?source=linkedin": [
-        "Experimenting with new patterns of software engineering with AI systems; and",
-        "Exposure to iOS or backend development",
-        "Work alongside product, design, iOS engineers, and backend engineers to push features from problem clarification all the way to post-release monitoring;"
-    ],
-    "https://www.porsche-digital.hr/en/jobs/backend-engineer#job-application-section": [],
-    "https://www.aptiv.com/en/jobs/search/open-positions/J000701023": [
-        "Senior Robotics Simulation Engineer (f-m-d)\nSoftware Engineering, Wuppertal, North Rhine-Westphalia",
-        "Software & Services",
-        "Software Engineering, Wuppertal, North Rhine-Westphalia",
-        "italiano (IT)"
-    ],
-    "https://careers.canyon.com/search/?q=&searchResultView=LIST": [
-        "IT\nDeutschland\nKoblenz (HQ)\nVollzeit\nHybrid\nUnbefristet",
-        "LEAD IT SYSTEM ENGINEER CORE (M/W/D)",
-        "LEAD IT SYSTEM ENGINEER CORE (M/W/D)\nKoblenz Deutschland\nIT\nDeutschland\nKoblenz (HQ)\nVollzeit\nHybrid\nUnbefristet",
-        "SAP BASIS ADMINISTRATOR (M/F/D)\nKoblenz Deutschland\nIT\nDeutschland\nKoblenz (HQ)\nVollzeit\nHybrid\nUnbefristet"
-    ],
-    "https://job-boards.greenhouse.io/idnow/jobs/4822285101": [
-        "5+ years of professional software development experience with a strong focus on Java.",
-        "Design, develop, and maintain robust Java applications and microservices powering IDnow\u2019s identity verification platform.",
-        "Expertise in Java EE and Spring / Spring Boot (or Play Framework).",
-        "Senior Software Engineer \u2013 Java (f/m/d)",
-        "Senior Software Engineer \u2013 Java (f/m/d)\nBerlin, Berlin, Germany; M\u00fcnchen, Bavaria, Germany",
-        "Senior Software Engineer \u2013 Java (f/m/d)\nBerlin, Berlin, Germany; M\u00fcnchen, Bavaria, Germany\nJoin IDnow"
-    ],
-    "https://job-boards.greenhouse.io/prisma6/jobs/4390154002": [
-        "Experience running software solutions on cloud services, such as AWS;",
-        "Experience with Java and interest in other languages like Kotlin or TypeScript;",
-        "High interest in software craftsmanship and doing things \"right\" from Design Patterns to Security;",
-        "Influence Analysis, Architecture, Deployment, Monitoring, Security, and every other aspect of the software lifecycle;",
-        "Relevant professional experience and track record in software development;",
-        "Software Engineer (m/f/d) - Onsite/Hybrid/Remote (Germany)",
-        "Software Engineer (m/f/d) - Onsite/Hybrid/Remote (Germany)\nLeipzig",
-        "Software Engineer (m/f/d) - Onsite/Hybrid/Remote (Germany)\nLeipzig\nApply"
-    ],
-    "https://jobs.ashbyhq.com/pliant/682e4239-60fd-4e00-b3d3-c310e9787dbd": [
-        "5+ years of relevant experience with Java/Kotlin and Spring Boot",
-        "Businesses such as financial software platforms, ERP providers, and banks that want to launch or enhance their credit card offerings using Pliant\u2019s embedded finance and white-label solutions.",
-        "Collaborate closely with product managers, designers, and frontend engineers in a cross-functional team",
-        "Conceptualize, define and develop our partner and developer experience platform",
-        "Experience using agentic AI in all phases of software development",
-        "Exposure to, and understanding of, frontend development with React",
-        "Software Engineer - Backend - Partner Experience EU/UK remote (m/f/d)",
-        "The opportunity to work in a growing team with challenging responsibilities, owning partner and developer experience"
-    ],
-    "https://www.fourenergy.de/karriereseite/senior-fullstack-m-w-d/": [
-        "(Senior) Fullstack (m/w/d)",
-        "Abgeschlossenes IT-Studium oder vergleichbare Qualifikation.",
-        "Bei der Frontend-Magie bist Du der Superstar und kreierst mit Angular, React, und/oder vue.js beeindruckende interaktive und reaktionsf\u00e4hige Benutzeroberfl\u00e4chen, die den Nutzer zum Staunen bringen.",
-        "Du zauberst mit Java (17+), Spring Boot und Microservices die coolsten Anwendungen aus dem Code-Hut.",
-        "Erfahrung in Java (17+), Spring Boot und Microservices.",
-        "Frontend-Expertise mit Angular, React oder vue.js.",
-        "IT-Entwicklung",
-        "IT-Konzeption",
-        "Mindestens 3 Jahre Erfahrung im Fullstack-Development.",
-        "Software Entwicklung"
-    ],
-    "https://www.discoverinternational.com/job-seekers?joblocation=Europe%2CGermany": [],
-    "https://www.faktorzehn.com/de/karriere/jobs/": [
-        "Stellenanzeige:\n      Senior Softwareentwickler Java (Mensch*)",
-        "Stellenanzeige:\n      Senior Softwareentwickler Java (Mensch*)\n      \n    \n\n    \n      Standorte:\n      K\u00f6ln, M\u00fcnchen\n      \u00b7\n      undefined:\n      Vollzeit\n    \n\n    Mehr erfahren",
-        "Stellenanzeige:\n      Senior Softwareentwickler Java (Mensch*)\n      \n    \n\n    \n      Standorte:\n      Wien\n      \u00b7\n      undefined:\n      Vollzeit\n    \n\n    Mehr erfahren",
-        "Stellenanzeige:\n      Softwareentwickler Java (Mensch*)",
-        "Stellenanzeige:\n      Softwareentwickler Java (Mensch*)\n      \n    \n\n    \n      Standorte:\n      K\u00f6ln, M\u00fcnchen\n      \u00b7\n      undefined:\n      Vollzeit\n    \n\n    Mehr erfahren",
-        "Stellenanzeige:\n      Softwareentwickler Java (Mensch*)\n      \n    \n\n    \n      Standorte:\n      Wien\n      \u00b7\n      undefined:\n      Vollzeit\n    \n\n    Mehr erfahren",
-        "Stellenanzeige:\nDevOps Engineer / IT Consultant (Mensch*) f\u00fcr Kundenprojekte",
-        "Stellenanzeige:\nDevOps Engineer / IT Consultant (Mensch*) f\u00fcr Kundenprojekte\nStandorte:\nK\u00f6ln, M\u00fcnchen \u00b7\nundefined:\nVollzeit\nMehr erfahren",
-        "Stellenanzeige:\nSenior IT-Projektmanager im Versicherungsumfeld (Mensch*)",
-        "Stellenanzeige:\nSenior IT-Projektmanager im Versicherungsumfeld (Mensch*)\nStandorte:\nK\u00f6ln, M\u00fcnchen \u00b7\nundefined:\nVollzeit\nMehr erfahren"
-    ],
-    "https://schwarz-digits.de/en/jobsearch?includeAllLanguages=true": [
-        "(Junior) Consultant IT Master Data Manager SAP (m/w/d)",
-        "(Junior) Consultant IT Master Data Manager SAP (m/w/d)\n\nBerufserfahrene | Bad Friedrichshall",
-        "(Junior) Frontend Engineer - Vue.js & Design System (m/w/d)",
-        "(Junior) Frontend Engineer - Vue.js & Design System (m/w/d)\n\nBerufserfahrene | Bad Friedrichshall",
-        "(Junior) IT Business Consultant - Finance & Administration (m/w/d)",
-        "(Junior) IT Business Consultant - Finance & Administration (m/w/d)\n\nBerufserfahrene | Heilbronn",
-        "(Junior) IT Business Consultant Payment Solutions (m/w/d)",
-        "(Junior) IT Business Consultant Payment Solutions (m/w/d)\n\nBerufseinsteiger | Bad Friedrichshall",
-        "(Junior) IT Operations & Event Specialist f\u00fcr IPAI (m/w/d)",
-        "(Junior) IT Operations & Event Specialist f\u00fcr IPAI (m/w/d)\n\nBerufserfahrene | Heilbronn"
-    ],
-    "https://jobs.ashbyhq.com/krakentech?locationId=ab3276ac-d15d-4c5e-8f57-4d8eb3c54af5&source=linkedin%20application": [
-        "Lead Software Engineer - Agent Safety",
-        "Lead Software Engineer - Agent Safety\n\nTech Development \u2022 London, UK; Berlin, Germany; Manchester, UK; Paris, France \u2022 Full time \u2022 Hybrid",
-        "Senior Software Engineer - Agent Safety / Evals - AI Foundations",
-        "Senior Software Engineer - Agent Safety / Evals - AI Foundations\n\nTech Development \u2022 London, UK; Berlin, Germany; Manchester, UK; Paris, France \u2022 Full time \u2022 Hybrid"
-    ],
-    "https://www.annapurnarecruitment.com/jobs/": [
-        "Senior Full Stack Engineer"
-    ],
-    "https://agile-robots-se.jobs.personio.de/?language=en": [],
-    "https://jobs.takko.com/de-de/suche": [
-        "Werkstudent IT- ERP (m/w/d)",
-        "Werkstudent IT- ERP (m/w/d)\n\nZentrale Telgte, Alfred-Krupp-Str. 21\n\nTeilzeit\n\nStudenten"
-    ],
-    "https://www.personio.com/about-personio/careers/#see-our-open-roles": [],
-    "https://flix.careers/jobs/": [
-        "Senior Full-Stack Kotlin Engineer (Freelance/Service Agreement)\nKrak\u00f3w",
-        "Senior Full-Stack Kotlin Engineer (Freelance/Service Agreement)\nWarsaw",
-        "Senior Full-Stack Kotlin Engineer (Freelance/Service Agreement)\nWroclaw",
-        "Senior Full-Stack Kotlin Engineer (m/f/d) - Station Management & Inventory\nBerlin",
-        "Senior Full-stack Python Engineer (m/f/d) - Network Planning\nBerlin",
-        "Senior Software Engineer (m/f/d)\nBerlin",
-        "Senior Software Engineer - Mobile/Android (m/f/d)\nBerlin",
-        "Senior Talent Acquisition Partner (m/f/d) - Tech/IT Hiring\nWarsaw",
-        "Zendesk Manager / Developer of Solutions for Migrations into Zendesk (m/f/d)\nLisbon"
-    ],
-    "https://jobs.deel.com/dott?locationIds[]=ff8d304f-2045-4161-aab5-8af878d0a6b8&locationIds[]=210cb33a-45ea-4d8a-b286-6b9ad43fc7d1&locationIds[]=21f52878-fae9-4bbe-ae69-76ef067dbccd#jobs": [
-        "Senior Backend Engineer (all genders) - Amsterdam\n\nAmsterdam\n\nFull-time\n\n\u20ac66,000 EUR - \u20ac85,000 EUR",
-        "Senior Backend Engineer (all genders) - AmsterdamAmsterdamFull-time\u20ac66,000 EUR - \u20ac85,000 EUR"
-    ],
-    "https://www.aptiv.com/en/jobs/search?country=Germany": [
-        "Machine Learning Engineer\nSoftware Engineering, Landeshauptstadt M\u00fcnchen, Germany",
-        "Senior AI/ML Data Engineer \u2013 Robotics & Drones (f/m/d)\nSoftware Engineering, Wuppertal, North Rhine-Westphalia, Germany",
-        "Senior Edge AI & Robotics Engineer (f-m-d)\nSoftware Engineering, Wuppertal, North Rhine-Westphalia, Germany",
-        "Senior Robotics Simulation Engineer (f-m-d)\nSoftware Engineering, Wuppertal, North Rhine-Westphalia, Germany",
-        "Software & Services",
-        "italiano (IT)"
-    ],
-    "https://careers.canyon.com/search/?q=&searchResultView=LIST&markerViewed=&carouselIndex=&facetFilters=%7B%22sfstd_jobLocation_obj%22%3A%5B%22Koblenz+%28HQ%29%22%2C%22Koblenz+%28Factory%29%22%2C%22Koblenz+%28Home%29%22%2C%22M%C3%BCnchen%22%2C%22Amsterdam%22%2C%22Eindhoven%22%5D%7D&pageNumber=0": [
-        "DevOps ENGINEER (M/F/D)\nMehrere Orte\nIT\nDeutschland, Niederlande, Spanien\nAmsterdam, Barcelona, Koblenz (HQ)\nVollzeit\nHybrid\nUnbefristet",
-        "IT\nDeutschland\nKoblenz (HQ)\nVollzeit\nHybrid\nUnbefristet",
-        "IT\nDeutschland, Niederlande, Spanien\nAmsterdam, Barcelona, Koblenz (HQ)\nVollzeit\nHybrid\nUnbefristet",
-        "LEAD IT SYSTEM ENGINEER CORE (M/W/D)",
-        "LEAD IT SYSTEM ENGINEER CORE (M/W/D)\nKoblenz Deutschland\nIT\nDeutschland\nKoblenz (HQ)\nVollzeit\nHybrid\nUnbefristet",
-        "SAP BASIS ADMINISTRATOR (M/F/D)\nKoblenz Deutschland\nIT\nDeutschland\nKoblenz (HQ)\nVollzeit\nHybrid\nUnbefristet"
-    ],
-    "https://job-boards.eu.greenhouse.io/idnow?offices%5B%5D=4016319101&offices%5B%5D=4016320101&offices%5B%5D=4016436101&offices%5B%5D=4016321101": [
-        "General & Administration / IT & Security & Audit",
-        "IT Integration Engineer (f/m/d)\n\nBerlin, Berlin, Germany; M\u00fcnchen, Bavaria, Germany",
-        "IT System Administrator (f/m/d)\n\nRennes, Ille-et-Vilaine, France",
-        "Internal IT",
-        "Job\n\n\n\n\nIT Integration Engineer (f/m/d)\n\nBerlin, Berlin, Germany; M\u00fcnchen, Bavaria, Germany\n\n\n\n\nIT System Administrator (f/m/d)\n\nRennes, Ille-et-Vilaine, France",
-        "Senior Software Engineer \u2013 Java (f/m/d)\n\nBerlin, Berlin, Germany; M\u00fcnchen, Bavaria, Germany"
-    ],
-    "https://job-boards.greenhouse.io/prisma6": [
-        "Engineering\n\nJob\n\n\n\n\nSoftware Engineer (m/f/d) - Onsite/Hybrid/Remote (Germany)\n\nLeipzig",
-        "Engineering\n\nJob\n\n\n\n\nSoftware Engineer (m/f/d) - Onsite/Hybrid/Remote (Germany)\n\nLeipzig\n\nTalent Community\n\nJob\n\n\n\n\nTalent Community (m/f/d)\n\nLeipzig",
-        "Job\n\n\n\n\nSoftware Engineer (m/f/d) - Onsite/Hybrid/Remote (Germany)\n\nLeipzig",
-        "Software Engineer (m/f/d) - Onsite/Hybrid/Remote (Germany)\n\nLeipzig"
-    ],
-    "https://www.fourenergy.de/job-opportunities/": [
-        "(Senior) Fullstack (m/w/d)",
-        "(Senior) Java Testautomatisierer (m/w/d)",
-        "(Senior) Software Architekt (m/w/d)",
-        "IT-Entwicklung",
-        "IT-Konzeption",
-        "Software Entwicklung"
-    ],
-    "https://pointsharp.jobs.personio.de/?language=en": [
-        "Product Development\n- 2 positions\n2\nSenior Java Developer\nDE- Karlsruhe Office, DE - Remote Germany\nFull-time\nPermanent employee\nUX Designer\nSE- Stockholm Office\nFull-time\nPermanent employee",
-        "Senior Java Developer",
-        "Senior Java Developer\nDE- Karlsruhe Office, DE - Remote Germany\nFull-time\nPermanent employee",
-        "Senior Java Developer\nDE- Karlsruhe Office, DE - Remote Germany\nFull-time\nPermanent employee\nUX Designer\nSE- Stockholm Office\nFull-time\nPermanent employee"
-    ],
-    "https://jobs.ashbyhq.com/pliant": [
-        "(Senior) Software Engineer - Backend - Growth *EU/UK remote* (m/f/d)",
-        "(Senior) Software Engineer - Backend - Growth *EU/UK remote* (m/f/d)\n\nEngineering \u2022 Remote \u2022 Full time \u2022 Remote",
-        "Engineering Manager - Developer Experience *EU/UK remote* (m/f/d)",
-        "Engineering Manager - Developer Experience *EU/UK remote* (m/f/d)\n\nEngineering \u2022 Remote \u2022 Full time \u2022 Remote",
-        "Senior Software Engineer - AI Experience EU/UK remote (m/f/d)",
-        "Senior Software Engineer - AI Experience EU/UK remote (m/f/d)\n\nEngineering \u2022 Remote \u2022 Full time \u2022 Remote",
-        "Senior Software Engineer - Backend - Card & Transaction Platform *EU/UK remote* (m/f/d)",
-        "Senior Software Engineer - Backend - Card & Transaction Platform *EU/UK remote* (m/f/d)\n\nEngineering \u2022 Remote \u2022 Full time \u2022 Remote",
-        "Software Engineer - Backend - Partner Experience EU/UK remote (m/f/d)",
-        "Software Engineer - Backend - Partner Experience EU/UK remote (m/f/d)\n\nEngineering \u2022 Remote \u2022 Full time \u2022 Remote",
-        "Software Engineer - Backend/Funds Transfer *EU/UK remote* (m/f/d)",
-        "Software Engineer - Backend/Funds Transfer *EU/UK remote* (m/f/d)\n\nEngineering \u2022 Remote \u2022 Full time \u2022 Remote",
-        "Software Engineer - Mobile *EU/UK remote* (m/f/d)",
-        "Software Engineer - Mobile *EU/UK remote* (m/f/d)\n\nEngineering \u2022 Remote \u2022 Full time \u2022 Remote"
-    ],
-    "https://jobs.pwc.de/de/de/search-results": [
-        "Jetzt bewerben\nManager Deals IT Solutions (w/m/d)",
-        "Jetzt bewerben\nSenior Consultant Deals IT Solutions (w/m/d)",
-        "Manager Deals IT Solutions (w/m/d)",
-        "Save Manager Deals IT Solutions (w/m/d) 2549",
-        "Save Senior Consultant Deals IT Solutions (w/m/d) 2548",
-        "Senior Consultant Deals IT Solutions (w/m/d)"
-    ],
-    "https://jobs.check24.de/de/jobs/?query=": [
-        "(Junior) Full-Stack Entwickler (m/w/d) AI & Digital Innovation Reise",
-        "(Junior) Software Entwickler (m/w/d)",
-        "(Junior) Softwareentwickler (m/w/d) AI Forge",
-        "(Junior) Softwareentwickler (m/w/d) CTO Taskforce Team",
-        "(Junior) Softwareentwickler (m/w/d) in der Reise CTO Taskforce",
-        "Ausbildung zum IT Fachinformatiker (m/w/d) Anwendungsentwicklung - 2026",
-        "Du hast sehr gute Kenntnisse in der Softwareentwicklung von Webapplikationen mit Python (Django als Backend) und React/Typescript (Frontend)",
-        "Eigeninitiative und Ownership: Du hinterfragst Dinge, setzt um und willst sehen, wie Deine Software live geht",
-        "Eine Programmier- bzw. Scriptsprache (Java, TypeScript, Python, Golang, C#, etc.) beherrschst Du sicher",
-        "Erste Programmierkenntnisse\u00a0in mindestens einer objektorientierten Programmiersprache wie z.B. mit C#, Java, PHP und/oder Erfahrung im Erstellen von Homepages oder Mobile Apps",
-        "Full-Stack\u202fEntwickler (m/w/d)\u202f\u2013 AI & Digital Innovation Explorer",
-        "Full-Stack\u202fEntwickler (m/w/d)\u202f\u2013 Fokus\u202fBackend Explorer",
-        "Full-Stack\u202fEntwickler (m/w/d)\u202f\u2013 Fokus\u202fFrontend Explorer",
-        "Fullstack Mindset: Du kannst Dich daf\u00fcr begeistern mit neuen Technologien End-to-End Features umzusetzen. Du musst nicht alle Technologien beherrschen, Du musst jedoch bereit sein\u00a0zu lernen.",
-        "Fullstack Softwareentwickler (m/w/d) HR-Automation",
-        "Interdisziplin\u00e4res Arbeiten: Du bringst ein technisches Grundverst\u00e4ndnis mit und hast Lust, eng mit Produktmanagement, IT, Data Science und der Gesch\u00e4ftsf\u00fchrung zusammenzuarbeiten",
-        "Mehrj\u00e4hrige Erfahrung in der Backend\u2011Entwicklung mit PHP und Go sowie praktische Kenntnisse in Next.js/React",
-        "Mehrj\u00e4hrige Erfahrung in der Frontend\u2011Entwicklung mit React/Next.js sowie fundierte Kenntnisse in PHP und/oder Go f\u00fcr Backend\u2011Services",
-        "Praktische Erfahrung: In mindestens einer Programmier- oder Skriptsprache (Python, Golang, Java, PHP, C#, etc.) sowie in Linux/DevOps verf\u00fcgst Du bereits \u00fcber gute Kenntnisse",
-        "Sehr erfolgreich abgeschlossenes Studium im IT-Bereich oder eine sehr erfolgreich abgeschlossene Ausbildung als Fachinformatiker f\u00fcr Anwendungsentwicklung",
-        "Sehr gro\u00dfe Begeisterung f\u00fcr IT, Internet-Themen und digitale Trends",
-        "Sehr gut abgeschlossenes Studium mit wirtschaftswissenschaftlicher, mathematisch-technischer oder IT-Ausrichtung bzw. eines anderen quantitativ ausgerichteten Studienganges",
-        "Sehr guter Schulabschluss\u00a0mit\u00a0sehr guten Noten\u00a0in den technischen / naturwissenschaftlichen F\u00e4chern oder hast Du bereits ein IT-Studium begonnen und m\u00f6chtest zu einer Ausbildung wechseln?",
-        "Sehr gutes Beherrschen mindestens einer Programmier- bzw. Scriptsprache (PHP, Python, Golang, Java, C#, etc.)",
-        "Sicherer Umgang mit JavaScript/TypeScript, responsivem Design und UI/UX\u2011Prinzipien; Erfahrung mit API\u2011Design und Datenbankanbindungen",
-        "Software Engineering",
-        "Verst\u00e4ndnis f\u00fcr sauberen, wartbaren Code und grundlegende Software-Engineering-Prinzipien"
-    ],
-    "https://careers.soprasteria.de/jobs": [
-        "ISS Software GmbH(6)",
-        "IT Architecture & Software Development",
-        "IT Architecture(9)",
-        "IT Service Management(8)",
-        "Jobprofile\nZur\u00fcckkehrenBusiness & Management Consulting\nCybersecurity\nData & AI\nDigital Transformation\nIT Architecture & Software Development\nProject Management\nSAP\nTestmanagement",
-        "Software & Web Development(21)",
-        "Sopra Steria Custom Software Solutions GmbH(6)"
-    ],
-    "https://ic-resources.com/en/job-search/?ct=Europe": [],
-    "https://www.arbeitsagentur.de/jobsuche/suche?suchbereich=jobs&was=Software-Entwickler%2Fin&wo=56068%20Koblenz%20am%20Rhein&umkreis=25&sort=veroeffdatum": [
-        "10: Java-Softwareentwickler (m/w/d) bei FERCHAU GmbH Niederlassung Koblenz",
-        "11: PHP Developer Nextcloud / OSS [gn] bei LUMASERV GmbH",
-        "13: Developer Dashboards (m/w/d) bei IABG Industrieanlagen Betriebs-GmbH",
-        "14: Software Engineering Manager (m/f/d) bei CompuGroup Medical SE & Co. KGaA",
-        "15: Softwareentwickler (m/w/d) bei PureLoX Solutions GmbH",
-        "18: WEB-SOFTWAREENTWICKLER m/w/d bei prosozial GmbH",
-        "19 Jobs f\u00fcr Software-Entwickler/in in 56068 Koblenz am Rhein\n| Jobsuche der BA",
-        "19: Softwareentwickler Delphi f\u00fcr Reha IT (m/w/d) bei CompuGroup Medical SE & Co. KGaA",
-        "1: (Junior) Softwareentwickler (m/w/d) Sondermaschinenbau bei FERCHAU GmbH Niederlassung Koblenz",
-        "2: iOS Developer (m/w/d) - Hybrid - Remote bei Docutain",
-        "3: Software-Tester Embedded Systeme (m/w/d) bei KBL GmbH",
-        "4: Softwareentwickler - Software Engineer (m/w/d) bei CGM",
-        "5: Softwareentwickler - KI, Fullstack (m/w/d) bei CGM",
-        "6: Softwareentwickler (m/w/d) bei CGM",
-        "7: Softwareentwickler - Technical Leader (m/w/d) bei CGM",
-        "8: Software Engineer - Vice President Software Development (m/f/d) bei CGM",
-        "9: Software Engineer - C++, Multithreading (m/f/d) bei CGM",
-        "Net Softwareentwickler/in2",
-        "Python Softwareentwickler/in2"
-    ],
-    "https://www.xn--jobs-fr-koblenz-4vb.com/stellenangebote/?jw_categories=2045": [
-        "Ausbildung - Kaufmann/Kauffrau f\u00fcr Dialogmarketing (m/w/d)\nHottgenroth Software AG\nK\u00f6ln, Magdeburg, Flammersfeld/Weyerbusch\n13.08.2026",
-        "Ausbildung zum Fachinformatiker f\u00fcr Systemintegration (w/m/d) (Start 2027)\nBechtle IT-Systemhaus GmbH & Co. KG\nSiegen\n14.08.2026",
-        "Ausbildung zum Kaufmann f\u00fcr IT-Systemmanagement (w/m/d) (Start 2027)",
-        "Ausbildung zum Kaufmann f\u00fcr IT-Systemmanagement (w/m/d) (Start 2027)\nBechtle GmbH & Co. KG\nBonn\n25.08.2026",
-        "Die Suche in der Kategorie IT ergab 11 Jobs.",
-        "IT-Administrator (m/w/d)",
-        "IT-Administrator (m/w/d)\nmedentis medical GmbH\nBad Neuenahr-Ahrweiler\n30.08.2026",
-        "Mitarbeiter f\u00fcr den Software-Support (m/w/d)",
-        "Mitarbeiter f\u00fcr den Software-Support (m/w/d)\nHottgenroth Software AG\nK\u00f6ln, Flammersfeld/Weyerbusch\n20.08.2026",
-        "Softwareentwickler (m/w/d) Fullstack f\u00fcr Prozessdigitalisierung und Automatisierung",
-        "Softwareentwickler (m/w/d) Fullstack f\u00fcr Prozessdigitalisierung und Automatisierung\nDMG MORI Ultrasonic Lasertec GmbH\nStipshausen\n19.08.2026",
-        "Werkstudent Abteilungs- und IT-Projektmanagement (m/w/d)",
-        "Werkstudent Abteilungs- und IT-Projektmanagement (m/w/d)\nBWI GmbH\nMeckenheim\n27.08.2026"
-    ]
+    "_version": 2,
+    "urls": {
+        "https://kleinanzeigendegmbh.careers.hibob.com/jobs?department=266131009": {
+            "jobs": {}
+        },
+        "https://www.xn--jobs-fr-koblenz-4vb.com/stellenangebote/?jw_jobname=java": {
+            "jobs": {}
+        },
+        "https://careers.telekom.com/de/jobs?search=java": {
+            "jobs": {
+                "senior java-entwickler (m/w/d) projekt gigabit": {
+                    "title": "Senior Java-Entwickler (m/w/d) Projekt Gigabit",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "java developer (m/w/d)": {
+                    "title": "Java Developer (m/w/d)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "java-entwickler (m/w/d)": {
+                    "title": "Java-Entwickler (m/w/d)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "senior softwareentwickler (m/w/d) java-anwendungsentwickler": {
+                    "title": "Senior Softwareentwickler (m/w/d) Java-Anwendungsentwickler",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "senior java software-architekt (m/w/d)": {
+                    "title": "Senior Java Software-Architekt (m/w/d)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "senior java-entwickler (m/w/d) identity & access platform": {
+                    "title": "Senior Java-Entwickler (m/w/d) Identity & Access Platform",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "werkstudent softwareentwicklung (m/w/d)": {
+                    "title": "Werkstudent Softwareentwicklung (m/w/d)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "senior java-entwickler (m/w/d)": {
+                    "title": "Senior Java-Entwickler (m/w/d)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "anwendungsentwickler (m/w/d) mit angular": {
+                    "title": "Anwendungsentwickler (m/w/d) mit Angular",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "senior java-entwickler (m/w/d) projekt atlas": {
+                    "title": "Senior Java-Entwickler (m/w/d) Projekt Atlas",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "lead java-entwickler (m/w/d)": {
+                    "title": "Lead Java-Entwickler (m/w/d)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "fullstack-softwareentwickler (m/w/d) java und angular": {
+                    "title": "FullStack-Softwareentwickler (m/w/d) Java und Angular",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "senior fullstack-entwickler (m/w/d) java und javascript": {
+                    "title": "Senior Fullstack-Entwickler (m/w/d) Java und JavaScript",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "java backend entwickler (m/w/d)": {
+                    "title": "Java Backend Entwickler (m/w/d)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "senior full-stack-entwickler (m/w/d) mit schwerpunkt frontend (senior anwendungsentwickler - projekt gigabit)": {
+                    "title": "Senior Full-Stack-Entwickler (m/w/d) mit Schwerpunkt Frontend (Senior Anwendungsentwickler - Projekt Gigabit)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                }
+            }
+        },
+        "https://kleinanzeigendegmbh.careers.hibob.com/jobs": {
+            "jobs": {}
+        },
+        "https://www.xn--jobs-fr-koblenz-4vb.com/stellenangebote": {
+            "jobs": {}
+        },
+        "https://careers.telekom.com/de/jobs": {
+            "jobs": {
+                "ausbildung it-system-elektroniker*in (m/w/d)": {
+                    "title": "Ausbildung IT-System-Elektroniker*in (m/w/d)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:40.125440+00:00"
+                },
+                "ausbildung it-system-elektroniker*in (m/w/d) netzwerk/infrastruktur": {
+                    "title": "Ausbildung IT-System-Elektroniker*in (m/w/d)\n\nNetzwerk/Infrastruktur",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "ausbildung it-system-elektroniker*in (m/w/d) netzwerk/infrastruktur g\u00f6ppingen ausbildung jobdetails": {
+                    "title": "Ausbildung IT-System-Elektroniker*in (m/w/d)\n\nNetzwerk/Infrastruktur\n\nG\u00f6ppingen\n\nAusbildung\n\nJobdetails",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "ausbildung it-system-elektroniker*in (m/w/d) netzwerk/infrastruktur w\u00fcrzburg ausbildung jobdetails": {
+                    "title": "Ausbildung IT-System-Elektroniker*in (m/w/d)\n\nNetzwerk/Infrastruktur\n\nW\u00fcrzburg\n\nAusbildung\n\nJobdetails",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "berufsorientierungspraktikum it-system-elektroniker*in (m/w/d)": {
+                    "title": "Berufsorientierungspraktikum IT-System-Elektroniker*in (m/w/d)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:40.125440+00:00"
+                },
+                "berufsorientierungspraktikum it-system-elektroniker*in (m/w/d) netzwerk/infrastruktur": {
+                    "title": "Berufsorientierungspraktikum IT-System-Elektroniker*in (m/w/d)\n\nNetzwerk/Infrastruktur",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "berufsorientierungspraktikum it-system-elektroniker*in (m/w/d) netzwerk/infrastruktur angerm\u00fcnde sch\u00fclerpraktikum jobdetails": {
+                    "title": "Berufsorientierungspraktikum IT-System-Elektroniker*in (m/w/d)\n\nNetzwerk/Infrastruktur\n\nAngerm\u00fcnde\n\nSch\u00fclerpraktikum\n\nJobdetails",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "berufsorientierungspraktikum it-system-elektroniker*in (m/w/d) netzwerk/infrastruktur g\u00fctersloh sch\u00fclerpraktikum jobdetails": {
+                    "title": "Berufsorientierungspraktikum IT-System-Elektroniker*in (m/w/d)\n\nNetzwerk/Infrastruktur\n\nG\u00fctersloh\n\nSch\u00fclerpraktikum\n\nJobdetails",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "berufsorientierungspraktikum it-system-elektroniker*in (m/w/d) netzwerk/infrastruktur koblenz sch\u00fclerpraktikum jobdetails": {
+                    "title": "Berufsorientierungspraktikum IT-System-Elektroniker*in (m/w/d)\n\nNetzwerk/Infrastruktur\n\nKoblenz\n\nSch\u00fclerpraktikum\n\nJobdetails",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "berufsorientierungspraktikum it-system-elektroniker*in (m/w/d) netzwerk/infrastruktur schwabm\u00fcnchen sch\u00fclerpraktikum jobdetails": {
+                    "title": "Berufsorientierungspraktikum IT-System-Elektroniker*in (m/w/d)\n\nNetzwerk/Infrastruktur\n\nSchwabm\u00fcnchen\n\nSch\u00fclerpraktikum\n\nJobdetails",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                }
+            }
+        },
+        "https://jobsformoms.de/de-de/jobs": {
+            "jobs": {}
+        },
+        "https://www.7education.com/career": {
+            "jobs": {
+                "it\u2019s more than a new start. it\u2019s the impact you can make.": {
+                    "title": "It\u2019s more than a new start. \nIt\u2019s the impact you can make.",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "you made it": {
+                    "title": "You made it",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                }
+            }
+        },
+        "https://cgm.wd3.myworkdayjobs.com/cgm": {
+            "jobs": {
+                "cgm software ro srl": {
+                    "title": "CGM Software RO SRL",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:05:05.909239+00:00"
+                },
+                "compugroup medical software gmbh": {
+                    "title": "CompuGroup Medical Software GmbH",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:05:05.909239+00:00"
+                },
+                "head of software development (m/w/d)": {
+                    "title": "Head of Software Development (m/w/d)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:05:05.909239+00:00"
+                },
+                "head of software development (m/w/d) locations koblenz | maria trost 21 jr108062compugroup medical software gmbh": {
+                    "title": "Head of Software Development (m/w/d)\nlocations\nKoblenz | Maria Trost 21\nJR108062CompuGroup Medical Software GmbH",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "it security engineer (m/w/d)": {
+                    "title": "IT Security Engineer (m/w/d)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:05:05.909239+00:00"
+                },
+                "it security engineer (m/w/d) locations 3 locations jr109923compugroup medical deutschland ag": {
+                    "title": "IT Security Engineer (m/w/d)\nlocations\n3 Locations\nJR109923CompuGroup Medical Deutschland AG",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "it-kaufmann (m/w/d)": {
+                    "title": "IT-Kaufmann (m/w/d)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:05:05.909239+00:00"
+                },
+                "it-kaufmann (m/w/d) locations koblenz jr110121": {
+                    "title": "IT-Kaufmann (m/w/d)\nlocations\nKoblenz\nJR110121",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "it-service-manager (m/w/d)": {
+                    "title": "IT-Service-Manager (m/w/d)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:05:05.909239+00:00"
+                },
+                "it-service-manager (m/w/d) locations 2 locations jr110162compugroup medical deutschland ag": {
+                    "title": "IT-Service-Manager (m/w/d)\nlocations\n2 Locations\nJR110162CompuGroup Medical Deutschland AG",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "infrastructure & ops automation engineer (ai) (2-3 years experience) locations iasi jr110129cgm software ro srl": {
+                    "title": "Infrastructure & Ops Automation Engineer (AI) (2-3 years experience)\nlocations\nIasi\nJR110129CGM Software RO SRL",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "senior it-projektmanager (m/w/d)": {
+                    "title": "Senior IT-Projektmanager (m/w/d)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:05:05.909239+00:00"
+                },
+                "senior it-projektmanager (m/w/d) locations 7 locations jr110098cgm se & co. kgaa": {
+                    "title": "Senior IT-Projektmanager (m/w/d)\nlocations\n7 Locations\nJR110098CGM SE & Co. KGaA",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                }
+            }
+        },
+        "https://www.ptc-telematik.de/karriere-jobs/": {
+            "jobs": {
+                "digitaler tachograph remote auslesen, daten speichern, in der software auslesen, dokumentation erstellen, einfach, praktikabel, gesetzeskonformmehr...": {
+                    "title": "Digitaler Tachograph\n                Remote auslesen, Daten speichern, in der Software auslesen, Dokumentation erstellen,\n                    einfach, praktikabel, gesetzeskonformmehr...",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "senior softwareentwickler/in (ingenieur) (m/w/d)": {
+                    "title": "Senior Softwareentwickler/in (Ingenieur) (m/w/d)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:05:31.905363+00:00"
+                },
+                "senior softwareentwickler/in (ingenieur) (m/w/d) ptc telematik": {
+                    "title": "Senior Softwareentwickler/in (Ingenieur) (m/w/d)\nPTC Telematik",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "senior softwareentwickler/in (ingenieur) (m/w/d) ptc telematik vollzeit": {
+                    "title": "Senior Softwareentwickler/in (Ingenieur) (m/w/d)\nPTC Telematik\nVollzeit",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "senior softwareentwickler/in (ingenieur) (m/w/d) ptc telematik vollzeit software developer (w/m/d) ptc telematik vollzeit": {
+                    "title": "Senior Softwareentwickler/in (Ingenieur) (m/w/d)\nPTC Telematik\nVollzeit\nSoftware Developer (w/m/d)\nPTC Telematik\nVollzeit",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "software developer (w/m/d)": {
+                    "title": "Software Developer (w/m/d)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:05:31.905363+00:00"
+                },
+                "software developer (w/m/d) ptc telematik": {
+                    "title": "Software Developer (w/m/d)\nPTC Telematik",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "software developer (w/m/d) ptc telematik vollzeit": {
+                    "title": "Software Developer (w/m/d)\nPTC Telematik\nVollzeit",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "telematik-software": {
+                    "title": "Telematik-Software",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:05:31.905363+00:00"
+                },
+                "vertrauen aus einer hand erfahrung, software, apps, hardware, einbau vor ort, umfassender service u. v. m. \u2013 l\u00f6sungen f\u00fcr ihre anspr\u00fcche": {
+                    "title": "Vertrauen aus einer Hand\t\t\tErfahrung, Software, Apps, Hardware, Einbau vor Ort, umfassender Service u. v. m. \u2013 L\u00f6sungen f\u00fcr Ihre Anspr\u00fcche",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                }
+            }
+        },
+        "https://lumaserv.com/company/career": {
+            "jobs": {
+                "assistenz projektmanagement it & quality assurance [gn]": {
+                    "title": "Assistenz Projektmanagement IT & Quality Assurance [gn]",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:05:40.539066+00:00"
+                },
+                "assistenz projektmanagement it & quality assurance [gn] koblenz, remote vollzeit festanstellung": {
+                    "title": "Assistenz Projektmanagement IT & Quality Assurance [gn]\nKoblenz, Remote\nVollzeit\nFestanstellung",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "devops engineer [gn] koblenz, remote vollzeit festanstellung it system engineer [gn] koblenz, remote rlp, remote hessen, remote hamburg vollzeit festanstellung": {
+                    "title": "DevOps Engineer [gn]\nKoblenz, Remote\nVollzeit\nFestanstellung\nIT System Engineer [gn]\nKoblenz, Remote RLP, Remote Hessen, Remote Hamburg\nVollzeit\nFestanstellung",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "drupal developer / web design freelancer [gn]": {
+                    "title": "Drupal Developer / Web Design Freelancer [gn]",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:05:40.539066+00:00"
+                },
+                "drupal developer / web design freelancer [gn] remote rlp teilzeit freelancing": {
+                    "title": "Drupal Developer / Web Design Freelancer [gn]\nRemote RLP\nTeilzeit\nFreelancing",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "it project manager [gn]": {
+                    "title": "IT Project Manager [gn]",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:05:40.539066+00:00"
+                },
+                "it project manager [gn] koblenz, remote rlp, remote hamburg vollzeit festanstellung": {
+                    "title": "IT Project Manager [gn]\nKoblenz, Remote RLP, Remote Hamburg\nVollzeit\nFestanstellung",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "it system engineer [gn]": {
+                    "title": "IT System Engineer [gn]",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:05:40.539066+00:00"
+                },
+                "it system engineer [gn] koblenz, remote rlp, remote hessen, remote hamburg vollzeit festanstellung": {
+                    "title": "IT System Engineer [gn]\nKoblenz, Remote RLP, Remote Hessen, Remote Hamburg\nVollzeit\nFestanstellung",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "internal it / support - 1 position": {
+                    "title": "Internal IT / Support\n- 1 Position",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:05:40.539066+00:00"
+                },
+                "internal it / support - 1 position 1": {
+                    "title": "Internal IT / Support\n- 1 Position\n1",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "internal it / support - 1 position 1 werkstudent - it-systemintegration [gn] koblenz, remote rlp teilzeit praktikum/werkstudium": {
+                    "title": "Internal IT / Support\n- 1 Position\n1\nWerkstudent - IT-Systemintegration [gn]\nKoblenz, Remote RLP\nTeilzeit\nPraktikum/Werkstudium",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "php developer nextcloud / oss [gn]": {
+                    "title": "PHP Developer Nextcloud / OSS [gn]",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:05:40.539066+00:00"
+                },
+                "php developer nextcloud / oss [gn] koblenz, remote rlp part-time permanent employee": {
+                    "title": "PHP Developer Nextcloud / OSS [gn]\nKoblenz, Remote RLP\nPart-time\nPermanent employee",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "qa /testing - 1 position 1 assistenz projektmanagement it & quality assurance [gn] koblenz, remote vollzeit festanstellung": {
+                    "title": "QA /Testing\n- 1 Position\n1\nAssistenz Projektmanagement IT & Quality Assurance [gn]\nKoblenz, Remote\nVollzeit\nFestanstellung",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "software & operations": {
+                    "title": "Software & Operations",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:05:40.539066+00:00"
+                },
+                "werkstudent - it-systemintegration [gn]": {
+                    "title": "Werkstudent - IT-Systemintegration [gn]",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:05:40.539066+00:00"
+                },
+                "werkstudent - it-systemintegration [gn] koblenz, remote rlp teilzeit praktikum/werkstudium": {
+                    "title": "Werkstudent - IT-Systemintegration [gn]\nKoblenz, Remote RLP\nTeilzeit\nPraktikum/Werkstudium",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                }
+            }
+        },
+        "https://touch.ferchau.com/de/en?type=3&city=Koblenz%2C+Rhineland-Palatinate%2C+Germany%3B50.353121%3B7.594565&rangeAndFaculty%5B0%5D=12004&sortingType=distance&sortingDirection=ASC": {
+            "jobs": {
+                "(junior) softwareentwickler (m/w/d) sondermaschinenbau": {
+                    "title": "(Junior) Softwareentwickler (m/w/d) Sondermaschinenbau",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:05:50.582940+00:00"
+                },
+                "embedded-software-entwickler (m/w/d)": {
+                    "title": "Embedded-Software-Entwickler (m/w/d)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:05:50.582940+00:00"
+                },
+                "it administrator (m/w/d)": {
+                    "title": "IT Administrator (m/w/d)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:05:50.582940+00:00"
+                },
+                "java-softwareentwickler (m/w/d)": {
+                    "title": "Java-Softwareentwickler (m/w/d)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:05:50.582940+00:00"
+                },
+                "netzwerktechniker (m/w/d) it security": {
+                    "title": "Netzwerktechniker (m/w/d) IT Security",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:05:50.582940+00:00"
+                },
+                "senior it-servicetechniker (m/w/d)": {
+                    "title": "Senior IT-Servicetechniker (m/w/d)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:05:50.582940+00:00"
+                },
+                "technischer projektmanager defence / it (m/w/d)": {
+                    "title": "Technischer Projektmanager Defence / IT (m/w/d)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:05:50.582940+00:00"
+                }
+            }
+        },
+        "https://www.united-coding.com/karriere/": {
+            "jobs": {
+                "der it-partner f\u00fcr agenturen": {
+                    "title": "Der IT-Partner f\u00fcr Agenturen",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:06:00.474083+00:00"
+                },
+                "front-end entwickler": {
+                    "title": "Front-End Entwickler",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:06:00.474083+00:00"
+                },
+                "full-stack entwickler": {
+                    "title": "Full-Stack Entwickler",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:06:00.474083+00:00"
+                },
+                "it-administrator": {
+                    "title": "IT-Administrator",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:06:00.474083+00:00"
+                },
+                "java entwickler": {
+                    "title": "Java Entwickler",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:06:00.474083+00:00"
+                },
+                "java-script entwickler buchen": {
+                    "title": "Java-Script Entwickler buchen",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:06:00.474083+00:00"
+                },
+                "magento 2 entwickler": {
+                    "title": "Magento 2 Entwickler",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:06:00.474083+00:00"
+                },
+                "mehr als 3 jahre erfahrung in entwurf und umsetzung von fullstack-anwendungen": {
+                    "title": "Mehr als 3 Jahre Erfahrung in Entwurf und Umsetzung von Fullstack-Anwendungen",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:06:00.474083+00:00"
+                },
+                "moodle entwickler": {
+                    "title": "Moodle Entwickler",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:06:00.474083+00:00"
+                },
+                "php entwickler": {
+                    "title": "PHP Entwickler",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:06:00.474083+00:00"
+                },
+                "python entwickler": {
+                    "title": "Python Entwickler",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:06:00.474083+00:00"
+                },
+                "react entwickler": {
+                    "title": "React Entwickler",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:06:00.474083+00:00"
+                },
+                "shopware entwickler": {
+                    "title": "Shopware Entwickler",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:06:00.474083+00:00"
+                },
+                "software architekt": {
+                    "title": "Software Architekt",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:06:00.474083+00:00"
+                },
+                "tiefgehende entwicklungserfahrung in python (kenntnisse in java, c/c++ oder anderen dynamischen sprachen sind von vorteil)": {
+                    "title": "Tiefgehende Entwicklungserfahrung in Python (Kenntnisse in Java, C/C++ oder anderen dynamischen Sprachen sind von Vorteil)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:06:00.474083+00:00"
+                },
+                "umfangreiche kenntnisse in javascript, jquery, compass, css3 und selenium": {
+                    "title": "Umfangreiche Kenntnisse in JavaScript, jQuery, compass, CSS3 und Selenium",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:06:00.474083+00:00"
+                },
+                "umfangreiche kenntnisse von web und backend technologien (z. b.: http, aws, nginx). kenntnisse in asynchroner programmierung, asyncio und dem tornado webserver sind von vorteil": {
+                    "title": "Umfangreiche Kenntnisse von Web und Backend Technologien (z. B.: HTTP, AWS, nginx). Kenntnisse in asynchroner Programmierung, asyncio und dem Tornado Webserver sind von Vorteil",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:06:00.474083+00:00"
+                },
+                "unser team in koblenz sucht dich als full-stack-entwickler (m/w)": {
+                    "title": "Unser Team in Koblenz sucht dich als Full-Stack-Entwickler (m/w)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:06:00.474083+00:00"
+                },
+                "websysteme und backend-entwicklung": {
+                    "title": "Websysteme und Backend-Entwicklung",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:06:00.474083+00:00"
+                },
+                "welchen entwickler m\u00f6chten sie buchen?": {
+                    "title": "Welchen Entwickler m\u00f6chten Sie buchen?",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:06:00.474083+00:00"
+                },
+                "\u00fcber welchen zeitraum m\u00f6chten sie den entwickler buchen?": {
+                    "title": "\u00dcber welchen Zeitraum m\u00f6chten sie den Entwickler buchen?",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:06:00.474083+00:00"
+                },
+                "\u201ewir schaffen bedingungen, in denen sich unsere mitarbeiter 100 % entfalten k\u00f6nnen \u2013 als voraussetzung f\u00fcr software-entwicklungen h\u00f6chster qualit\u00e4t.\u201c": {
+                    "title": "\u201eWir schaffen Bedingungen, in denen sich unsere Mitarbeiter 100 % entfalten k\u00f6nnen \u2013 als Voraussetzung f\u00fcr Software-Entwicklungen h\u00f6chster Qualit\u00e4t.\u201c",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:06:00.474083+00:00"
+                }
+            }
+        },
+        "https://www.iridium-works.com/en/career": {
+            "jobs": {}
+        },
+        "https://www.tomra.com/careers/vacant-positions?country=de": {
+            "jobs": {
+                "research tomra recycling full-time save to favorite software developer - c++* m\u00fclheim-k\u00e4rlich, rp, germany show more...": {
+                    "title": "Research\nTOMRA Recycling\nFull-time\nSave to favorite\nSoftware Developer - C++*\n\nM\u00fclheim-K\u00e4rlich, RP, Germany\n\nShow more...",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "software developer - c++*": {
+                    "title": "Software Developer - C++*",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:05:18.613365+00:00"
+                },
+                "the plastic dilemma: is it recyclable or waste?": {
+                    "title": "The plastic dilemma: Is it recyclable or waste?",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:05:18.613365+00:00"
+                }
+            }
+        },
+        "https://wearexena.com/jobs/?_market=backend%2Cfrontend%2Cfullstack&_location=berlin%2Cremote%2Cmunich%2Chamburg%2Ccologne%2Cdusseldorf%2Cfrankfurt": {
+            "jobs": {
+                "backend(38) fullstack(17) frontend(16) management(15) data(12) xena(6) individual contributor(4) mobile(3) product(2) design(1)": {
+                    "title": "Backend(38)\nFullstack(17)\nFrontend(16)\nManagement(15)\nData(12)\nXena(6)\nIndividual Contributor(4)\nMobile(3)\nProduct(2)\nDesign(1)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:06:22.065159+00:00"
+                },
+                "berlin lead java engineer read more": {
+                    "title": "Berlin\nLead Java Engineer\nRead more",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "berlin senior frontend engineer read more": {
+                    "title": "Berlin\nSenior Frontend Engineer\nRead more",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "berlin software engineer (rust/python) read more": {
+                    "title": "Berlin\nSoftware Engineer (Rust/Python)\nRead more",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "job types backend(38) fullstack(17) frontend(16) management(15) data(12) xena(6) individual contributor(4) mobile(3) product(2) design(1)": {
+                    "title": "Job types\nBackend(38)\nFullstack(17)\nFrontend(16)\nManagement(15)\nData(12)\nXena(6)\nIndividual Contributor(4)\nMobile(3)\nProduct(2)\nDesign(1)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "lead java engineer": {
+                    "title": "Lead Java Engineer",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:06:22.065159+00:00"
+                },
+                "remote senior frontend engineer (react.js) read more": {
+                    "title": "Remote\nSenior Frontend Engineer (React.js)\nRead more",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "remote tech lead backend (kotlin) read more": {
+                    "title": "Remote\nTech Lead Backend (Kotlin)\nRead more",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "senior frontend engineer": {
+                    "title": "Senior Frontend Engineer",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:06:22.065159+00:00"
+                },
+                "senior frontend engineer (react.js)": {
+                    "title": "Senior Frontend Engineer (React.js)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:06:22.065159+00:00"
+                },
+                "software engineer (rust/python)": {
+                    "title": "Software Engineer (Rust/Python)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:06:22.065159+00:00"
+                },
+                "tech lead backend (kotlin)": {
+                    "title": "Tech Lead Backend (Kotlin)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:06:22.065159+00:00"
+                }
+            }
+        },
+        "https://reev.com/en/this-is-reev/working-at-reev/#jobs": {
+            "jobs": {}
+        },
+        "https://www.7education.com/career#open-positions": {
+            "jobs": {
+                "it\u2019s more than a new start. it\u2019s the impact you can make.": {
+                    "title": "It\u2019s more than a new start. \nIt\u2019s the impact you can make.",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:10:41.895763+00:00"
+                },
+                "you made it": {
+                    "title": "You made it",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:10:41.895763+00:00"
+                }
+            }
+        },
+        "https://www.lodige.co.uk/company/about-us/career/#c32422": {
+            "jobs": {
+                "a good #feeling about it.": {
+                    "title": "A GOOD #FEELING ABOUT IT.",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:10:51.766346+00:00"
+                },
+                "a career is more than just a job \u2013 it has to feel right.": {
+                    "title": "A career is more than just a job \u2013 it has to feel right.",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:10:51.766346+00:00"
+                },
+                "for us, innovation isn\u2019t just a department \u2013 it\u2019s a mindset.": {
+                    "title": "For us, innovation isn\u2019t just a department \u2013 it\u2019s a mindset.",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:10:51.766346+00:00"
+                },
+                "for us, mechanical engineering is more than just technology \u2013 it is our passion.": {
+                    "title": "For us, mechanical engineering is more than just technology \u2013 it is our passion.",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:10:51.766346+00:00"
+                },
+                "from paderborn to the world \u2013 it is international diversity that makes all the difference.": {
+                    "title": "From Paderborn to the world \u2013 it is international diversity that makes all the difference.",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:10:51.766346+00:00"
+                }
+            }
+        },
+        "https://www.discoverinternational.com/job-seekers?joblocation=Germany&p=2": {
+            "jobs": {}
+        },
+        "https://www.faktorzehn.com/de/danke-fuer-ihre-bewerbung/": {
+            "jobs": {}
+        },
+        "https://schwarz-digits.de/en/jobsearch/hr/full-stack-engineering-lead-supply-chain-management-applications-m-w-d-GT2793": {
+            "jobs": {}
+        },
+        "https://jobs.ashbyhq.com/krakentech/135b7374-0c5d-4684-922d-af835a5d1bf7?source=linkedin+application": {
+            "jobs": {
+                "lead software engineer": {
+                    "title": "Lead Software Engineer",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "python and django (or equivalent web framework) web development experience, as you will be asked to work on some full-stack projects": {
+                    "title": "Python and Django (or equivalent web framework) web development experience, as you will be asked to work on some full-stack projects",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "writing robust and fault-tolerant software": {
+                    "title": "Writing robust and fault-tolerant software",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "your level will be senior software engineer or above and we expect you to have experience/expertise in the following (in rough priority order):": {
+                    "title": "Your level will be Senior Software Engineer or above and we expect you to have experience/expertise in the following (in rough priority order):",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "your team will be building and maintaining the backend systems and support site for uk-based clients to support their electricity and gas operations.": {
+                    "title": "Your team will be building and maintaining the backend systems and support site for UK-based clients to support their electricity and gas operations.",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                }
+            }
+        },
+        "https://www.annapurnarecruitment.com/job/senior-software-engineer-647609/": {
+            "jobs": {
+                "5+ years of commercial software engineering experience": {
+                    "title": "5+ years of commercial software engineering experience",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "designing, developing and delivering scalable backend services using java and kotlin": {
+                    "title": "Designing, developing and delivering scalable backend services using Java and Kotlin",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "experience building scalable backend or distributed systems": {
+                    "title": "Experience building scalable backend or distributed systems",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "frontend experience with react, typescript or node.js would be beneficial but isn\u2019t essential": {
+                    "title": "Frontend experience with React, TypeScript or Node.js would be beneficial but isn\u2019t essential",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "job search senior software engineer permanent negotiable berlin": {
+                    "title": "JOB SEARCH\nSenior\n \nSoftware\n \nEngineer\n\nPermanent\n\nNegotiable\n\nBerlin",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "senior software engineer": {
+                    "title": "Senior\n \nSoftware\n \nEngineer",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "senior full stack developer (python & typescript)": {
+                    "title": "Senior Full Stack Developer (Python & TypeScript)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "senior software engineer (java / kotlin)": {
+                    "title": "Senior Software Engineer (Java / Kotlin)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "staff software engineer": {
+                    "title": "Staff Software Engineer",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "strong java and kotlin development experience": {
+                    "title": "Strong Java and Kotlin development experience",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                }
+            }
+        },
+        "https://jd.wd103.myworkdayjobs.com/en-US/Careers_at_JD": {
+            "jobs": {}
+        },
+        "https://jobs.zalando.com/en/jobs?category=IT+Consulting+%26+Operations&location=Germany": {
+            "jobs": {
+                "it techniker*in": {
+                    "title": "IT Techniker*in",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:14:07.602991+00:00"
+                },
+                "it techniker*in it consulting & operations lahr view job": {
+                    "title": "IT Techniker*in\n\nIT Consulting & Operations\n\nLahr\n\nView job",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "partner onboarding intern (all genders) - zeos it consulting & operations berlin view job": {
+                    "title": "Partner Onboarding Intern (all genders) - ZEOS\n\nIT Consulting & Operations\n\nBerlin\n\nView job",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "principal enterprise automation engineer - logistics development (all genders) it consulting & operations berlin view job": {
+                    "title": "Principal Enterprise Automation Engineer - Logistics Development (all genders)\n\nIT Consulting & Operations\n\nBerlin\n\nView job",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "principal technology vendor manager (all genders) it consulting & operations berlin view job": {
+                    "title": "Principal Technology Vendor Manager (all genders)\n\nIT Consulting & Operations\n\nBerlin\n\nView job",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "senior crm process owner (all genders) it consulting & operations berlin view job": {
+                    "title": "Senior CRM Process Owner (all genders)\n\nIT Consulting & Operations\n\nBerlin\n\nView job",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "tech consultant - fulfilment (all genders) it consulting & operations berlin view job": {
+                    "title": "Tech Consultant - Fulfilment (all genders)\n\nIT Consulting & Operations\n\nBerlin\n\nView job",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                }
+            }
+        },
+        "https://job.takko.com/de/jobs/127332/applied?feedbackToken=90fccff8-41b1-4827-995a-5ca371c0e7f1": {
+            "jobs": {}
+        },
+        "https://contextfab.ai/careers": {
+            "jobs": {
+                "03 built to scale. if it won't hold up across sites, we rethink it.": {
+                    "title": "03\nBuilt to scale.\n\nIf it won't hold up across sites, we rethink it.",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "software that powers real production lines.": {
+                    "title": "Software that powers real production lines.",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:14:24.967629+00:00"
+                }
+            }
+        },
+        "https://www.personio.com/careers/5a4d9bca-8c1c-4fd1-98fd-658bf1d16105/apply/": {
+            "jobs": {}
+        },
+        "https://flix.careers/job/?jobid=8729404002&gh_src=fc023d502": {
+            "jobs": {}
+        },
+        "https://jobs.deel.com/dott/job-details/2d6eaf3d-fcaa-4c08-82d2-db8fd1d218c1/application?source=linkedin": {
+            "jobs": {
+                "experimenting with new patterns of software engineering with ai systems; and": {
+                    "title": "Experimenting with new patterns of software engineering with AI systems; and",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "exposure to ios or backend development": {
+                    "title": "Exposure to iOS or backend development",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "work alongside product, design, ios engineers, and backend engineers to push features from problem clarification all the way to post-release monitoring;": {
+                    "title": "Work alongside product, design, iOS engineers, and backend engineers to push features from problem clarification all the way to post-release monitoring;",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                }
+            }
+        },
+        "https://www.porsche-digital.hr/en/jobs/backend-engineer#job-application-section": {
+            "jobs": {}
+        },
+        "https://www.aptiv.com/en/jobs/search/open-positions/J000701023": {
+            "jobs": {
+                "senior robotics simulation engineer (f-m-d) software engineering, wuppertal, north rhine-westphalia": {
+                    "title": "Senior Robotics Simulation Engineer (f-m-d)\nSoftware Engineering, Wuppertal, North Rhine-Westphalia",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "software & services": {
+                    "title": "Software & Services",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "software engineering, wuppertal, north rhine-westphalia": {
+                    "title": "Software Engineering, Wuppertal, North Rhine-Westphalia",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "italiano (it)": {
+                    "title": "italiano (IT)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                }
+            }
+        },
+        "https://careers.canyon.com/search/?q=&searchResultView=LIST": {
+            "jobs": {
+                "it deutschland koblenz (hq) vollzeit hybrid unbefristet": {
+                    "title": "IT\nDeutschland\nKoblenz (HQ)\nVollzeit\nHybrid\nUnbefristet",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "lead it system engineer core (m/w/d)": {
+                    "title": "LEAD IT SYSTEM ENGINEER CORE (M/W/D)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "lead it system engineer core (m/w/d) koblenz deutschland it deutschland koblenz (hq) vollzeit hybrid unbefristet": {
+                    "title": "LEAD IT SYSTEM ENGINEER CORE (M/W/D)\nKoblenz Deutschland\nIT\nDeutschland\nKoblenz (HQ)\nVollzeit\nHybrid\nUnbefristet",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "sap basis administrator (m/f/d) koblenz deutschland it deutschland koblenz (hq) vollzeit hybrid unbefristet": {
+                    "title": "SAP BASIS ADMINISTRATOR (M/F/D)\nKoblenz Deutschland\nIT\nDeutschland\nKoblenz (HQ)\nVollzeit\nHybrid\nUnbefristet",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                }
+            }
+        },
+        "https://job-boards.greenhouse.io/idnow/jobs/4822285101": {
+            "jobs": {
+                "5+ years of professional software development experience with a strong focus on java.": {
+                    "title": "5+ years of professional software development experience with a strong focus on Java.",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "design, develop, and maintain robust java applications and microservices powering idnow\u2019s identity verification platform.": {
+                    "title": "Design, develop, and maintain robust Java applications and microservices powering IDnow\u2019s identity verification platform.",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "expertise in java ee and spring / spring boot (or play framework).": {
+                    "title": "Expertise in Java EE and Spring / Spring Boot (or Play Framework).",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "senior software engineer \u2013 java (f/m/d)": {
+                    "title": "Senior Software Engineer \u2013 Java (f/m/d)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "senior software engineer \u2013 java (f/m/d) berlin, berlin, germany; m\u00fcnchen, bavaria, germany": {
+                    "title": "Senior Software Engineer \u2013 Java (f/m/d)\nBerlin, Berlin, Germany; M\u00fcnchen, Bavaria, Germany",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "senior software engineer \u2013 java (f/m/d) berlin, berlin, germany; m\u00fcnchen, bavaria, germany join idnow": {
+                    "title": "Senior Software Engineer \u2013 Java (f/m/d)\nBerlin, Berlin, Germany; M\u00fcnchen, Bavaria, Germany\nJoin IDnow",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                }
+            }
+        },
+        "https://job-boards.greenhouse.io/prisma6/jobs/4390154002": {
+            "jobs": {
+                "experience running software solutions on cloud services, such as aws;": {
+                    "title": "Experience running software solutions on cloud services, such as AWS;",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "experience with java and interest in other languages like kotlin or typescript;": {
+                    "title": "Experience with Java and interest in other languages like Kotlin or TypeScript;",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "high interest in software craftsmanship and doing things \"right\" from design patterns to security;": {
+                    "title": "High interest in software craftsmanship and doing things \"right\" from Design Patterns to Security;",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "influence analysis, architecture, deployment, monitoring, security, and every other aspect of the software lifecycle;": {
+                    "title": "Influence Analysis, Architecture, Deployment, Monitoring, Security, and every other aspect of the software lifecycle;",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "relevant professional experience and track record in software development;": {
+                    "title": "Relevant professional experience and track record in software development;",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "software engineer (m/f/d) - onsite/hybrid/remote (germany)": {
+                    "title": "Software Engineer (m/f/d) - Onsite/Hybrid/Remote (Germany)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "software engineer (m/f/d) - onsite/hybrid/remote (germany) leipzig": {
+                    "title": "Software Engineer (m/f/d) - Onsite/Hybrid/Remote (Germany)\nLeipzig",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "software engineer (m/f/d) - onsite/hybrid/remote (germany) leipzig apply": {
+                    "title": "Software Engineer (m/f/d) - Onsite/Hybrid/Remote (Germany)\nLeipzig\nApply",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                }
+            }
+        },
+        "https://jobs.ashbyhq.com/pliant/682e4239-60fd-4e00-b3d3-c310e9787dbd": {
+            "jobs": {
+                "5+ years of relevant experience with java/kotlin and spring boot": {
+                    "title": "5+ years of relevant experience with Java/Kotlin and Spring Boot",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "businesses such as financial software platforms, erp providers, and banks that want to launch or enhance their credit card offerings using pliant\u2019s embedded finance and white-label solutions.": {
+                    "title": "Businesses such as financial software platforms, ERP providers, and banks that want to launch or enhance their credit card offerings using Pliant\u2019s embedded finance and white-label solutions.",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "collaborate closely with product managers, designers, and frontend engineers in a cross-functional team": {
+                    "title": "Collaborate closely with product managers, designers, and frontend engineers in a cross-functional team",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "conceptualize, define and develop our partner and developer experience platform": {
+                    "title": "Conceptualize, define and develop our partner and developer experience platform",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "experience using agentic ai in all phases of software development": {
+                    "title": "Experience using agentic AI in all phases of software development",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "exposure to, and understanding of, frontend development with react": {
+                    "title": "Exposure to, and understanding of, frontend development with React",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "software engineer - backend - partner experience eu/uk remote (m/f/d)": {
+                    "title": "Software Engineer - Backend - Partner Experience EU/UK remote (m/f/d)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "the opportunity to work in a growing team with challenging responsibilities, owning partner and developer experience": {
+                    "title": "The opportunity to work in a growing team with challenging responsibilities, owning partner and developer experience",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                }
+            }
+        },
+        "https://www.fourenergy.de/karriereseite/senior-fullstack-m-w-d/": {
+            "jobs": {
+                "(senior) fullstack (m/w/d)": {
+                    "title": "(Senior) Fullstack (m/w/d)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "abgeschlossenes it-studium oder vergleichbare qualifikation.": {
+                    "title": "Abgeschlossenes IT-Studium oder vergleichbare Qualifikation.",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "bei der frontend-magie bist du der superstar und kreierst mit angular, react, und/oder vue.js beeindruckende interaktive und reaktionsf\u00e4hige benutzeroberfl\u00e4chen, die den nutzer zum staunen bringen.": {
+                    "title": "Bei der Frontend-Magie bist Du der Superstar und kreierst mit Angular, React, und/oder vue.js beeindruckende interaktive und reaktionsf\u00e4hige Benutzeroberfl\u00e4chen, die den Nutzer zum Staunen bringen.",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "du zauberst mit java (17+), spring boot und microservices die coolsten anwendungen aus dem code-hut.": {
+                    "title": "Du zauberst mit Java (17+), Spring Boot und Microservices die coolsten Anwendungen aus dem Code-Hut.",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "erfahrung in java (17+), spring boot und microservices.": {
+                    "title": "Erfahrung in Java (17+), Spring Boot und Microservices.",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "frontend-expertise mit angular, react oder vue.js.": {
+                    "title": "Frontend-Expertise mit Angular, React oder vue.js.",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "it-entwicklung": {
+                    "title": "IT-Entwicklung",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "it-konzeption": {
+                    "title": "IT-Konzeption",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "mindestens 3 jahre erfahrung im fullstack-development.": {
+                    "title": "Mindestens 3 Jahre Erfahrung im Fullstack-Development.",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "software entwicklung": {
+                    "title": "Software Entwicklung",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                }
+            }
+        },
+        "https://www.discoverinternational.com/job-seekers?joblocation=Europe%2CGermany": {
+            "jobs": {}
+        },
+        "https://www.faktorzehn.com/de/karriere/jobs/": {
+            "jobs": {
+                "stellenanzeige: senior softwareentwickler java (mensch*)": {
+                    "title": "Stellenanzeige:\n      Senior Softwareentwickler Java (Mensch*)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:11:12.327461+00:00"
+                },
+                "stellenanzeige: senior softwareentwickler java (mensch*) standorte: k\u00f6ln, m\u00fcnchen \u00b7 undefined: vollzeit mehr erfahren": {
+                    "title": "Stellenanzeige:\n      Senior Softwareentwickler Java (Mensch*)\n      \n    \n\n    \n      Standorte:\n      K\u00f6ln, M\u00fcnchen\n      \u00b7\n      undefined:\n      Vollzeit\n    \n\n    Mehr erfahren",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "stellenanzeige: senior softwareentwickler java (mensch*) standorte: wien \u00b7 undefined: vollzeit mehr erfahren": {
+                    "title": "Stellenanzeige:\n      Senior Softwareentwickler Java (Mensch*)\n      \n    \n\n    \n      Standorte:\n      Wien\n      \u00b7\n      undefined:\n      Vollzeit\n    \n\n    Mehr erfahren",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "stellenanzeige: softwareentwickler java (mensch*)": {
+                    "title": "Stellenanzeige:\n      Softwareentwickler Java (Mensch*)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:11:12.327461+00:00"
+                },
+                "stellenanzeige: softwareentwickler java (mensch*) standorte: k\u00f6ln, m\u00fcnchen \u00b7 undefined: vollzeit mehr erfahren": {
+                    "title": "Stellenanzeige:\n      Softwareentwickler Java (Mensch*)\n      \n    \n\n    \n      Standorte:\n      K\u00f6ln, M\u00fcnchen\n      \u00b7\n      undefined:\n      Vollzeit\n    \n\n    Mehr erfahren",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "stellenanzeige: softwareentwickler java (mensch*) standorte: wien \u00b7 undefined: vollzeit mehr erfahren": {
+                    "title": "Stellenanzeige:\n      Softwareentwickler Java (Mensch*)\n      \n    \n\n    \n      Standorte:\n      Wien\n      \u00b7\n      undefined:\n      Vollzeit\n    \n\n    Mehr erfahren",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "stellenanzeige: devops engineer / it consultant (mensch*) f\u00fcr kundenprojekte": {
+                    "title": "Stellenanzeige:\nDevOps Engineer / IT Consultant (Mensch*) f\u00fcr Kundenprojekte",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:11:12.327461+00:00"
+                },
+                "stellenanzeige: devops engineer / it consultant (mensch*) f\u00fcr kundenprojekte standorte: k\u00f6ln, m\u00fcnchen \u00b7 undefined: vollzeit mehr erfahren": {
+                    "title": "Stellenanzeige:\nDevOps Engineer / IT Consultant (Mensch*) f\u00fcr Kundenprojekte\nStandorte:\nK\u00f6ln, M\u00fcnchen \u00b7\nundefined:\nVollzeit\nMehr erfahren",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "stellenanzeige: senior it-projektmanager im versicherungsumfeld (mensch*)": {
+                    "title": "Stellenanzeige:\nSenior IT-Projektmanager im Versicherungsumfeld (Mensch*)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:11:12.327461+00:00"
+                },
+                "stellenanzeige: senior it-projektmanager im versicherungsumfeld (mensch*) standorte: k\u00f6ln, m\u00fcnchen \u00b7 undefined: vollzeit mehr erfahren": {
+                    "title": "Stellenanzeige:\nSenior IT-Projektmanager im Versicherungsumfeld (Mensch*)\nStandorte:\nK\u00f6ln, M\u00fcnchen \u00b7\nundefined:\nVollzeit\nMehr erfahren",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                }
+            }
+        },
+        "https://schwarz-digits.de/en/jobsearch?includeAllLanguages=true": {
+            "jobs": {
+                "(junior) consultant it master data manager sap (m/w/d)": {
+                    "title": "(Junior) Consultant IT Master Data Manager SAP (m/w/d)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:11:22.301595+00:00"
+                },
+                "(junior) consultant it master data manager sap (m/w/d) berufserfahrene | bad friedrichshall": {
+                    "title": "(Junior) Consultant IT Master Data Manager SAP (m/w/d)\n\nBerufserfahrene | Bad Friedrichshall",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "(junior) frontend engineer - vue.js & design system (m/w/d)": {
+                    "title": "(Junior) Frontend Engineer - Vue.js & Design System (m/w/d)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:11:22.301595+00:00"
+                },
+                "(junior) frontend engineer - vue.js & design system (m/w/d) berufserfahrene | bad friedrichshall": {
+                    "title": "(Junior) Frontend Engineer - Vue.js & Design System (m/w/d)\n\nBerufserfahrene | Bad Friedrichshall",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "(junior) it business consultant - finance & administration (m/w/d)": {
+                    "title": "(Junior) IT Business Consultant - Finance & Administration (m/w/d)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:11:22.301595+00:00"
+                },
+                "(junior) it business consultant - finance & administration (m/w/d) berufserfahrene | heilbronn": {
+                    "title": "(Junior) IT Business Consultant - Finance & Administration (m/w/d)\n\nBerufserfahrene | Heilbronn",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "(junior) it business consultant payment solutions (m/w/d)": {
+                    "title": "(Junior) IT Business Consultant Payment Solutions (m/w/d)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:11:22.301595+00:00"
+                },
+                "(junior) it business consultant payment solutions (m/w/d) berufseinsteiger | bad friedrichshall": {
+                    "title": "(Junior) IT Business Consultant Payment Solutions (m/w/d)\n\nBerufseinsteiger | Bad Friedrichshall",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "(junior) it operations & event specialist f\u00fcr ipai (m/w/d)": {
+                    "title": "(Junior) IT Operations & Event Specialist f\u00fcr IPAI (m/w/d)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:11:22.301595+00:00"
+                },
+                "(junior) it operations & event specialist f\u00fcr ipai (m/w/d) berufserfahrene | heilbronn": {
+                    "title": "(Junior) IT Operations & Event Specialist f\u00fcr IPAI (m/w/d)\n\nBerufserfahrene | Heilbronn",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                }
+            }
+        },
+        "https://jobs.ashbyhq.com/krakentech?locationId=ab3276ac-d15d-4c5e-8f57-4d8eb3c54af5&source=linkedin%20application": {
+            "jobs": {
+                "lead software engineer - agent safety": {
+                    "title": "Lead Software Engineer - Agent Safety",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:11:29.784255+00:00"
+                },
+                "lead software engineer - agent safety tech development \u2022 london, uk; berlin, germany; manchester, uk; paris, france \u2022 full time \u2022 hybrid": {
+                    "title": "Lead Software Engineer - Agent Safety\n\nTech Development \u2022 London, UK; Berlin, Germany; Manchester, UK; Paris, France \u2022 Full time \u2022 Hybrid",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "senior software engineer - agent safety / evals - ai foundations": {
+                    "title": "Senior Software Engineer - Agent Safety / Evals - AI Foundations",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:11:29.784255+00:00"
+                },
+                "senior software engineer - agent safety / evals - ai foundations tech development \u2022 london, uk; berlin, germany; manchester, uk; paris, france \u2022 full time \u2022 hybrid": {
+                    "title": "Senior Software Engineer - Agent Safety / Evals - AI Foundations\n\nTech Development \u2022 London, UK; Berlin, Germany; Manchester, UK; Paris, France \u2022 Full time \u2022 Hybrid",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                }
+            }
+        },
+        "https://www.annapurnarecruitment.com/jobs/": {
+            "jobs": {
+                "senior full stack engineer": {
+                    "title": "Senior Full Stack Engineer",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:11:37.792739+00:00"
+                }
+            }
+        },
+        "https://agile-robots-se.jobs.personio.de/?language=en": {
+            "jobs": {}
+        },
+        "https://jobs.takko.com/de-de/suche": {
+            "jobs": {
+                "werkstudent it- erp (m/w/d)": {
+                    "title": "Werkstudent IT- ERP (m/w/d)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:14:16.311674+00:00"
+                },
+                "werkstudent it- erp (m/w/d) zentrale telgte, alfred-krupp-str. 21 teilzeit studenten": {
+                    "title": "Werkstudent IT- ERP (m/w/d)\n\nZentrale Telgte, Alfred-Krupp-Str. 21\n\nTeilzeit\n\nStudenten",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                }
+            }
+        },
+        "https://www.personio.com/about-personio/careers/#see-our-open-roles": {
+            "jobs": {}
+        },
+        "https://flix.careers/jobs/": {
+            "jobs": {
+                "senior full-stack kotlin engineer (freelance/service agreement) krak\u00f3w": {
+                    "title": "Senior Full-Stack Kotlin Engineer (Freelance/Service Agreement)\nKrak\u00f3w",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:14:50.495970+00:00"
+                },
+                "senior full-stack kotlin engineer (freelance/service agreement) warsaw": {
+                    "title": "Senior Full-Stack Kotlin Engineer (Freelance/Service Agreement)\nWarsaw",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:14:50.495970+00:00"
+                },
+                "senior full-stack kotlin engineer (freelance/service agreement) wroclaw": {
+                    "title": "Senior Full-Stack Kotlin Engineer (Freelance/Service Agreement)\nWroclaw",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:14:50.495970+00:00"
+                },
+                "senior full-stack kotlin engineer (m/f/d) - station management & inventory berlin": {
+                    "title": "Senior Full-Stack Kotlin Engineer (m/f/d) - Station Management & Inventory\nBerlin",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:14:50.495970+00:00"
+                },
+                "senior full-stack python engineer (m/f/d) - network planning berlin": {
+                    "title": "Senior Full-stack Python Engineer (m/f/d) - Network Planning\nBerlin",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:14:50.495970+00:00"
+                },
+                "senior software engineer (m/f/d) berlin": {
+                    "title": "Senior Software Engineer (m/f/d)\nBerlin",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:14:50.495970+00:00"
+                },
+                "senior software engineer - mobile/android (m/f/d) berlin": {
+                    "title": "Senior Software Engineer - Mobile/Android (m/f/d)\nBerlin",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:14:50.495970+00:00"
+                },
+                "senior talent acquisition partner (m/f/d) - tech/it hiring warsaw": {
+                    "title": "Senior Talent Acquisition Partner (m/f/d) - Tech/IT Hiring\nWarsaw",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:14:50.495970+00:00"
+                },
+                "zendesk manager / developer of solutions for migrations into zendesk (m/f/d) lisbon": {
+                    "title": "Zendesk Manager / Developer of Solutions for Migrations into Zendesk (m/f/d)\nLisbon",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:14:50.495970+00:00"
+                }
+            }
+        },
+        "https://jobs.deel.com/dott?locationIds[]=ff8d304f-2045-4161-aab5-8af878d0a6b8&locationIds[]=210cb33a-45ea-4d8a-b286-6b9ad43fc7d1&locationIds[]=21f52878-fae9-4bbe-ae69-76ef067dbccd#jobs": {
+            "jobs": {
+                "senior backend engineer (all genders) - amsterdam amsterdam full-time \u20ac66,000 eur - \u20ac85,000 eur": {
+                    "title": "Senior Backend Engineer (all genders) - Amsterdam\n\nAmsterdam\n\nFull-time\n\n\u20ac66,000 EUR - \u20ac85,000 EUR",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:15:00.113888+00:00"
+                },
+                "senior backend engineer (all genders) - amsterdamamsterdamfull-time\u20ac66,000 eur - \u20ac85,000 eur": {
+                    "title": "Senior Backend Engineer (all genders) - AmsterdamAmsterdamFull-time\u20ac66,000 EUR - \u20ac85,000 EUR",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:15:00.113888+00:00"
+                }
+            }
+        },
+        "https://www.aptiv.com/en/jobs/search?country=Germany": {
+            "jobs": {
+                "machine learning engineer software engineering, landeshauptstadt m\u00fcnchen, germany": {
+                    "title": "Machine Learning Engineer\nSoftware Engineering, Landeshauptstadt M\u00fcnchen, Germany",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:15:10.274107+00:00"
+                },
+                "senior ai/ml data engineer \u2013 robotics & drones (f/m/d) software engineering, wuppertal, north rhine-westphalia, germany": {
+                    "title": "Senior AI/ML Data Engineer \u2013 Robotics & Drones (f/m/d)\nSoftware Engineering, Wuppertal, North Rhine-Westphalia, Germany",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:15:10.274107+00:00"
+                },
+                "senior edge ai & robotics engineer (f-m-d) software engineering, wuppertal, north rhine-westphalia, germany": {
+                    "title": "Senior Edge AI & Robotics Engineer (f-m-d)\nSoftware Engineering, Wuppertal, North Rhine-Westphalia, Germany",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:15:10.274107+00:00"
+                },
+                "senior robotics simulation engineer (f-m-d) software engineering, wuppertal, north rhine-westphalia, germany": {
+                    "title": "Senior Robotics Simulation Engineer (f-m-d)\nSoftware Engineering, Wuppertal, North Rhine-Westphalia, Germany",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:15:10.274107+00:00"
+                },
+                "software & services": {
+                    "title": "Software & Services",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:15:10.274107+00:00"
+                },
+                "italiano (it)": {
+                    "title": "italiano (IT)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:15:10.274107+00:00"
+                }
+            }
+        },
+        "https://careers.canyon.com/search/?q=&searchResultView=LIST&markerViewed=&carouselIndex=&facetFilters=%7B%22sfstd_jobLocation_obj%22%3A%5B%22Koblenz+%28HQ%29%22%2C%22Koblenz+%28Factory%29%22%2C%22Koblenz+%28Home%29%22%2C%22M%C3%BCnchen%22%2C%22Amsterdam%22%2C%22Eindhoven%22%5D%7D&pageNumber=0": {
+            "jobs": {
+                "devops engineer (m/f/d) mehrere orte it deutschland, niederlande, spanien amsterdam, barcelona, koblenz (hq) vollzeit hybrid unbefristet": {
+                    "title": "DevOps ENGINEER (M/F/D)\nMehrere Orte\nIT\nDeutschland, Niederlande, Spanien\nAmsterdam, Barcelona, Koblenz (HQ)\nVollzeit\nHybrid\nUnbefristet",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "it deutschland koblenz (hq) vollzeit hybrid unbefristet": {
+                    "title": "IT\nDeutschland\nKoblenz (HQ)\nVollzeit\nHybrid\nUnbefristet",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "it deutschland, niederlande, spanien amsterdam, barcelona, koblenz (hq) vollzeit hybrid unbefristet": {
+                    "title": "IT\nDeutschland, Niederlande, Spanien\nAmsterdam, Barcelona, Koblenz (HQ)\nVollzeit\nHybrid\nUnbefristet",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "lead it system engineer core (m/w/d)": {
+                    "title": "LEAD IT SYSTEM ENGINEER CORE (M/W/D)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "lead it system engineer core (m/w/d) koblenz deutschland it deutschland koblenz (hq) vollzeit hybrid unbefristet": {
+                    "title": "LEAD IT SYSTEM ENGINEER CORE (M/W/D)\nKoblenz Deutschland\nIT\nDeutschland\nKoblenz (HQ)\nVollzeit\nHybrid\nUnbefristet",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "sap basis administrator (m/f/d) koblenz deutschland it deutschland koblenz (hq) vollzeit hybrid unbefristet": {
+                    "title": "SAP BASIS ADMINISTRATOR (M/F/D)\nKoblenz Deutschland\nIT\nDeutschland\nKoblenz (HQ)\nVollzeit\nHybrid\nUnbefristet",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                }
+            }
+        },
+        "https://job-boards.eu.greenhouse.io/idnow?offices%5B%5D=4016319101&offices%5B%5D=4016320101&offices%5B%5D=4016436101&offices%5B%5D=4016321101": {
+            "jobs": {
+                "general & administration / it & security & audit": {
+                    "title": "General & Administration / IT & Security & Audit",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:17:30.173630+00:00"
+                },
+                "it integration engineer (f/m/d) berlin, berlin, germany; m\u00fcnchen, bavaria, germany": {
+                    "title": "IT Integration Engineer (f/m/d)\n\nBerlin, Berlin, Germany; M\u00fcnchen, Bavaria, Germany",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:17:30.173630+00:00"
+                },
+                "it system administrator (f/m/d) rennes, ille-et-vilaine, france": {
+                    "title": "IT System Administrator (f/m/d)\n\nRennes, Ille-et-Vilaine, France",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "internal it": {
+                    "title": "Internal IT",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:17:30.173630+00:00"
+                },
+                "job it integration engineer (f/m/d) berlin, berlin, germany; m\u00fcnchen, bavaria, germany it system administrator (f/m/d) rennes, ille-et-vilaine, france": {
+                    "title": "Job\n\n\n\n\nIT Integration Engineer (f/m/d)\n\nBerlin, Berlin, Germany; M\u00fcnchen, Bavaria, Germany\n\n\n\n\nIT System Administrator (f/m/d)\n\nRennes, Ille-et-Vilaine, France",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "senior software engineer \u2013 java (f/m/d) berlin, berlin, germany; m\u00fcnchen, bavaria, germany": {
+                    "title": "Senior Software Engineer \u2013 Java (f/m/d)\n\nBerlin, Berlin, Germany; M\u00fcnchen, Bavaria, Germany",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:17:30.173630+00:00"
+                }
+            }
+        },
+        "https://job-boards.greenhouse.io/prisma6": {
+            "jobs": {
+                "engineering job software engineer (m/f/d) - onsite/hybrid/remote (germany) leipzig": {
+                    "title": "Engineering\n\nJob\n\n\n\n\nSoftware Engineer (m/f/d) - Onsite/Hybrid/Remote (Germany)\n\nLeipzig",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "engineering job software engineer (m/f/d) - onsite/hybrid/remote (germany) leipzig talent community job talent community (m/f/d) leipzig": {
+                    "title": "Engineering\n\nJob\n\n\n\n\nSoftware Engineer (m/f/d) - Onsite/Hybrid/Remote (Germany)\n\nLeipzig\n\nTalent Community\n\nJob\n\n\n\n\nTalent Community (m/f/d)\n\nLeipzig",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "job software engineer (m/f/d) - onsite/hybrid/remote (germany) leipzig": {
+                    "title": "Job\n\n\n\n\nSoftware Engineer (m/f/d) - Onsite/Hybrid/Remote (Germany)\n\nLeipzig",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "software engineer (m/f/d) - onsite/hybrid/remote (germany) leipzig": {
+                    "title": "Software Engineer (m/f/d) - Onsite/Hybrid/Remote (Germany)\n\nLeipzig",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:17:37.179665+00:00"
+                }
+            }
+        },
+        "https://www.fourenergy.de/job-opportunities/": {
+            "jobs": {
+                "(senior) fullstack (m/w/d)": {
+                    "title": "(Senior) Fullstack (m/w/d)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:17:52.510984+00:00"
+                },
+                "(senior) java testautomatisierer (m/w/d)": {
+                    "title": "(Senior) Java Testautomatisierer (m/w/d)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:17:52.510984+00:00"
+                },
+                "(senior) software architekt (m/w/d)": {
+                    "title": "(Senior) Software Architekt (m/w/d)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:17:52.510984+00:00"
+                },
+                "it-entwicklung": {
+                    "title": "IT-Entwicklung",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:17:52.510984+00:00"
+                },
+                "it-konzeption": {
+                    "title": "IT-Konzeption",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:17:52.510984+00:00"
+                },
+                "software entwicklung": {
+                    "title": "Software Entwicklung",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:17:52.510984+00:00"
+                }
+            }
+        },
+        "https://pointsharp.jobs.personio.de/?language=en": {
+            "jobs": {
+                "product development - 2 positions 2 senior java developer de- karlsruhe office, de - remote germany full-time permanent employee ux designer se- stockholm office full-time permanent employee": {
+                    "title": "Product Development\n- 2 positions\n2\nSenior Java Developer\nDE- Karlsruhe Office, DE - Remote Germany\nFull-time\nPermanent employee\nUX Designer\nSE- Stockholm Office\nFull-time\nPermanent employee",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "senior java developer": {
+                    "title": "Senior Java Developer",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:00.229343+00:00"
+                },
+                "senior java developer de- karlsruhe office, de - remote germany full-time permanent employee": {
+                    "title": "Senior Java Developer\nDE- Karlsruhe Office, DE - Remote Germany\nFull-time\nPermanent employee",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "senior java developer de- karlsruhe office, de - remote germany full-time permanent employee ux designer se- stockholm office full-time permanent employee": {
+                    "title": "Senior Java Developer\nDE- Karlsruhe Office, DE - Remote Germany\nFull-time\nPermanent employee\nUX Designer\nSE- Stockholm Office\nFull-time\nPermanent employee",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                }
+            }
+        },
+        "https://jobs.ashbyhq.com/pliant": {
+            "jobs": {
+                "(senior) software engineer - backend - growth *eu/uk remote* (m/f/d)": {
+                    "title": "(Senior) Software Engineer - Backend - Growth *EU/UK remote* (m/f/d)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:07.601805+00:00"
+                },
+                "(senior) software engineer - backend - growth *eu/uk remote* (m/f/d) engineering \u2022 remote \u2022 full time \u2022 remote": {
+                    "title": "(Senior) Software Engineer - Backend - Growth *EU/UK remote* (m/f/d)\n\nEngineering \u2022 Remote \u2022 Full time \u2022 Remote",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "engineering manager - developer experience *eu/uk remote* (m/f/d)": {
+                    "title": "Engineering Manager - Developer Experience *EU/UK remote* (m/f/d)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:07.601805+00:00"
+                },
+                "engineering manager - developer experience *eu/uk remote* (m/f/d) engineering \u2022 remote \u2022 full time \u2022 remote": {
+                    "title": "Engineering Manager - Developer Experience *EU/UK remote* (m/f/d)\n\nEngineering \u2022 Remote \u2022 Full time \u2022 Remote",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "senior software engineer - ai experience eu/uk remote (m/f/d)": {
+                    "title": "Senior Software Engineer - AI Experience EU/UK remote (m/f/d)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:07.601805+00:00"
+                },
+                "senior software engineer - ai experience eu/uk remote (m/f/d) engineering \u2022 remote \u2022 full time \u2022 remote": {
+                    "title": "Senior Software Engineer - AI Experience EU/UK remote (m/f/d)\n\nEngineering \u2022 Remote \u2022 Full time \u2022 Remote",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "senior software engineer - backend - card & transaction platform *eu/uk remote* (m/f/d)": {
+                    "title": "Senior Software Engineer - Backend - Card & Transaction Platform *EU/UK remote* (m/f/d)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:07.601805+00:00"
+                },
+                "senior software engineer - backend - card & transaction platform *eu/uk remote* (m/f/d) engineering \u2022 remote \u2022 full time \u2022 remote": {
+                    "title": "Senior Software Engineer - Backend - Card & Transaction Platform *EU/UK remote* (m/f/d)\n\nEngineering \u2022 Remote \u2022 Full time \u2022 Remote",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "software engineer - backend - partner experience eu/uk remote (m/f/d)": {
+                    "title": "Software Engineer - Backend - Partner Experience EU/UK remote (m/f/d)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:07.601805+00:00"
+                },
+                "software engineer - backend - partner experience eu/uk remote (m/f/d) engineering \u2022 remote \u2022 full time \u2022 remote": {
+                    "title": "Software Engineer - Backend - Partner Experience EU/UK remote (m/f/d)\n\nEngineering \u2022 Remote \u2022 Full time \u2022 Remote",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "software engineer - backend/funds transfer *eu/uk remote* (m/f/d)": {
+                    "title": "Software Engineer - Backend/Funds Transfer *EU/UK remote* (m/f/d)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:07.601805+00:00"
+                },
+                "software engineer - backend/funds transfer *eu/uk remote* (m/f/d) engineering \u2022 remote \u2022 full time \u2022 remote": {
+                    "title": "Software Engineer - Backend/Funds Transfer *EU/UK remote* (m/f/d)\n\nEngineering \u2022 Remote \u2022 Full time \u2022 Remote",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "software engineer - mobile *eu/uk remote* (m/f/d)": {
+                    "title": "Software Engineer - Mobile *EU/UK remote* (m/f/d)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:07.601805+00:00"
+                },
+                "software engineer - mobile *eu/uk remote* (m/f/d) engineering \u2022 remote \u2022 full time \u2022 remote": {
+                    "title": "Software Engineer - Mobile *EU/UK remote* (m/f/d)\n\nEngineering \u2022 Remote \u2022 Full time \u2022 Remote",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                }
+            }
+        },
+        "https://jobs.pwc.de/de/de/search-results": {
+            "jobs": {
+                "jetzt bewerben manager deals it solutions (w/m/d)": {
+                    "title": "Jetzt bewerben\nManager Deals IT Solutions (w/m/d)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:18.981709+00:00"
+                },
+                "jetzt bewerben senior consultant deals it solutions (w/m/d)": {
+                    "title": "Jetzt bewerben\nSenior Consultant Deals IT Solutions (w/m/d)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:18.981709+00:00"
+                },
+                "manager deals it solutions (w/m/d)": {
+                    "title": "Manager Deals IT Solutions (w/m/d)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:18.981709+00:00"
+                },
+                "save manager deals it solutions (w/m/d) 2549": {
+                    "title": "Save Manager Deals IT Solutions (w/m/d) 2549",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:18.981709+00:00"
+                },
+                "save senior consultant deals it solutions (w/m/d) 2548": {
+                    "title": "Save Senior Consultant Deals IT Solutions (w/m/d) 2548",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:18.981709+00:00"
+                },
+                "senior consultant deals it solutions (w/m/d)": {
+                    "title": "Senior Consultant Deals IT Solutions (w/m/d)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:18.981709+00:00"
+                }
+            }
+        },
+        "https://jobs.check24.de/de/jobs/?query=": {
+            "jobs": {
+                "(junior) full-stack entwickler (m/w/d) ai & digital innovation reise": {
+                    "title": "(Junior) Full-Stack Entwickler (m/w/d) AI & Digital Innovation Reise",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:43.108902+00:00"
+                },
+                "(junior) software entwickler (m/w/d)": {
+                    "title": "(Junior) Software Entwickler (m/w/d)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:43.108902+00:00"
+                },
+                "(junior) softwareentwickler (m/w/d) ai forge": {
+                    "title": "(Junior) Softwareentwickler (m/w/d) AI Forge",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:43.108902+00:00"
+                },
+                "(junior) softwareentwickler (m/w/d) cto taskforce team": {
+                    "title": "(Junior) Softwareentwickler (m/w/d) CTO Taskforce Team",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:43.108902+00:00"
+                },
+                "(junior) softwareentwickler (m/w/d) in der reise cto taskforce": {
+                    "title": "(Junior) Softwareentwickler (m/w/d) in der Reise CTO Taskforce",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:43.108902+00:00"
+                },
+                "ausbildung zum it fachinformatiker (m/w/d) anwendungsentwicklung - 2026": {
+                    "title": "Ausbildung zum IT Fachinformatiker (m/w/d) Anwendungsentwicklung - 2026",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:43.108902+00:00"
+                },
+                "du hast sehr gute kenntnisse in der softwareentwicklung von webapplikationen mit python (django als backend) und react/typescript (frontend)": {
+                    "title": "Du hast sehr gute Kenntnisse in der Softwareentwicklung von Webapplikationen mit Python (Django als Backend) und React/Typescript (Frontend)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:43.108902+00:00"
+                },
+                "eigeninitiative und ownership: du hinterfragst dinge, setzt um und willst sehen, wie deine software live geht": {
+                    "title": "Eigeninitiative und Ownership: Du hinterfragst Dinge, setzt um und willst sehen, wie Deine Software live geht",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:43.108902+00:00"
+                },
+                "eine programmier- bzw. scriptsprache (java, typescript, python, golang, c#, etc.) beherrschst du sicher": {
+                    "title": "Eine Programmier- bzw. Scriptsprache (Java, TypeScript, Python, Golang, C#, etc.) beherrschst Du sicher",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:43.108902+00:00"
+                },
+                "erste programmierkenntnisse in mindestens einer objektorientierten programmiersprache wie z.b. mit c#, java, php und/oder erfahrung im erstellen von homepages oder mobile apps": {
+                    "title": "Erste Programmierkenntnisse\u00a0in mindestens einer objektorientierten Programmiersprache wie z.B. mit C#, Java, PHP und/oder Erfahrung im Erstellen von Homepages oder Mobile Apps",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:43.108902+00:00"
+                },
+                "full-stack entwickler (m/w/d) \u2013 ai & digital innovation explorer": {
+                    "title": "Full-Stack\u202fEntwickler (m/w/d)\u202f\u2013 AI & Digital Innovation Explorer",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:43.108902+00:00"
+                },
+                "full-stack entwickler (m/w/d) \u2013 fokus backend explorer": {
+                    "title": "Full-Stack\u202fEntwickler (m/w/d)\u202f\u2013 Fokus\u202fBackend Explorer",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:43.108902+00:00"
+                },
+                "full-stack entwickler (m/w/d) \u2013 fokus frontend explorer": {
+                    "title": "Full-Stack\u202fEntwickler (m/w/d)\u202f\u2013 Fokus\u202fFrontend Explorer",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:43.108902+00:00"
+                },
+                "fullstack mindset: du kannst dich daf\u00fcr begeistern mit neuen technologien end-to-end features umzusetzen. du musst nicht alle technologien beherrschen, du musst jedoch bereit sein zu lernen.": {
+                    "title": "Fullstack Mindset: Du kannst Dich daf\u00fcr begeistern mit neuen Technologien End-to-End Features umzusetzen. Du musst nicht alle Technologien beherrschen, Du musst jedoch bereit sein\u00a0zu lernen.",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:43.108902+00:00"
+                },
+                "fullstack softwareentwickler (m/w/d) hr-automation": {
+                    "title": "Fullstack Softwareentwickler (m/w/d) HR-Automation",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:43.108902+00:00"
+                },
+                "interdisziplin\u00e4res arbeiten: du bringst ein technisches grundverst\u00e4ndnis mit und hast lust, eng mit produktmanagement, it, data science und der gesch\u00e4ftsf\u00fchrung zusammenzuarbeiten": {
+                    "title": "Interdisziplin\u00e4res Arbeiten: Du bringst ein technisches Grundverst\u00e4ndnis mit und hast Lust, eng mit Produktmanagement, IT, Data Science und der Gesch\u00e4ftsf\u00fchrung zusammenzuarbeiten",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:43.108902+00:00"
+                },
+                "mehrj\u00e4hrige erfahrung in der backend\u2011entwicklung mit php und go sowie praktische kenntnisse in next.js/react": {
+                    "title": "Mehrj\u00e4hrige Erfahrung in der Backend\u2011Entwicklung mit PHP und Go sowie praktische Kenntnisse in Next.js/React",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:43.108902+00:00"
+                },
+                "mehrj\u00e4hrige erfahrung in der frontend\u2011entwicklung mit react/next.js sowie fundierte kenntnisse in php und/oder go f\u00fcr backend\u2011services": {
+                    "title": "Mehrj\u00e4hrige Erfahrung in der Frontend\u2011Entwicklung mit React/Next.js sowie fundierte Kenntnisse in PHP und/oder Go f\u00fcr Backend\u2011Services",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:43.108902+00:00"
+                },
+                "praktische erfahrung: in mindestens einer programmier- oder skriptsprache (python, golang, java, php, c#, etc.) sowie in linux/devops verf\u00fcgst du bereits \u00fcber gute kenntnisse": {
+                    "title": "Praktische Erfahrung: In mindestens einer Programmier- oder Skriptsprache (Python, Golang, Java, PHP, C#, etc.) sowie in Linux/DevOps verf\u00fcgst Du bereits \u00fcber gute Kenntnisse",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:43.108902+00:00"
+                },
+                "sehr erfolgreich abgeschlossenes studium im it-bereich oder eine sehr erfolgreich abgeschlossene ausbildung als fachinformatiker f\u00fcr anwendungsentwicklung": {
+                    "title": "Sehr erfolgreich abgeschlossenes Studium im IT-Bereich oder eine sehr erfolgreich abgeschlossene Ausbildung als Fachinformatiker f\u00fcr Anwendungsentwicklung",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:43.108902+00:00"
+                },
+                "sehr gro\u00dfe begeisterung f\u00fcr it, internet-themen und digitale trends": {
+                    "title": "Sehr gro\u00dfe Begeisterung f\u00fcr IT, Internet-Themen und digitale Trends",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:43.108902+00:00"
+                },
+                "sehr gut abgeschlossenes studium mit wirtschaftswissenschaftlicher, mathematisch-technischer oder it-ausrichtung bzw. eines anderen quantitativ ausgerichteten studienganges": {
+                    "title": "Sehr gut abgeschlossenes Studium mit wirtschaftswissenschaftlicher, mathematisch-technischer oder IT-Ausrichtung bzw. eines anderen quantitativ ausgerichteten Studienganges",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:43.108902+00:00"
+                },
+                "sehr guter schulabschluss mit sehr guten noten in den technischen / naturwissenschaftlichen f\u00e4chern oder hast du bereits ein it-studium begonnen und m\u00f6chtest zu einer ausbildung wechseln?": {
+                    "title": "Sehr guter Schulabschluss\u00a0mit\u00a0sehr guten Noten\u00a0in den technischen / naturwissenschaftlichen F\u00e4chern oder hast Du bereits ein IT-Studium begonnen und m\u00f6chtest zu einer Ausbildung wechseln?",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:43.108902+00:00"
+                },
+                "sehr gutes beherrschen mindestens einer programmier- bzw. scriptsprache (php, python, golang, java, c#, etc.)": {
+                    "title": "Sehr gutes Beherrschen mindestens einer Programmier- bzw. Scriptsprache (PHP, Python, Golang, Java, C#, etc.)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:43.108902+00:00"
+                },
+                "sicherer umgang mit javascript/typescript, responsivem design und ui/ux\u2011prinzipien; erfahrung mit api\u2011design und datenbankanbindungen": {
+                    "title": "Sicherer Umgang mit JavaScript/TypeScript, responsivem Design und UI/UX\u2011Prinzipien; Erfahrung mit API\u2011Design und Datenbankanbindungen",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:43.108902+00:00"
+                },
+                "software engineering": {
+                    "title": "Software Engineering",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:43.108902+00:00"
+                },
+                "verst\u00e4ndnis f\u00fcr sauberen, wartbaren code und grundlegende software-engineering-prinzipien": {
+                    "title": "Verst\u00e4ndnis f\u00fcr sauberen, wartbaren Code und grundlegende Software-Engineering-Prinzipien",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:43.108902+00:00"
+                }
+            }
+        },
+        "https://careers.soprasteria.de/jobs": {
+            "jobs": {
+                "iss software gmbh(6)": {
+                    "title": "ISS Software GmbH(6)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:30.413428+00:00"
+                },
+                "it architecture & software development": {
+                    "title": "IT Architecture & Software Development",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:30.413428+00:00"
+                },
+                "it architecture(9)": {
+                    "title": "IT Architecture(9)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:30.413428+00:00"
+                },
+                "it service management(8)": {
+                    "title": "IT Service Management(8)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:30.413428+00:00"
+                },
+                "jobprofile zur\u00fcckkehrenbusiness & management consulting cybersecurity data & ai digital transformation it architecture & software development project management sap testmanagement": {
+                    "title": "Jobprofile\nZur\u00fcckkehrenBusiness & Management Consulting\nCybersecurity\nData & AI\nDigital Transformation\nIT Architecture & Software Development\nProject Management\nSAP\nTestmanagement",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "software & web development(21)": {
+                    "title": "Software & Web Development(21)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:30.413428+00:00"
+                },
+                "sopra steria custom software solutions gmbh(6)": {
+                    "title": "Sopra Steria Custom Software Solutions GmbH(6)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:30.413428+00:00"
+                }
+            }
+        },
+        "https://ic-resources.com/en/job-search/?ct=Europe": {
+            "jobs": {}
+        },
+        "https://www.arbeitsagentur.de/jobsuche/suche?suchbereich=jobs&was=Software-Entwickler%2Fin&wo=56068%20Koblenz%20am%20Rhein&umkreis=25&sort=veroeffdatum": {
+            "jobs": {
+                "10: java-softwareentwickler (m/w/d) bei ferchau gmbh niederlassung koblenz": {
+                    "title": "10: Java-Softwareentwickler (m/w/d) bei FERCHAU GmbH Niederlassung Koblenz",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:56.037659+00:00"
+                },
+                "11: php developer nextcloud / oss [gn] bei lumaserv gmbh": {
+                    "title": "11: PHP Developer Nextcloud / OSS [gn] bei LUMASERV GmbH",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:56.037659+00:00"
+                },
+                "13: developer dashboards (m/w/d) bei iabg industrieanlagen betriebs-gmbh": {
+                    "title": "13: Developer Dashboards (m/w/d) bei IABG Industrieanlagen Betriebs-GmbH",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:56.037659+00:00"
+                },
+                "14: software engineering manager (m/f/d) bei compugroup medical se & co. kgaa": {
+                    "title": "14: Software Engineering Manager (m/f/d) bei CompuGroup Medical SE & Co. KGaA",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:56.037659+00:00"
+                },
+                "15: softwareentwickler (m/w/d) bei purelox solutions gmbh": {
+                    "title": "15: Softwareentwickler (m/w/d) bei PureLoX Solutions GmbH",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:56.037659+00:00"
+                },
+                "18: web-softwareentwickler m/w/d bei prosozial gmbh": {
+                    "title": "18: WEB-SOFTWAREENTWICKLER m/w/d bei prosozial GmbH",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:56.037659+00:00"
+                },
+                "19 jobs f\u00fcr software-entwickler/in in 56068 koblenz am rhein | jobsuche der ba": {
+                    "title": "19 Jobs f\u00fcr Software-Entwickler/in in 56068 Koblenz am Rhein\n| Jobsuche der BA",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:56.037659+00:00"
+                },
+                "19: softwareentwickler delphi f\u00fcr reha it (m/w/d) bei compugroup medical se & co. kgaa": {
+                    "title": "19: Softwareentwickler Delphi f\u00fcr Reha IT (m/w/d) bei CompuGroup Medical SE & Co. KGaA",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:56.037659+00:00"
+                },
+                "1: (junior) softwareentwickler (m/w/d) sondermaschinenbau bei ferchau gmbh niederlassung koblenz": {
+                    "title": "1: (Junior) Softwareentwickler (m/w/d) Sondermaschinenbau bei FERCHAU GmbH Niederlassung Koblenz",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:56.037659+00:00"
+                },
+                "2: ios developer (m/w/d) - hybrid - remote bei docutain": {
+                    "title": "2: iOS Developer (m/w/d) - Hybrid - Remote bei Docutain",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:56.037659+00:00"
+                },
+                "3: software-tester embedded systeme (m/w/d) bei kbl gmbh": {
+                    "title": "3: Software-Tester Embedded Systeme (m/w/d) bei KBL GmbH",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:56.037659+00:00"
+                },
+                "4: softwareentwickler - software engineer (m/w/d) bei cgm": {
+                    "title": "4: Softwareentwickler - Software Engineer (m/w/d) bei CGM",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:56.037659+00:00"
+                },
+                "5: softwareentwickler - ki, fullstack (m/w/d) bei cgm": {
+                    "title": "5: Softwareentwickler - KI, Fullstack (m/w/d) bei CGM",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:56.037659+00:00"
+                },
+                "6: softwareentwickler (m/w/d) bei cgm": {
+                    "title": "6: Softwareentwickler (m/w/d) bei CGM",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:56.037659+00:00"
+                },
+                "7: softwareentwickler - technical leader (m/w/d) bei cgm": {
+                    "title": "7: Softwareentwickler - Technical Leader (m/w/d) bei CGM",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:56.037659+00:00"
+                },
+                "8: software engineer - vice president software development (m/f/d) bei cgm": {
+                    "title": "8: Software Engineer - Vice President Software Development (m/f/d) bei CGM",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:56.037659+00:00"
+                },
+                "9: software engineer - c++, multithreading (m/f/d) bei cgm": {
+                    "title": "9: Software Engineer - C++, Multithreading (m/f/d) bei CGM",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:56.037659+00:00"
+                },
+                "net softwareentwickler/in2": {
+                    "title": "Net Softwareentwickler/in2",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:56.037659+00:00"
+                },
+                "python softwareentwickler/in2": {
+                    "title": "Python Softwareentwickler/in2",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:18:56.037659+00:00"
+                }
+            }
+        },
+        "https://www.xn--jobs-fr-koblenz-4vb.com/stellenangebote/?jw_categories=2045": {
+            "jobs": {
+                "ausbildung - kaufmann/kauffrau f\u00fcr dialogmarketing (m/w/d) hottgenroth software ag k\u00f6ln, magdeburg, flammersfeld/weyerbusch 13.08.2026": {
+                    "title": "Ausbildung - Kaufmann/Kauffrau f\u00fcr Dialogmarketing (m/w/d)\nHottgenroth Software AG\nK\u00f6ln, Magdeburg, Flammersfeld/Weyerbusch\n13.08.2026",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "ausbildung zum fachinformatiker f\u00fcr systemintegration (w/m/d) (start 2027) bechtle it-systemhaus gmbh & co. kg siegen 14.08.2026": {
+                    "title": "Ausbildung zum Fachinformatiker f\u00fcr Systemintegration (w/m/d) (Start 2027)\nBechtle IT-Systemhaus GmbH & Co. KG\nSiegen\n14.08.2026",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "ausbildung zum kaufmann f\u00fcr it-systemmanagement (w/m/d) (start 2027)": {
+                    "title": "Ausbildung zum Kaufmann f\u00fcr IT-Systemmanagement (w/m/d) (Start 2027)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:19:05.835787+00:00"
+                },
+                "ausbildung zum kaufmann f\u00fcr it-systemmanagement (w/m/d) (start 2027) bechtle gmbh & co. kg bonn 25.08.2026": {
+                    "title": "Ausbildung zum Kaufmann f\u00fcr IT-Systemmanagement (w/m/d) (Start 2027)\nBechtle GmbH & Co. KG\nBonn\n25.08.2026",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "die suche in der kategorie it ergab 11 jobs.": {
+                    "title": "Die Suche in der Kategorie IT ergab 11 Jobs.",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:19:05.835787+00:00"
+                },
+                "it-administrator (m/w/d)": {
+                    "title": "IT-Administrator (m/w/d)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:19:05.835787+00:00"
+                },
+                "it-administrator (m/w/d) medentis medical gmbh bad neuenahr-ahrweiler 30.08.2026": {
+                    "title": "IT-Administrator (m/w/d)\nmedentis medical GmbH\nBad Neuenahr-Ahrweiler\n30.08.2026",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "mitarbeiter f\u00fcr den software-support (m/w/d)": {
+                    "title": "Mitarbeiter f\u00fcr den Software-Support (m/w/d)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:19:05.835787+00:00"
+                },
+                "mitarbeiter f\u00fcr den software-support (m/w/d) hottgenroth software ag k\u00f6ln, flammersfeld/weyerbusch 20.08.2026": {
+                    "title": "Mitarbeiter f\u00fcr den Software-Support (m/w/d)\nHottgenroth Software AG\nK\u00f6ln, Flammersfeld/Weyerbusch\n20.08.2026",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "softwareentwickler (m/w/d) fullstack f\u00fcr prozessdigitalisierung und automatisierung": {
+                    "title": "Softwareentwickler (m/w/d) Fullstack f\u00fcr Prozessdigitalisierung und Automatisierung",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:19:05.835787+00:00"
+                },
+                "softwareentwickler (m/w/d) fullstack f\u00fcr prozessdigitalisierung und automatisierung dmg mori ultrasonic lasertec gmbh stipshausen 19.08.2026": {
+                    "title": "Softwareentwickler (m/w/d) Fullstack f\u00fcr Prozessdigitalisierung und Automatisierung\nDMG MORI Ultrasonic Lasertec GmbH\nStipshausen\n19.08.2026",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "werkstudent abteilungs- und it-projektmanagement (m/w/d)": {
+                    "title": "Werkstudent Abteilungs- und IT-Projektmanagement (m/w/d)",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:19:05.835787+00:00"
+                },
+                "werkstudent abteilungs- und it-projektmanagement (m/w/d) bwi gmbh meckenheim 27.08.2026": {
+                    "title": "Werkstudent Abteilungs- und IT-Projektmanagement (m/w/d)\nBWI GmbH\nMeckenheim\n27.08.2026",
+                    "first_seen": "2026-09-02T11:04:02.784075+00:00",
+                    "last_seen": "2026-09-02T11:04:02.784075+00:00"
+                },
+                "it-profi musst du keiner sein \u2013 interesse an technischen ausbildungsberufen bringst du aber mit": {
+                    "title": "IT-Profi musst du keiner sein \u2013 Interesse an technischen Ausbildungsberufen bringst du aber mit",
+                    "first_seen": "2026-09-02T11:19:05.835787+00:00",
+                    "last_seen": "2026-09-02T11:19:05.835787+00:00"
+                }
+            }
+        },
+        "https://www.sai360.com/about-us/careers": {
+            "jobs": {
+                "it risk": {
+                    "title": "IT Risk",
+                    "first_seen": "2026-09-02T11:19:15.173458+00:00",
+                    "last_seen": "2026-09-02T11:19:15.173458+00:00"
+                },
+                "modern whistleblower software test": {
+                    "title": "Modern Whistleblower Software Test",
+                    "first_seen": "2026-09-02T11:19:15.173458+00:00",
+                    "last_seen": "2026-09-02T11:19:15.173458+00:00"
+                },
+                "what\u2019s it like working at sai360?": {
+                    "title": "What\u2019s it like working at SAI360?",
+                    "first_seen": "2026-09-02T11:19:15.173458+00:00",
+                    "last_seen": "2026-09-02T11:19:15.173458+00:00"
+                }
+            }
+        }
+    }
 }
