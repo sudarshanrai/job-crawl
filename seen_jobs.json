@@ -125,15 +125,17 @@
     ],
     "https://wearexena.com/jobs/?_market=backend%2Cfrontend%2Cfullstack&_location=berlin%2Cremote%2Cmunich%2Chamburg%2Ccologne%2Cdusseldorf%2Cfrankfurt": [
         "Backend(38)\nFullstack(17)\nFrontend(16)\nManagement(15)\nData(12)\nXena(6)\nIndividual Contributor(4)\nMobile(3)\nProduct(2)\nDesign(1)",
-        "Berlin\nFull Stack Engineer\nRead more",
-        "Berlin\nFull Stack Engineer (JS/TS/Python)\nRead more",
-        "Berlin\nPrincipal Frontend Engineer - Green Tech\nRead more",
-        "Berlin\nSenior (Lead) Java Engineer\nRead more",
-        "Full Stack Engineer",
-        "Full Stack Engineer (JS/TS/Python)",
+        "Berlin\nLead Java Engineer\nRead more",
+        "Berlin\nSenior Frontend Engineer\nRead more",
+        "Berlin\nSoftware Engineer (Rust/Python)\nRead more",
         "Job types\nBackend(38)\nFullstack(17)\nFrontend(16)\nManagement(15)\nData(12)\nXena(6)\nIndividual Contributor(4)\nMobile(3)\nProduct(2)\nDesign(1)",
-        "Principal Frontend Engineer - Green Tech",
-        "Senior (Lead) Java Engineer"
+        "Lead Java Engineer",
+        "Remote\nSenior Frontend Engineer (React.js)\nRead more",
+        "Remote\nTech Lead Backend (Kotlin)\nRead more",
+        "Senior Frontend Engineer",
+        "Senior Frontend Engineer (React.js)",
+        "Software Engineer (Rust/Python)",
+        "Tech Lead Backend (Kotlin)"
     ],
     "https://reev.com/en/this-is-reev/working-at-reev/#jobs": [],
     "https://www.7education.com/career#open-positions": [
@@ -308,7 +310,11 @@
         "italiano (IT)"
     ],
     "https://careers.canyon.com/search/?q=&searchResultView=LIST&markerViewed=&carouselIndex=&facetFilters=%7B%22sfstd_jobLocation_obj%22%3A%5B%22Koblenz+%28HQ%29%22%2C%22Koblenz+%28Factory%29%22%2C%22Koblenz+%28Home%29%22%2C%22M%C3%BCnchen%22%2C%22Amsterdam%22%2C%22Eindhoven%22%5D%7D&pageNumber=0": [
+        "DevOps ENGINEER (M/F/D)\nMehrere Orte\nIT\nDeutschland, Niederlande, Spanien\nAmsterdam, Barcelona, Koblenz (HQ)\nVollzeit\nHybrid\nUnbefristet",
         "IT\nDeutschland\nKoblenz (HQ)\nVollzeit\nHybrid\nUnbefristet",
+        "IT\nDeutschland, Niederlande, Spanien\nAmsterdam, Barcelona, Koblenz (HQ)\nVollzeit\nHybrid\nUnbefristet",
+        "LEAD IT SYSTEM ENGINEER CORE (M/W/D)",
+        "LEAD IT SYSTEM ENGINEER CORE (M/W/D)\nKoblenz Deutschland\nIT\nDeutschland\nKoblenz (HQ)\nVollzeit\nHybrid\nUnbefristet",
         "SAP BASIS ADMINISTRATOR (M/F/D)\nKoblenz Deutschland\nIT\nDeutschland\nKoblenz (HQ)\nVollzeit\nHybrid\nUnbefristet"
     ],
     "https://job-boards.eu.greenhouse.io/idnow?offices%5B%5D=4016319101&offices%5B%5D=4016320101&offices%5B%5D=4016436101&offices%5B%5D=4016321101": [
@@ -428,9 +434,7 @@
         "Ausbildung zum Fachinformatiker f\u00fcr Systemintegration (w/m/d) (Start 2027)\nBechtle IT-Systemhaus GmbH & Co. KG\nSiegen\n14.08.2026",
         "Ausbildung zum Kaufmann f\u00fcr IT-Systemmanagement (w/m/d) (Start 2027)",
         "Ausbildung zum Kaufmann f\u00fcr IT-Systemmanagement (w/m/d) (Start 2027)\nBechtle GmbH & Co. KG\nBonn\n25.08.2026",
-        "Die Suche in der Kategorie IT ergab 10 Jobs.",
-        "IT Trainee (m/w/d) mit Schwerpunkt Finance/ Controlling",
-        "IT Trainee (m/w/d) mit Schwerpunkt Finance/ Controlling\nFriedhelm Loh Stiftung & Co. KG\nHaiger\n03.06.2026",
+        "Die Suche in der Kategorie IT ergab 11 Jobs.",
         "IT-Administrator (m/w/d)",
         "IT-Administrator (m/w/d)\nmedentis medical GmbH\nBad Neuenahr-Ahrweiler\n30.08.2026",
         "Mitarbeiter f\u00fcr den Software-Support (m/w/d)",
@@ -438,7 +442,6 @@
         "Softwareentwickler (m/w/d) Fullstack f\u00fcr Prozessdigitalisierung und Automatisierung",
         "Softwareentwickler (m/w/d) Fullstack f\u00fcr Prozessdigitalisierung und Automatisierung\nDMG MORI Ultrasonic Lasertec GmbH\nStipshausen\n19.08.2026",
         "Werkstudent Abteilungs- und IT-Projektmanagement (m/w/d)",
-        "Werkstudent Abteilungs- und IT-Projektmanagement (m/w/d)\nBWI GmbH\nMeckenheim\n27.08.2026",
-        "Werkstudent Abteilungs- und IT-Projektmanagement (m/w/d) launch"
+        "Werkstudent Abteilungs- und IT-Projektmanagement (m/w/d)\nBWI GmbH\nMeckenheim\n27.08.2026"
     ]
 }
