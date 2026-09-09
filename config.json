@@ -52,6 +52,7 @@
     "https://www.flossbachvonstorch.de/de/ueber-uns/karriere/jobportal",
     "https://careers.agsolutiongroup.com/jobs?split_view=true&query=&location=K%C3%B6ln",
     "https://www.mongodb.com/company/careers/see-jobs#positions",
+    "https://jobs.sap.com/search/?createNewAlert=false&q=&locationsearch=&optionsFacetsDD_department=Bildung+und+Training&optionsFacetsDD_customfield3=&optionsFacetsDD_country=DE",
     "https://careers.liebherr.com/search/?createNewAlert=false&q=&locationsearch=germany&optionsFacetsDD_country=&optionsFacetsDD_city=&optionsFacetsDD_facility=&optionsFacetsDD_shifttype=&optionsFacetsDD_department=&optionsFacetsDD_lang="
   ],
   "gemini_model": "gemini-3.5-flash"
