@@ -49,7 +49,8 @@
     "https://apply.lufthansagroup.careers/index.php?ac=search_result&search_criterion_channel%5B%5D=12",
     "https://www.autoscout24.de/as24-career-pages/search-roles/?location=Berlin%2520%28Germany%29&department=Engineering",
     "https://jobs.chi-gruppe.com/de/jobs",
-    "https://www.flossbachvonstorch.de/de/ueber-uns/karriere/jobportal"
+    "https://www.flossbachvonstorch.de/de/ueber-uns/karriere/jobportal",
+    "https://careers.agsolutiongroup.com/jobs?split_view=true&query=&location=K%C3%B6ln"
   ],
   "gemini_model": "gemini-3.5-flash"
 }
