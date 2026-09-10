@@ -61,7 +61,8 @@
     "https://careers.liebherr.com/search/?createNewAlert=false&q=&locationsearch=germany&optionsFacetsDD_country=&optionsFacetsDD_city=&optionsFacetsDD_facility=&optionsFacetsDD_shifttype=&optionsFacetsDD_department=&optionsFacetsDD_lang=",
     "https://colenio.com/en/career/#stellen",
     "https://www.investify-tech.com/karriere",
-    "https://www.infomotion.de/karriere/jobportal"
+    "https://www.infomotion.de/karriere/jobportal",
+    "https://ag.wd3.myworkdayjobs.com/en-US/Airbus?locationCountry=dcc5b7608d8644b3a93716604e78e995&startDate=29d7affdc34a10001f8fca311c1900f7&jobFamilyGroup=f5811cef9cb5018463377f3f550a1bf2"
   ],
   "gemini_model": "gemini-3.5-flash"
 }
