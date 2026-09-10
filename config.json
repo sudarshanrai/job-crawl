@@ -58,7 +58,8 @@
     "https://jobs.sap.com/search/?createNewAlert=false&q=&locationsearch=&optionsFacetsDD_department=Bildung+und+Training&optionsFacetsDD_customfield3=&optionsFacetsDD_country=DE",
     "https://careers.liebherr.com/search/?createNewAlert=false&q=&locationsearch=germany&optionsFacetsDD_country=&optionsFacetsDD_city=&optionsFacetsDD_facility=&optionsFacetsDD_shifttype=&optionsFacetsDD_department=&optionsFacetsDD_lang=",
     "https://colenio.com/en/career/#stellen",
-    "https://www.investify-tech.com/karriere"
+    "https://www.investify-tech.com/karriere",
+    "https://www.infomotion.de/karriere?gad_source=1&gad_campaignid=23574903518&gbraid=0AAAAApfsTxneLQ-cM0e2k01p81lXSDbhZ&gclid=CjwKCAjwqonVBhA4EiwA9wYJ3UfYG3OjG5WPy9h0ikluYcTlj4P3tL-1XBRSv-vjusn1YV0BKVv4exoC0CoQAvD_BwE"
   ],
   "gemini_model": "gemini-3.5-flash"
 }
