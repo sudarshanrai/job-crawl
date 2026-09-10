@@ -57,7 +57,8 @@
     "https://bettermile.com/careers/",
     "https://jobs.sap.com/search/?createNewAlert=false&q=&locationsearch=&optionsFacetsDD_department=Bildung+und+Training&optionsFacetsDD_customfield3=&optionsFacetsDD_country=DE",
     "https://careers.liebherr.com/search/?createNewAlert=false&q=&locationsearch=germany&optionsFacetsDD_country=&optionsFacetsDD_city=&optionsFacetsDD_facility=&optionsFacetsDD_shifttype=&optionsFacetsDD_department=&optionsFacetsDD_lang=",
-    "https://colenio.com/en/career/#stellen"
+    "https://colenio.com/en/career/#stellen",
+    "https://www.investify-tech.com/karriere"
   ],
   "gemini_model": "gemini-3.5-flash"
 }
