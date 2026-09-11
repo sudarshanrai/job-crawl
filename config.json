@@ -69,11 +69,11 @@
     "https://www.henkel.de/karriere/finde-deinen-job-und-bewirb-dich#selectFilterByParameter=Locations_279384=Europe&Europe_877522=Germany&startIndex=110&loadCount=10&",
     "https://careers.trivago.com/jobs/?job_families=technology&experience_levels=0",
     "https://www.qftest.com/unternehmen/jobs.html",
-    “https://mgm-cp.com/jobs#job-offers”,
-    “https://career.mgm-tp.com/de/p/mgm_security_partners/jobs#CCM19consent=hgah6|2gunpd|a05e90653a2358e8|1”,
-    “https://jobs.mgm-ip.de/category/entwicklung/2d01f0af-69bd-55f1-a4f3-d9d9406ee695”
-    “https://all4cloud.jobs.personio.com/“,
-    “https://jobs.mgm-tp.com/“
+    "https://mgm-cp.com/jobs#job-offers",
+    "https://career.mgm-tp.com/de/p/mgm_security_partners/jobs#CCM19consent=hgah6|2gunpd|a05e90653a2358e8|1",
+    "https://jobs.mgm-ip.de/category/entwicklung/2d01f0af-69bd-55f1-a4f3-d9d9406ee695",
+    "https://all4cloud.jobs.personio.com/",
+    "https://jobs.mgm-tp.com/"
   ],
   "gemini_model": "gemini-3.5-flash"
 }
