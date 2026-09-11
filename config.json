@@ -65,7 +65,8 @@
     "https://www.infomotion.de/karriere/jobportal",
     "https://ag.wd3.myworkdayjobs.com/en-US/Airbus?locationCountry=dcc5b7608d8644b3a93716604e78e995&startDate=29d7affdc34a10001f8fca311c1900f7&jobFamilyGroup=f5811cef9cb5018463377f3f550a1bf2",
     "https://www.henkel.de/karriere/finde-deinen-job-und-bewirb-dich#selectFilterByParameter=Locations_279384=Europe&Europe_877522=Germany&startIndex=110&loadCount=10&",
-    "https://careers.trivago.com/jobs/?job_families=technology&experience_levels=0"
+    "https://careers.trivago.com/jobs/?job_families=technology&experience_levels=0",
+    "https://www.qftest.com/unternehmen/jobs.html"
   ],
   "gemini_model": "gemini-3.5-flash"
 }
