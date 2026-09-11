@@ -76,7 +76,8 @@
     "https://all4cloud.jobs.personio.com/",
     "https://jobs.mgm-tp.com/",
     "https://careers.doctolib.de/jobs/?key=software&locations=Berlin%2CBielefeld%2CD%C3%BCsseldorf%2CFrankfurt%2CHannover%2CMainz%2CM%C3%BCnchen%2CM%C3%BCnster%2COsnabr%C3%BCck%2CWuppertal%2CW%C3%BCrzburg%2CGermany",
-    "https://glovis-europe.jobs.personio.de/?language=en&filters=eyJkZXBhcnRtZW50X2lkIjpbMjczNTk2N119"
+    "https://glovis-europe.jobs.personio.de/?language=en&filters=eyJkZXBhcnRtZW50X2lkIjpbMjczNTk2N119",
+    "https://www.aldi-nord.de/karriere/jobs.html?jobCategoryId=10420"
   ],
   "gemini_model": "gemini-3.5-flash"
 }
