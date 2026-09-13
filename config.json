@@ -84,7 +84,8 @@
     "https://careers.ing.com/en/search-jobs?acm=ALL&alrpm=2921044&ascf=[%7B%22key%22:%22ALL%22,%22value%22:%22%22%7D]",
     "https://myjobs.adp.com/advantestcareers/cx/job-listing?keyword=software,%20java&FIELD1=Germany",
     "https://careers.muehlbauer.de/#jobs:search=java",
-    "https://careers.smartrecruiters.com/ScalableGmbH?search=java"
+    "https://careers.smartrecruiters.com/ScalableGmbH?search=java",
+    "https://careers.db.com/professionals/search-roles/#/professional/results/?jobIdSearch=java&country=46"
   ],
   "gemini_model": "gemini-3.5-flash"
 }
