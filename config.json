@@ -85,7 +85,8 @@
     "https://myjobs.adp.com/advantestcareers/cx/job-listing?keyword=software,%20java&FIELD1=Germany",
     "https://careers.muehlbauer.de/#jobs:search=java",
     "https://careers.smartrecruiters.com/ScalableGmbH?search=java",
-    "https://careers.db.com/professionals/search-roles/#/professional/results/?jobIdSearch=java&country=46"
+    "https://careers.db.com/professionals/search-roles/#/professional/results/?jobIdSearch=java&country=46",
+    "https://etalytics.com/company/career#Section-Job-Openings"
   ],
   "gemini_model": "gemini-3.5-flash"
 }
