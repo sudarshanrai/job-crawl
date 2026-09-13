@@ -81,7 +81,10 @@
     "https://glovis-europe.jobs.personio.de/?language=en&filters=eyJkZXBhcnRtZW50X2lkIjpbMjczNTk2N119",
     "https://www.aldi-nord.de/karriere/jobs.html?jobCategoryId=10420",
     "https://schluetersche-mediengruppe.jobs.personio.de/?filters=eyJyZWNydWl0aW5nX2NhdGVnb3J5X2lkIjpbMTU5NDU2N10sIm9mZmljZV9pZCI6WzE1NzA5MzIsMTU3MDkzNywxNTcwOTM4LDIyNjc1MDYsMjM5NDI2NiwyNzI0MDQyXX0%3D",
-    "https://careers.ing.com/en/search-jobs?acm=ALL&alrpm=2921044&ascf=[%7B%22key%22:%22ALL%22,%22value%22:%22%22%7D]"
+    "https://careers.ing.com/en/search-jobs?acm=ALL&alrpm=2921044&ascf=[%7B%22key%22:%22ALL%22,%22value%22:%22%22%7D]",
+    "https://myjobs.adp.com/advantestcareers/cx/job-listing?keyword=software,%20java&FIELD1=Germany",
+    "https://careers.muehlbauer.de/#jobs:search=java",
+    "https://careers.smartrecruiters.com/ScalableGmbH?search=java"
   ],
   "gemini_model": "gemini-3.5-flash"
 }
