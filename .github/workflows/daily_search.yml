@@ -3,7 +3,7 @@ name: AI Job Scraper
 on:
   schedule:
     # Runs every 2 hours
-    - cron: '0 */2 * * *'
+    - cron: '0 */1 * * *'
   workflow_dispatch: # Allows you to manually trigger it from the Actions tab
 
 jobs:
