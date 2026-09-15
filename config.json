@@ -86,7 +86,14 @@
     "https://careers.muehlbauer.de/#jobs:search=java",
     "https://careers.smartrecruiters.com/ScalableGmbH?search=java",
     "https://careers.db.com/professionals/search-roles/#/professional/results/?jobIdSearch=java&country=46",
-    "https://etalytics.com/company/career#Section-Job-Openings"
+    "https://etalytics.com/company/career#Section-Job-Openings",
+    "https://www.scopevisio.com/unternehmen/karriere/",
+    "https://www.f-i.de/stellen-finden?Level%5B%5D=berufseinsteigende&Level%5B%5D=berufserfahrene&KeywordA=software",
+    "https://www.dkfz.de/karriere/stellenangebote",
+    "https://jobs.vaillant-group.com/search/?q=software&locationsearch=&searchResultView=LIST&markerViewed=&carouselIndex=&facetFilters=%7B%22filter1%22%3A%5B%22Deutschland%22%5D%7D&pageNumber=0",
+    "https://vereinigte-hagel.net/lu/karriere/",
+    "https://jobs.signal-iduna.de/SIGNALIDUNA/search/?searchby=location&createNewAlert=false&q=java&locationsearch=&geolocation=&optionsFacetsDD_shifttype=&optionsFacetsDD_dept=IT+%26+Data+Science",
+    "https://nodeline.de/jobs/"
   ],
   "gemini_model": "gemini-3.5-flash"
 }
