@@ -93,7 +93,12 @@
     "https://jobs.vaillant-group.com/search/?q=software&locationsearch=&searchResultView=LIST&markerViewed=&carouselIndex=&facetFilters=%7B%22filter1%22%3A%5B%22Deutschland%22%5D%7D&pageNumber=0",
     "https://vereinigte-hagel.net/lu/karriere/",
     "https://jobs.signal-iduna.de/SIGNALIDUNA/search/?searchby=location&createNewAlert=false&q=java&locationsearch=&geolocation=&optionsFacetsDD_shifttype=&optionsFacetsDD_dept=IT+%26+Data+Science",
-    "https://nodeline.de/jobs/"
+    "https://nodeline.de/jobs/",
+    "https://www.gi-de.com/en/careers/jobs?country=DE&filter_company=Veridos",
+    "https://seclous.jobs.personio.com/?language=en",
+    "https://v22.desy.de/index_eng.html",
+    "https://www.conplement.de/deine-karriere",
+    "https://karriere.accompio.com/de?searchQuery=java"
   ],
   "gemini_model": "gemini-3.5-flash"
 }
