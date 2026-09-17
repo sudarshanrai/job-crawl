@@ -98,7 +98,9 @@
     "https://seclous.jobs.personio.com/?language=en",
     "https://v22.desy.de/index_eng.html",
     "https://www.conplement.de/deine-karriere",
-    "https://karriere.accompio.com/de?searchQuery=java"
+    "https://karriere.accompio.com/de?searchQuery=java",
+    "https://www.rsu-jobs.de/de?searchQuery=java",
+    "https://karriere.d-velop.de/stellenanzeigen/?gclid=CjwKCAjwn67VBhBnEiwAXUIN1b7CLp-wbSMdNhqX87nVhfLog9_m5L3nNYr6-KFbNCIxIETW7YoZlhoCkncQAvD_BwE&gbraid=0AAAAAC08E-4KmWJWfHnQcW8CI_nLJDPiX&_suche=java"
   ],
   "gemini_model": "gemini-3.5-flash"
 }
