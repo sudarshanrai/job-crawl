@@ -101,7 +101,10 @@
     "https://karriere.accompio.com/de?searchQuery=java",
     "https://www.rsu-jobs.de/de?searchQuery=java",
     "https://karriere.d-velop.de/stellenanzeigen/?gclid=CjwKCAjwn67VBhBnEiwAXUIN1b7CLp-wbSMdNhqX87nVhfLog9_m5L3nNYr6-KFbNCIxIETW7YoZlhoCkncQAvD_BwE&gbraid=0AAAAAC08E-4KmWJWfHnQcW8CI_nLJDPiX&_suche=java",
-    "https://www.tipico-careers.com/de/jobs/?search=&location=&country=Germany&department=Technology&pagesize=20#results"
+    "https://www.tipico-careers.com/de/jobs/?search=&location=&country=Germany&department=Technology&pagesize=20#results",
+    "https://job-boards.greenhouse.io/zetaglobal?offices%5B%5D=4064913004",
+    "https://jobs.dayforcehcm.com/moneygram/candidateportal?locationString=Germany&distance=100&locationId=34&locationType=2",
+    "https://db.jobs/service/search/de-de/5441588?qli=true&query=java&queryJoined=&targetStartDate=&sort=pubExternalDate_tdt&itemsPerPage=20&pageNum=0"
   ],
   "gemini_model": "gemini-3.5-flash"
 }
