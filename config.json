@@ -106,7 +106,8 @@
     "https://jobs.dayforcehcm.com/moneygram/candidateportal?locationString=Germany&distance=100&locationId=34&locationType=2",
     "https://db.jobs/service/search/de-de/5441588?qli=true&query=java&queryJoined=&targetStartDate=&sort=pubExternalDate_tdt&itemsPerPage=20&pageNum=0",
     "https://knime.jobs.personio.de/?filters=eyJkZXBhcnRtZW50X2lkIjpbODgxMjYwXSwib2ZmaWNlX2lkIjpbMzU5NzI1XX0%3D",
-    "https://www.drgueldener.de/jobs"
+    "https://www.drgueldener.de/jobs",
+    "https://1komma5grad.jobs.personio.de/?filters=eyJkZXBhcnRtZW50X2lkIjpbMzgwNzI5M119"
   ],
   "gemini_model": "gemini-3.5-flash"
 }
