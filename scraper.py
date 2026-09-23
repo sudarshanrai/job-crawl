@@ -3,53 +3,80 @@ Job-alert scraper: visits each configured career page, extracts job
 listings that match your keywords, and emails you (via Brevo) whenever a
 genuinely new listing shows up.
 
-Changelog vs. the original version -- all aimed at the duplicate/repeated
-listings you were seeing:
+Performance changelog vs. the previous version -- the logic (dedup,
+persistent "ever seen" cache, retention pruning, keyword matching) is
+UNCHANGED; only how fast it gets there has changed:
 
-1. Root cause of the duplicates: the extractor selected several tag types
-   at once (a, h1-h4, li, tr, [class*="job"], [class*="position"]) and on
-   most sites a job "card" is a wrapping <a>/<li> around a <h3> title
-   (plus a location tag and a "Read more" link). That wrapper AND the
-   heading inside it both match the selector, so one job produced two
-   overlapping lines: "Berlin Full Stack Engineer Read more" and
-   "Full Stack Engineer". `extract_page_snippet` now keeps only the
-   "leaf" matches (elements that don't themselves wrap another match),
-   so each card contributes exactly one line, and any CTA text baked
-   directly into that line ("... Read more") is stripped by
-   `strip_trailing_noise`.
+1. URLs are now scanned concurrently (Playwright's async API + an
+   asyncio.Semaphore) instead of one after another. This is the single
+   biggest win once you have more than a couple of career pages -- wall
+   time now scales with (number of URLs / max_concurrency) instead of
+   the sum of every page's load time. Tune `max_concurrency` in
+   config.json (default 5) to your machine's CPU/RAM and to how
+   aggressive you're comfortable being against the target sites.
 
-2. Repeats across separate runs: the old cache only remembered the
-   *previous* scan's snapshot, so a listing that briefly vanished from a
-   page (re-sorted, temporarily unlisted, wording tweaked) and then
-   reappeared looked "new" again. The cache is now a persistent,
-   normalized "ever seen" record per URL (with first_seen/last_seen
-   timestamps), so a listing is only ever flagged as new once. Old
-   caches are auto-migrated the first time this runs.
+2. `page.goto(..., wait_until="networkidle")` is gone. Many career sites
+   run chat widgets, analytics beacons, or polling requests that never
+   let the network go fully idle, so that call was frequently eating its
+   entire timeout for nothing -- and then eating it again on retry. We
+   now load with `domcontentloaded` (fires as soon as the DOM exists,
+   not when every subresource has finished) and make one *bounded*
+   best-effort attempt at networkidle afterwards. If it doesn't settle
+   in time we just proceed to extraction anyway -- autoscroll_and_expand
+   and extraction both tolerate a still-settling page.
 
-3. Stale entries are pruned after `job_retention_days` (default 45) of
-   not appearing, so the cache doesn't grow forever -- and a job that
-   genuinely disappears for months and comes back is treated as new
-   again, which is usually what you want.
+3. Image/font/video requests are aborted at the network layer
+   (`context.route`). They don't contribute to the text we extract, but
+   they add bytes and delay "the page is idle." Stylesheets are
+   deliberately NOT blocked -- innerText only returns text for elements
+   CSS actually renders as visible, so dropping CSS would surface hidden
+   nav duplicates / mobile-menu clones and quietly change what gets
+   extracted.
 
-4. Smaller fixes: retry once on a page-load timeout, skip malformed
-   URLs in config.json instead of crashing, and the outgoing email's
-   sender *name* is no longer accidentally set to a whole sentence.
+4. Consent-wall and "load more" detection used to run one Playwright
+   locator round-trip per candidate phrase (17 and 11 phrases
+   respectively) per frame, even on pages with no banner at all. Both
+   now search every phrase via a single regex-based locator (one round
+   trip), and consent dismissal stops as soon as one banner is closed
+   instead of still probing the remaining phrases.
+
+5. The leaf-filtering step in extract_page_snippet (added to fix the
+   duplicate-listing bug) used to compare every matched element against
+   every other matched element with `.contains()` -- O(n^2). It's now a
+   single ancestor-walk per element using a Set for O(1) membership
+   checks -- same result, roughly O(n * dom_depth) instead. Mostly
+   matters on sites where the broad SELECTOR sweeps up thousands of
+   nav/footer links.
+
+6. Keyword regexes are compiled once per run instead of once per URL.
+
+7. Flat `wait_for_timeout` sleeps were trimmed throughout -- they were
+   sized for a worst case and paid in full every time, not just when
+   actually needed.
+
+Everything else -- cache format, retention/pruning, URL validation,
+keyword matching, and the Brevo email -- is identical to before.
 """
 
 import os
 import re
 import json
 import html
+import asyncio
 from datetime import datetime, timedelta, timezone
 from urllib.parse import urlparse
 import urllib.request
 import urllib.error
-from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeoutError, Error as PlaywrightError
+from playwright.async_api import async_playwright, TimeoutError as PlaywrightTimeoutError, Error as PlaywrightError
 
 CONFIG_FILE = "config.json"
 CACHE_FILE = "seen_jobs.json"
 CACHE_VERSION = 2
 SELECTOR = 'a, h1, h2, h3, h4, li, tr, [class*="job"], [class*="position"]'
+DEFAULT_CONCURRENCY = 5
+# Blocking these speeds up load / time-to-idle without touching what
+# innerText extracts. Stylesheets are excluded on purpose -- see changelog.
+BLOCKED_RESOURCE_TYPES = {"image", "media", "font"}
 
 
 def load_json(file, default):
@@ -74,6 +101,11 @@ LOAD_MORE_TEXTS = [
     "load more", "show more", "more jobs", "view more",
     "weitere anzeigen", "mehr anzeigen", "mehr laden", "weitere jobs",
 ]
+
+# Combined into single regexes so detection is one Playwright round-trip
+# per frame instead of one round-trip per candidate phrase.
+_CONSENT_REGEX = re.compile("(" + "|".join(re.escape(t) for t in CONSENT_BUTTON_TEXTS) + ")", re.IGNORECASE)
+_LOAD_MORE_REGEX = re.compile("(" + "|".join(re.escape(t) for t in LOAD_MORE_TEXTS) + ")", re.IGNORECASE)
 
 # A few tech terms show up as one word, two words, or hyphenated
 # ("Fullstack" / "Full Stack" / "Full-Stack"). Map each keyword (lowercased)
@@ -120,23 +152,26 @@ def normalize_key(text: str) -> str:
     return re.sub(r"\s+", " ", text).strip().lower()
 
 
-def dismiss_consent_walls(page):
+async def dismiss_consent_walls(page):
     """
     Best-effort click-through of cookie/consent banners and "unblock
     content" walls. Silently does nothing if no matching button is found --
-    never raises, since most pages won't have one.
+    never raises, since most pages won't have one. Checks all candidate
+    phrases in a single locator (one round-trip per frame instead of one
+    per phrase) and stops after the first successful click, since one
+    dismissed banner is normally enough.
     """
     for frame in page.frames:
-        for text in CONSENT_BUTTON_TEXTS:
-            try:
-                locator = frame.get_by_text(text, exact=False)
-                if locator.count() > 0:
-                    locator.first.click(timeout=1000)
-            except Exception:
-                pass
+        try:
+            locator = frame.get_by_text(_CONSENT_REGEX)
+            if await locator.count() > 0:
+                await locator.first.click(timeout=1000)
+                return
+        except Exception:
+            pass
 
 
-def autoscroll_and_expand(page, max_rounds=8):
+async def autoscroll_and_expand(page, max_rounds=8):
     """
     Repeatedly scrolls down and clicks any visible "load more" style
     button, to force lazy-loaded / paginated job lists to fully render
@@ -144,18 +179,17 @@ def autoscroll_and_expand(page, max_rounds=8):
     """
     last_height = 0
     for _ in range(max_rounds):
-        page.mouse.wheel(0, 3000)
-        page.wait_for_timeout(700)
-        for text in LOAD_MORE_TEXTS:
-            try:
-                btn = page.get_by_text(text, exact=False)
-                if btn.count() > 0:
-                    btn.first.click(timeout=800)
-                    page.wait_for_timeout(700)
-            except Exception:
-                pass
+        await page.mouse.wheel(0, 3000)
+        await page.wait_for_timeout(400)
         try:
-            height = page.evaluate("document.body.scrollHeight")
+            btn = page.get_by_text(_LOAD_MORE_REGEX)
+            if await btn.count() > 0:
+                await btn.first.click(timeout=800)
+                await page.wait_for_timeout(500)
+        except Exception:
+            pass
+        try:
+            height = await page.evaluate("document.body.scrollHeight")
         except Exception:
             break
         if height == last_height:
@@ -163,30 +197,35 @@ def autoscroll_and_expand(page, max_rounds=8):
         last_height = height
 
 
-def extract_page_snippet(page) -> list:
+async def extract_page_snippet(page) -> list:
     """
     Pulls visible text from likely job-related elements, across the main
     page AND every iframe on it, then collapses DOM-nested duplicates.
 
-    A job card is commonly a wrapping <a>/<li> around a heading, e.g.
-    <a><span>Berlin</span><h3>Full Stack Engineer</h3><span>Read more
-    </span></a>. Our selector matches both the wrapper and the heading, so
-    grabbing every match's innerText naively produces two overlapping
-    lines for one job. The in-page JS below keeps only "leaf" matches --
-    elements that don't themselves contain another matched element -- so
-    each card contributes exactly one line. Any CTA text still baked into
-    a leaf itself is cleaned up afterwards by strip_trailing_noise.
+    Same "keep only leaf matches" idea as before (a job card is commonly a
+    wrapping <a>/<li> around a heading, and our broad selector matches
+    both), but done as a single ancestor-walk with a Set for O(1)
+    membership checks instead of comparing every matched element against
+    every other one with `.contains()`. Identical output, much cheaper on
+    pages where SELECTOR sweeps up thousands of nav/footer links.
     """
     all_lines = []
     for frame in page.frames:
         try:
-            lines = frame.evaluate(
+            lines = await frame.evaluate(
                 r"""(sel) => {
                     const nodes = Array.from(document.querySelectorAll(sel));
-                    const leaves = nodes.filter(
-                        el => !nodes.some(other => other !== el && el.contains(other))
-                    );
-                    return leaves
+                    const nodeSet = new Set(nodes);
+                    const hasMatchedDescendant = new Set();
+                    for (const el of nodes) {
+                        let p = el.parentElement;
+                        while (p) {
+                            if (nodeSet.has(p)) hasMatchedDescendant.add(p);
+                            p = p.parentElement;
+                        }
+                    }
+                    return nodes
+                        .filter(el => !hasMatchedDescendant.has(el))
                         .map(el => (el.innerText || el.textContent || "").replace(/\s+/g, " ").trim())
                         .filter(t => t.length > 5 && t.length < 200);
                 }""",
@@ -212,15 +251,15 @@ def build_keyword_patterns(keywords: list):
     return patterns
 
 
-def match_jobs_by_keyword(lines: list, keywords: list) -> list:
+def match_jobs_by_keyword(lines: list, patterns: list) -> list:
     """
     Pure keyword matching -- no AI involved. A line counts as a job listing
     if it contains any target keyword (or a known spacing/hyphen variant)
-    as a whole phrase, case-insensitive.
+    as a whole phrase, case-insensitive. `patterns` is pre-compiled once
+    per run (see run_all) rather than rebuilt for every single URL.
     """
-    if not keywords:
+    if not patterns:
         return []
-    patterns = build_keyword_patterns(keywords)
     return [line for line in lines if any(p.search(line) for p in patterns)]
 
 
@@ -286,11 +325,25 @@ def prune_stale_jobs(jobs: dict, retention_days: int) -> int:
     return len(stale)
 
 
-def goto_with_retry(page, url, attempts=2, timeout_ms=60000):
+async def goto_with_retry(page, url, attempts=2, timeout_ms=45000, settle_timeout_ms=8000):
+    """
+    Loads with `domcontentloaded` (fires as soon as the DOM exists) instead
+    of requiring `networkidle` (which can burn the entire timeout on sites
+    with polling/analytics/chat widgets that never go fully quiet). Then
+    makes one *bounded* best-effort attempt to let the network settle --
+    if it doesn't settle in time we proceed anyway, since
+    autoscroll_and_expand and extraction both tolerate a still-settling
+    page. On a fast site this returns as soon as things go quiet, not
+    after a fixed delay.
+    """
     last_err = None
     for attempt in range(1, attempts + 1):
         try:
-            page.goto(url, wait_until="networkidle", timeout=timeout_ms)
+            await page.goto(url, wait_until="domcontentloaded", timeout=timeout_ms)
+            try:
+                await page.wait_for_load_state("networkidle", timeout=settle_timeout_ms)
+            except PlaywrightTimeoutError:
+                pass  # fine -- best-effort only, we still extract afterwards
             return
         except PlaywrightTimeoutError as e:
             last_err = e
@@ -299,80 +352,104 @@ def goto_with_retry(page, url, attempts=2, timeout_ms=60000):
     raise last_err
 
 
+async def scan_url(context, url, patterns, job_cache, retention_days):
+    page = await context.new_page()
+    print(f"🔍 Scanning: {url}")
+    try:
+        await goto_with_retry(page, url)
+
+        # 1. Click through cookie banners / "unblock content" walls
+        await dismiss_consent_walls(page)
+        await page.wait_for_timeout(800)  # let any newly-unlocked iframe attach & load
+
+        # 2. Force lazy-loaded / paginated results to render
+        await autoscroll_and_expand(page)
+
+        # 3. Pull candidate text from the page AND any iframes on it,
+        #    already deduplicated at the DOM level
+        condensed_lines = await extract_page_snippet(page)
+
+        # 4. Keep only the lines that match a target keyword
+        current_titles = sorted(match_jobs_by_keyword(condensed_lines, patterns))
+
+        # 5. Compare against everything ever seen for this URL (not
+        #    just last run), keyed by a normalized form of the title
+        jobs = get_url_jobs(job_cache, url)
+        now_iso = datetime.now(timezone.utc).isoformat()
+        site_new_jobs = []
+        for title in current_titles:
+            key = normalize_key(title)
+            if key in jobs:
+                jobs[key]["last_seen"] = now_iso
+            else:
+                jobs[key] = {"title": title, "first_seen": now_iso, "last_seen": now_iso}
+                site_new_jobs.append(title)
+
+        pruned = prune_stale_jobs(jobs, retention_days)
+
+        status = (f"    Found {len(current_titles)} matching jobs this scan "
+                  f"({len(site_new_jobs)} brand new, {len(jobs)} tracked total")
+        status += f", {pruned} pruned as stale)." if pruned else ")."
+        print(status)
+        if not current_titles:
+            print("    ⚠️  Zero matches -- if this site normally has openings, it likely "
+                  "needs a per-site override (e.g. typing into a search box, or hitting "
+                  "the ATS's JSON API directly). See notes below the script.")
+
+        return {"url": url, "titles": site_new_jobs} if site_new_jobs else None
+
+    except PlaywrightTimeoutError:
+        print(f"❌ Failed processing {url}: Page loading timed out.")
+    except PlaywrightError as e:
+        print(f"❌ Failed processing {url}: Playwright Browser Error -> {e}")
+    except Exception as e:
+        print(f"❌ Failed processing {url}: Internal Exception -> {type(e).__name__}: {e}")
+    finally:
+        await page.close()
+    return None
+
+
+async def run_all(urls, keywords, job_cache, retention_days, max_concurrency):
+    patterns = build_keyword_patterns(keywords)  # compiled once for the whole run
+    semaphore = asyncio.Semaphore(max_concurrency)
+
+    async def bounded_scan(context, url):
+        async with semaphore:
+            return await scan_url(context, url, patterns, job_cache, retention_days)
+
+    async with async_playwright() as p:
+        browser = await p.chromium.launch(headless=True)
+        context = await browser.new_context(
+            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+        )
+
+        async def maybe_block(route):
+            if route.request.resource_type in BLOCKED_RESOURCE_TYPES:
+                await route.abort()
+            else:
+                await route.continue_()
+
+        await context.route("**/*", maybe_block)
+
+        results = await asyncio.gather(*(bounded_scan(context, url) for url in urls))
+        await browser.close()
+
+    return [r for r in results if r]
+
+
 # --- Load config & cache ---
 config = load_json(CONFIG_FILE, {"keywords": [], "urls": []})
 config["urls"] = valid_urls(config.get("urls", []))
 keywords = config.get("keywords", [])
 RETENTION_DAYS = config.get("job_retention_days", 45)
+MAX_CONCURRENCY = config.get("max_concurrency", DEFAULT_CONCURRENCY)
 
 job_cache = migrate_cache(load_json(CACHE_FILE, {"_version": CACHE_VERSION, "urls": {}}))
 
 # --- Execution Logic ---
-new_discoveries = []
-
-with sync_playwright() as p:
-    browser = p.chromium.launch(headless=True)
-    context = browser.new_context(user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36")
-
-    for url in config["urls"]:
-        page = context.new_page()
-        print(f"🔍 Scanning: {url}")
-
-        try:
-            goto_with_retry(page, url)
-            page.wait_for_timeout(3000)
-
-            # 1. Click through cookie banners / "unblock content" walls
-            dismiss_consent_walls(page)
-            page.wait_for_timeout(1500)  # let any newly-unlocked iframe attach & load
-
-            # 2. Force lazy-loaded / paginated results to render
-            autoscroll_and_expand(page)
-
-            # 3. Pull candidate text from the page AND any iframes on it,
-            #    already deduplicated at the DOM level
-            condensed_lines = extract_page_snippet(page)
-
-            # 4. Keep only the lines that match a target keyword
-            current_titles = sorted(match_jobs_by_keyword(condensed_lines, keywords))
-
-            # 5. Compare against everything ever seen for this URL (not
-            #    just last run), keyed by a normalized form of the title
-            jobs = get_url_jobs(job_cache, url)
-            now_iso = datetime.now(timezone.utc).isoformat()
-            site_new_jobs = []
-            for title in current_titles:
-                key = normalize_key(title)
-                if key in jobs:
-                    jobs[key]["last_seen"] = now_iso
-                else:
-                    jobs[key] = {"title": title, "first_seen": now_iso, "last_seen": now_iso}
-                    site_new_jobs.append(title)
-
-            pruned = prune_stale_jobs(jobs, RETENTION_DAYS)
-
-            if site_new_jobs:
-                new_discoveries.append({"url": url, "titles": site_new_jobs})
-
-            status = (f"    Found {len(current_titles)} matching jobs this scan "
-                      f"({len(site_new_jobs)} brand new, {len(jobs)} tracked total")
-            status += f", {pruned} pruned as stale)." if pruned else ")."
-            print(status)
-            if not current_titles:
-                print("    ⚠️  Zero matches -- if this site normally has openings, it likely "
-                      "needs a per-site override (e.g. typing into a search box, or hitting "
-                      "the ATS's JSON API directly). See notes below the script.")
-
-        except PlaywrightTimeoutError:
-            print(f"❌ Failed processing {url}: Page loading timed out (exceeded 60s limit).")
-        except PlaywrightError as e:
-            print(f"❌ Failed processing {url}: Playwright Browser Error -> {e}")
-        except Exception as e:
-            print(f"❌ Failed processing {url}: Internal Exception -> {type(e).__name__}: {e}")
-        finally:
-            page.close()
-
-    browser.close()
+new_discoveries = asyncio.run(
+    run_all(config["urls"], keywords, job_cache, RETENTION_DAYS, MAX_CONCURRENCY)
+)
 
 # --- Notifications via Brevo HTTP API v3 ---
 if new_discoveries:
