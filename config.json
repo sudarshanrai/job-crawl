@@ -114,7 +114,8 @@
     "https://db.jobs/service/search/de-de/5441588?qli=true&query=java&queryJoined=&targetStartDate=&sort=pubExternalDate_tdt&itemsPerPage=20&pageNum=0",
     "https://knime.jobs.personio.de/?filters=eyJkZXBhcnRtZW50X2lkIjpbODgxMjYwXSwib2ZmaWNlX2lkIjpbMzU5NzI1XX0%3D",
     "https://www.drgueldener.de/jobs",
-    "https://1komma5grad.jobs.personio.de/?filters=eyJkZXBhcnRtZW50X2lkIjpbMzgwNzI5M119"
+    "https://1komma5grad.jobs.personio.de/?filters=eyJkZXBhcnRtZW50X2lkIjpbMzgwNzI5M119",
+    "https://picard.recruitee.com/"
   ],
   "gemini_model": "gemini-3.5-flash"
 }
