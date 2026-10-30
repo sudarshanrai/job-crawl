@@ -1,7 +1,7 @@
 """
 Job-alert scraper: checks each configured source for job listings that match
 your keywords and emails you (via Brevo) whenever a genuinely new listing
-shows up.
+shows up. A plain-text copy of the email is also printed to the console.
 
 What changed in this version (all aimed at NOT MISSING new postings):
 
@@ -34,6 +34,9 @@ What changed in this version (all aimed at NOT MISSING new postings):
    compounds, e.g. "*entwickler" matches "Softwareentwickler").
 
 8. Brevo request has a timeout and a small retry.
+
+9. The email content is also printed to the console (plain-text version),
+   before the send attempt, so you see it even if sending fails.
 
 Optional config.json keys:
     "keywords": [...], "urls": [...], "job_retention_days": 45,
@@ -886,7 +889,40 @@ def build_email(discoveries, warning_urls):
     return content
 
 
+def build_console_text(discoveries, warning_urls) -> str:
+    """Plain-text rendition of the email, for the console."""
+    lines = []
+    if discoveries:
+        lines.append("🔥 New Job Opportunities Detected")
+        for d in discoveries:
+            lines.append("")
+            lines.append(f"Source: {d['url']}")
+            for it in d["items"]:
+                line = f"  - {it['title']}"
+                if it.get("extra"):
+                    line += f" — {it['extra']}"
+                if it.get("reason") == "relisted":
+                    line += " (re-listed)"
+                lines.append(line)
+                if it.get("link"):
+                    lines.append(f"      {it['link']}")
+    if warning_urls:
+        if lines:
+            lines.append("")
+        lines.append("⚠️ These sources have failed several runs in a row "
+                     "(new jobs there may be going unnoticed):")
+        lines.extend(f"  - {u}" for u in warning_urls)
+    return "\n".join(lines)
+
+
 def send_email(discoveries, warning_urls) -> bool:
+    # Print a copy of the email to the console first, so it is visible even
+    # if the send fails or the env vars are missing.
+    border = "=" * 60
+    print(f"\n{border}\n📨 EMAIL CONTENT\n{border}")
+    print(build_console_text(discoveries, warning_urls))
+    print(f"{border}\n")
+
     api_key = os.getenv("BREVO_API_KEY")
     sender_email = os.getenv("JOB_ALERT_SENDER")
     receiver_email = os.getenv("JOB_ALERT_RECEIVER")
