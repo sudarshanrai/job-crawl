@@ -170,7 +170,8 @@
     "https://www.drgueldener.de/jobs",
     "https://1komma5grad.jobs.personio.de/?filters=eyJkZXBhcnRtZW50X2lkIjpbMzgwNzI5M119",
     "https://picard.recruitee.com/",
-    "https://www.bomag.com/de-de/jobs-karriere/uebersicht/aktuelle-stellenangebote/"
+    "https://www.bomag.com/de-de/jobs-karriere/uebersicht/aktuelle-stellenangebote/",
+    "https://www.deutsche-rentenversicherung.de/SiteGlobals/Forms/Suche/DE/DRV/Servicesuche_Formular?nn=6a097e05ca84ce5471c1bc00&resourceId=6a0983b3ca84ce5471c544fe&input_=6a097e05ca84ce5471c1bc00&pageLocale=de&__time_token=3011369e635e37a0d55970303dfbc91c35aa2efacae78d79f1451f7f7c7e546997a4d53a5402a54510e256a1ca18f1af&templateQueryString=java&submit=#searchResults"
   ],
   "gemini_model": "gemini-3.5-flash"
 }
